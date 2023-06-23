@@ -1,0 +1,23 @@
+{
+  "name": "ddanailov-ipfs-metamask",
+  "version": "1.0.0",
+  "description": "dApp app. Core features: check balance and upload a file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimitardanailov/IPFS-metamask.git"
+  },
+  "keywords": [
+    "ipfs",
+    "metamask"
+  ],
+  "author": "dimityr.danailov@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dimitardanailov/IPFS-metamask/issues"
+  },
+  "homepage": "https://github.com/dimitardanailov/IPFS-metamask#readme"
+}
