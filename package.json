@@ -4,7 +4,10 @@
   "description": "dApp app. Core features: check balance and upload a file",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "dev": "turbo run dev"
   },
   "repository": {
     "type": "git",
@@ -19,5 +22,13 @@
   "bugs": {
     "url": "https://github.com/dimitardanailov/IPFS-metamask/issues"
   },
-  "homepage": "https://github.com/dimitardanailov/IPFS-metamask#readme"
+  "homepage": "https://github.com/dimitardanailov/IPFS-metamask#readme",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "devDependencies": {
+    "turbo": "^1.10.5"
+  }
 }

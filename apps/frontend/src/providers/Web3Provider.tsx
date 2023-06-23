@@ -1,3 +1,4 @@
+/*
 import {createConfig, configureChains, WagmiConfig} from 'wagmi'
 import {publicProvider} from 'wagmi/providers/public'
 import {SessionProvider} from 'next-auth/react'
@@ -22,6 +23,12 @@ function Web3Provider({Component, pageProps}) {
       </SessionProvider>
     </WagmiConfig>
   )
+}
+
+export default Web3Provider*/
+
+function Web3Provider() {
+  return 'Web3Provider'
 }
 
 export default Web3Provider
