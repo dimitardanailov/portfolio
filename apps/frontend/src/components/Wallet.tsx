@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import {useListen} from '@/hooks/useListen'
 import {useMetamask} from '@/hooks/useMetamask'
-import {Loading} from './Loading'
+import {Loading} from '@/components/Loading'
 
 export default function Wallet() {
   const {
@@ -59,20 +59,6 @@ export default function Wallet() {
   return (
     <div className="bg-truffle">
       <div className="mx-auto max-w-2xl py-16 px-4 text-center sm:py-20 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          <span className="block">Metamask API intro</span>
-        </h2>
-        <p className="mt-4 text-lg leading-6 text-white">
-          Follow along with the{' '}
-          <Link
-            href="https://github.com/GuiBibeau/web3-unleashed-demo"
-            target="_blank"
-          >
-            <span className="underline cursor-pointer">Repo</span>
-          </Link>{' '}
-          in order to learn how to use the Metamask API.
-        </p>
-
         {wallet && balance && (
           <div className=" px-4 py-5 sm:px-6">
             <div className="-ml-4 -mt-4 flex flex-wrap items-center justify-between sm:flex-nowrap">
