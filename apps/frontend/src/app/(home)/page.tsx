@@ -1,5 +1,12 @@
+'use client'
+
 import HomePage from './HomePage'
+import {MetamaskProvider, useMetamask} from '@/hooks/useMetamask'
 
 export default function Home() {
-  return <HomePage />
+  return (
+    <MetamaskProvider>
+      <HomePage />
+    </MetamaskProvider>
+  )
 }

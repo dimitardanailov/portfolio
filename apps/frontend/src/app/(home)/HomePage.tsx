@@ -7,7 +7,7 @@ import NavBar from '@/components/NavBar'
 import Wallet from '@/components/Wallet'
 
 import {useListen} from '@/hooks/useListen'
-import {MetamaskProvider, useMetamask} from '@/hooks/useMetamask'
+import {useMetamask} from '@/hooks/useMetamask'
 
 const HomePage: NextPage = () => {
   const {dispatch} = useMetamask()
