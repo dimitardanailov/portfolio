@@ -13,6 +13,9 @@ export default function NavBar() {
         <li>
           <Link href="/dashboard">Dashboard</Link>
         </li>
+        <li>
+          <Link href="/ipfs">IPFS</Link>
+        </li>
       </ul>
     </nav>
   )
