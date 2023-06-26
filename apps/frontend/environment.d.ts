@@ -1,5 +1,5 @@
 declare namespace NodeJS {
   export interface ProcessEnv {
-    readonly WEB3_STORAGE_KEY: string
+    readonly NEXT_PUBLIC_WEB3_KEY: string
   }
 }

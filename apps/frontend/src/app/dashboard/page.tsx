@@ -8,7 +8,8 @@ function Dashboard() {
       <div>
         <NavBar />
       </div>
-      <div>Dashboard</div>
+      <p>Dashboard1111</p>
+      <p>{process.env.test}</p>
     </>
   )
 }
