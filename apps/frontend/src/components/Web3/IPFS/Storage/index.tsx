@@ -53,23 +53,23 @@ const InternalAttachmentStorage: React.FC<AttachmentStorageProps> = ({
     boolean,
     Dispatch<SetStateAction<boolean>>,
   ] = useState(false)
-  const dummyPMTFile = IPFSFile.createDummyFile()
-  const [activePMTFile, setActiveFile]: [
+  const dummyFile = IPFSFile.createDummyFile()
+  const [activeFile, setActiveFile]: [
     IPFSFile,
     Dispatch<SetStateAction<IPFSFile>>,
-  ] = useState(dummyPMTFile)
+  ] = useState(dummyFile)
   const dialogHandleClose = () => {
     setDialogIsOpen(false)
-    setActiveFile(dummyPMTFile)
+    setActiveFile(dummyFile)
   }
 
   const dialogHandleAgree = () => {
-    if (activePMTFile.isDatabaseDeleteStatusEqualToActive()) {
+    if (activeFile.isDatabaseDeleteStatusEqualToActive()) {
       return
     }
 
     const newAttachments = attachments.map((attachment: IPFSFile) => {
-      if (activePMTFile.documentUI.id === attachment.documentUI.id) {
+      if (activeFile.documentUI.id === attachment.documentUI.id) {
         attachment.setDatabaseDeleteStatusToActive()
       }
 
@@ -81,15 +81,15 @@ const InternalAttachmentStorage: React.FC<AttachmentStorageProps> = ({
     setTimeout(() => {
       const filteredAttachments = newAttachments.filter(
         (attachment: IPFSFile) => {
-          return activePMTFile.documentUI.id !== attachment.documentUI.id
+          return activeFile.documentUI.id !== attachment.documentUI.id
         },
       )
 
-      deleteFileFromDatabase(filteredAttachments, activePMTFile, setAttachments)
+      deleteFileFromDatabase(filteredAttachments, activeFile, setAttachments)
     }, delay)
 
     setDialogIsOpen(false)
-    setActiveFile(dummyPMTFile)
+    setActiveFile(dummyFile)
   }
 
   return (

@@ -1,9 +1,9 @@
 import IPFSFile from '@/classes/ipfs-file'
 
-function filterAttachments(attachments: IPFSFile[], pmtFile: IPFSFile) {
+function filterAttachments(attachments: IPFSFile[], file: IPFSFile) {
   const filteredAttachments = attachments.filter((attachment: IPFSFile) => {
     return (
-      attachment.documentUI.id !== pmtFile.documentUI.id &&
+      attachment.documentUI.id !== file.documentUI.id &&
       attachment.isAttachmentValidToBeRender()
     )
   })

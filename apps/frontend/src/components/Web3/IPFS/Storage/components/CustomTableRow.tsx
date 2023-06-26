@@ -19,7 +19,7 @@ import {
 interface CustomTableRowProps {
   file: IPFSFile
   setDialogIsOpen: Dispatch<SetStateAction<boolean>>
-  setActiveFile: Dispatch<SetStateAction<PMTFile>>
+  setActiveFile: Dispatch<SetStateAction<IPFSFile>>
   downloadAttachmentHandler: DownloadFileByType
 }
 

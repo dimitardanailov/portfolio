@@ -149,36 +149,36 @@ class IPFSFile {
   static attachmentsQueueHasCandidateRoleAttachments(
     attachments: IPFSFile[],
   ): boolean {
-    const pmtFilesByRole = IPFSFile.filterAttachmentsByUIAttachmentRole(
+    const filesByRole = IPFSFile.filterAttachmentsByUIAttachmentRole(
       attachments,
       UIAttachmentRole.AttachmentCandidateRole,
     )
 
-    return pmtFilesByRole.length > 0
+    return filesByRole.length > 0
   }
 
   static filterAttachmentsByUIAttachmentRole(
     attachments: IPFSFile[],
     uiAttachmentRole: UIAttachmentRole,
   ): IPFSFile[] {
-    const pmtFilesByRole = attachments.filter((attachment: IPFSFile) => {
+    const filesByRole = attachments.filter((attachment: IPFSFile) => {
       const role = attachment.getUIAttachmentRole()
 
       return role === uiAttachmentRole
     })
 
-    return pmtFilesByRole
+    return filesByRole
   }
 
   static attachmentsQueueHasStoredRoleAttachments(
     attachments: IPFSFile[],
   ): boolean {
-    const pmtFilesByRole = IPFSFile.filterAttachmentsByUIAttachmentRole(
+    const filesByRole = IPFSFile.filterAttachmentsByUIAttachmentRole(
       attachments,
       UIAttachmentRole.AttachmentStoredRole,
     )
 
-    return pmtFilesByRole.length > 0
+    return filesByRole.length > 0
   }
 
   static createDummyFile(): IPFSFile {

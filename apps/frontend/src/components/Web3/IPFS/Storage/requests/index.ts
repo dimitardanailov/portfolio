@@ -4,7 +4,7 @@ import IPFSFile from '@/classes/ipfs-file'
 
 export type DeleteFileFromDatabaseType = (
   filteredAttachments: IPFSFile[],
-  activePMTFile: IPFSFile,
+  activeFile: IPFSFile,
   setAttachments: Dispatch<SetStateAction<IPFSFile[]>>,
 ) => void
 
@@ -16,7 +16,7 @@ export function styleGuideDeleteFileFromDatabase(
   setAttachments(filteredAttachments)
 }
 
-export type DownloadFileByType = (pmtFile: IPFSFile) => void
+export type DownloadFileByType = (file: IPFSFile) => void
 
 export function styleGuideDowloadFile(_: IPFSFile) {
   alert('styleGuideDowloadFile')
