@@ -1,21 +1,26 @@
-import {useState, FC} from 'react'
-
-import IPFSFile from '@/classes/ipfs-file'
+import {FC} from 'react'
 
 import IPFSFileUploadBox from '@/components/Web3/IPFS/FileUploadBox'
+import {BaseProps as IPFSUploadBaseProps} from '@/props/attachments/ipfs'
 
-export interface IPFSContainerProps {
-  maximumFileUploadInMb: number
-  attachments: IPFSFile[]
-  setAttachments: any
-}
-
-export const IPFSContainer: FC<IPFSContainerProps> = ({
-  maximumFileUploadInMb,
+export const IPFSContainer: FC<IPFSUploadBaseProps> = ({
   attachments,
   setAttachments,
+  allowedFiles,
+  maximumFileUploadInMb,
+  type,
+  id,
 }) => {
-  return <IPFSFileUploadBox maximumFileUploadInMb={maximumFileUploadInMb} />
+  return (
+    <IPFSFileUploadBox
+      allowedFiles={allowedFiles}
+      attachments={attachments}
+      setAttachments={setAttachments}
+      maximumFileUploadInMb={maximumFileUploadInMb}
+      type={type}
+      id={id}
+    />
+  )
 }
 
 export default IPFSContainer

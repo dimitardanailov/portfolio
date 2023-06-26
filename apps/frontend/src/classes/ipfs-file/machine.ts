@@ -26,6 +26,10 @@ export const states = {
       event: 'UPLOAD_FILE_TO_DATABASE',
       value: 'upload_file_to_database',
     },
+    DELETE_FILE_FROM_UI_IS_ACTIVE: {
+      event: 'DELETE_FILE_FROM_UI_IS_ACTIVE',
+      value: 'delete_file_from_ui_is_active',
+    },
     SKIP_FILE_UPLOAD_TO_DATABASE: {
       event: 'SKIP_FILE_UPLOAD_TO_DATABASE',
       value: 'skip_file_upload_to_database',
@@ -59,6 +63,9 @@ const machine = createMachine(
           SKIP_FILE_UPLOAD_TO_DATABASE:
             states.candidateRole.SKIP_FILE_UPLOAD_TO_DATABASE.value,
 
+          DELETE_FILE_FROM_UI_IS_ACTIVE:
+            states.candidateRole.DELETE_FILE_FROM_UI_IS_ACTIVE.value,
+
           IDLE_STORED_ROLE: states.storedRole.IDLE_STORED_ROLE.value,
         },
       },
@@ -71,6 +78,9 @@ const machine = createMachine(
             target: states.candidateRole.IDLE_CANDIDATE_ROLE.value,
           },
         },
+      },
+      delete_file_from_ui_is_active: {
+        type: 'final',
       },
       skip_file_upload_to_database: {
         type: 'final',
