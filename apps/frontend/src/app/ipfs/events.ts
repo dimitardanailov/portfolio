@@ -23,7 +23,7 @@ function fileUploadFile<FileUploadFileType>(
     alert('something is wrong')
   }
 
-  const appStorage = AppWeb3Storage.makeClient(file)
+  const appStorage = AppWeb3Storage.makeClient()
   appStorage.uploadFile(file, callback, errorCallback)
 }
 
