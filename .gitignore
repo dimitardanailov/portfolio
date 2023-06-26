@@ -134,3 +134,6 @@ dist
 + build/**
 + dist/**
 + .next/**
+
+machine.typegen.ts
+.DS_Store
