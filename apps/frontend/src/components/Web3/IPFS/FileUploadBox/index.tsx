@@ -30,6 +30,7 @@ import {
   StyledUploadButton,
 } from './styled-components'
 import {onChangeFileListener} from './events'
+import ExternalRenderFileUploadCanidates from './Components/render/RenderFileUploadCanidates'
 
 const AddFileInAttachmentCandidateRoleQueue: React.FC<UploadComponentProps> = ({
   allowedFiles,
@@ -87,6 +88,11 @@ export const IPFSFileUploadBox: FC<IPFSFileUploadBoxProps> = ({
       <SectionAllowedFiles>
         Authorized document types: {allowedFiles.join(',')}
       </SectionAllowedFiles>
+      <ExternalRenderFileUploadCanidates
+        attachments={attachments}
+        setAttachments={setAttachments}
+        type={type}
+      />
     </>
   )
 }

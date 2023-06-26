@@ -3,10 +3,20 @@ import TableRow from '@mui/material/TableRow'
 
 import {StyledTableRowCell} from '@/styled-components/table'
 
-import Button from '@mui/material/Button'
-
 import {CustomTableRowProps} from './props'
-import {WrapperButttons} from './styled-components'
+
+import {
+  tryToUploadFile,
+  cancelFileUpload,
+  removeFileFromTheList,
+} from './events'
+
+import {
+  WrapperButttons,
+  UploadButton,
+  CancelButton,
+  TrashButton,
+} from './styled-components'
 
 const byteSize = require('byte-size')
 
@@ -46,7 +56,29 @@ const CustomTableRow: React.FC<CustomTableRowProps> = ({
         <StyledTableRowCell>{}</StyledTableRowCell>
       </TableCell>
       <TableCell width={'20%'}>
-        <WrapperButttons>Buttons</WrapperButttons>
+        <WrapperButttons>
+          <UploadButton
+            disabled={file.isAttachmentIsSkippedToBeUploadedInDatabase()}
+            onClick={() =>
+              removeFileFromTheList(file, attachments, setAttachments)
+            }
+          >
+            Upload
+          </UploadButton>
+          <CancelButton
+            onClick={() => cancelFileUpload(file)}
+            disabled={!file.uploadStatusIsActive()}
+          >
+            Cancel
+          </CancelButton>
+          <TrashButton
+            onClick={() =>
+              removeFileFromTheList(file, attachments, setAttachments)
+            }
+          >
+            Remove
+          </TrashButton>
+        </WrapperButttons>
       </TableCell>
     </TableRow>
   )

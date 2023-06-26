@@ -61,6 +61,14 @@ class IPFSFile {
     this.service.send(states.storedRole.IDLE_STORED_ROLE.event)
   }
 
+  setAttachmentToBeRemovedFromUI() {
+    this.service.send(states.candidateRole.DELETE_FILE_FROM_UI_IS_ACTIVE.event)
+  }
+
+  setUploadStatusToActive() {
+    this.service.send(states.candidateRole.UPLOAD_FILE_TO_DATABASE.event)
+  }
+
   generateRandomDocumentId(): string {
     const id =
       Math.random() + this.attachment.lastModified + this.attachment.size
@@ -72,6 +80,28 @@ class IPFSFile {
     return this.attachmentType === AttachmentType.Attachment
       ? 'Attachment'
       : 'Other Annex'
+  }
+
+  uploadStatusIsActive(): boolean {
+    return (
+      this.getServiceActiveState() ===
+      states.candidateRole.UPLOAD_FILE_TO_DATABASE.value
+    )
+  }
+
+  isAttachmentIsSkippedToBeUploadedInDatabase(): boolean {
+    const uiRole = this.getUIAttachmentRole()
+    if (uiRole === UIAttachmentRole.AttachmentStoredRole) return true
+
+    const activeState = this.getServiceActiveState()
+    switch (activeState) {
+      case states.candidateRole.UPLOAD_FILE_TO_DATABASE.value:
+      case states.candidateRole.DELETE_FILE_FROM_UI_IS_ACTIVE.value:
+      case states.candidateRole.SKIP_FILE_UPLOAD_TO_DATABASE.value:
+        return true
+      default:
+        return false
+    }
   }
 
   /*** is: start */
@@ -100,6 +130,11 @@ class IPFSFile {
     return role === UIAttachmentRole.AttachmentStoredRole
   }
 
+  resetUploadStatus() {
+    this.service.send(states.candidateRole.IDLE_CANDIDATE_ROLE.event)
+  }
+
+  /*** static: end */
   static attachmentsQueueHasCandidateRoleAttachments(
     attachments: IPFSFile[],
   ): boolean {
@@ -111,7 +146,6 @@ class IPFSFile {
     return pmtFilesByRole.length > 0
   }
 
-  /*** static: end */
   static filterAttachmentsByUIAttachmentRole(
     attachments: IPFSFile[],
     uiAttachmentRole: UIAttachmentRole,
