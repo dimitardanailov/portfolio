@@ -12,7 +12,7 @@ const WrapperButttons = styled.div`
 
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
 `
 
@@ -36,7 +36,9 @@ const UploadButton = styled(BasicButton)<ButtonProps>`
   border-color: #aa1e38;
 `
 
-const CancelButton = styled(BasicButton)<ButtonProps>``
+const CancelButton = styled(BasicButton)<ButtonProps>`
+  margin: 0 0.3rem;
+`
 
 const TrashButton = styled(BasicButton)<ButtonProps>`
   color: #333;
