@@ -20,6 +20,8 @@ const InternalRenderFileUploadCanidates: FC<RenderFileUploadCanidatesProps> = ({
   attachments,
   setAttachments,
   type,
+  delay,
+  fileUploadFile,
 }) => {
   const filteredItems = attachments.filter((file: IPFSFile) => {
     const isCorrect = file.isUIAttachmentFileCandidate(type)
@@ -77,6 +79,8 @@ const InternalRenderFileUploadCanidates: FC<RenderFileUploadCanidatesProps> = ({
                     file={file}
                     attachments={attachments}
                     setAttachments={setAttachments}
+                    delay={delay}
+                    fileUploadFile={fileUploadFile}
                   />
                 )
               })}
@@ -103,8 +107,8 @@ const ExternalRenderFileUploadCanidates: FC<RenderFileUploadCanidatesProps> = ({
   // stateDocumentsAttachmentMachine,
   // sendDocumentsAttachmentMachine,
   // serviceDocumentsAttachmentMachine,
-  // delay,
-  // fileUploadFile,
+  delay,
+  fileUploadFile,
 }) => {
   const attachmentArrayHasCandidateRoleAttachments =
     IPFSFile.attachmentsQueueHasCandidateRoleAttachments(attachments)
@@ -116,6 +120,8 @@ const ExternalRenderFileUploadCanidates: FC<RenderFileUploadCanidatesProps> = ({
           attachments={attachments}
           setAttachments={setAttachments}
           type={type}
+          delay={delay}
+          fileUploadFile={fileUploadFile}
         />
       ) : (
         ''

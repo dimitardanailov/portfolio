@@ -10,14 +10,6 @@
 
 import {FC, ChangeEvent} from 'react'
 
-import FileType from '@/enums/file-types'
-import IPFSFile from '@/classes/ipfs-file'
-
-import {
-  ExternalStyledWrapper,
-  InnerStyledWrapper,
-} from '@/styled-components/file-upload'
-
 import {createMimeTypeAllowedFiles} from '@/helpers'
 
 import {UploadComponentProps, IPFSFileUploadBoxProps} from './props'
@@ -30,7 +22,7 @@ import {
   StyledUploadButton,
 } from './styled-components'
 import {onChangeFileListener} from './events'
-import ExternalRenderFileUploadCanidates from './Components/render/RenderFileUploadCanidates'
+import ExternalRenderFileUploadCanidates from './components/RenderFileUploadCanidates'
 
 const AddFileInAttachmentCandidateRoleQueue: React.FC<UploadComponentProps> = ({
   allowedFiles,
@@ -73,6 +65,8 @@ export const IPFSFileUploadBox: FC<IPFSFileUploadBoxProps> = ({
   maximumFileUploadInMb,
   type,
   id,
+  fileUploadFile,
+  delay,
 }) => {
   return (
     <>
@@ -92,6 +86,8 @@ export const IPFSFileUploadBox: FC<IPFSFileUploadBoxProps> = ({
         attachments={attachments}
         setAttachments={setAttachments}
         type={type}
+        fileUploadFile={fileUploadFile}
+        delay={delay}
       />
     </>
   )

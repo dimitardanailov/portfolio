@@ -69,6 +69,10 @@ class IPFSFile {
     this.service.send(states.candidateRole.UPLOAD_FILE_TO_DATABASE.event)
   }
 
+  setDatabaseDeleteStatusToActive() {
+    this.service.send(states.storedRole.DELETE_FILE_TO_DATABASE_IS_ACTIVE.event)
+  }
+
   generateRandomDocumentId(): string {
     const id =
       Math.random() + this.attachment.lastModified + this.attachment.size
@@ -118,6 +122,13 @@ class IPFSFile {
       this.uiAttachmentRoleIsCandidateRole() && this.attachmentType === type
     )
   }
+
+  isDatabaseDeleteStatusEqualToActive(): boolean {
+    return (
+      this.getServiceActiveState() ===
+      states.storedRole.DELETE_FILE_TO_DATABASE_IS_ACTIVE.value
+    )
+  }
   /*** is: end */
 
   uiAttachmentRoleIsCandidateRole(): boolean {
@@ -157,6 +168,31 @@ class IPFSFile {
     })
 
     return pmtFilesByRole
+  }
+
+  static attachmentsQueueHasStoredRoleAttachments(
+    attachments: IPFSFile[],
+  ): boolean {
+    const pmtFilesByRole = IPFSFile.filterAttachmentsByUIAttachmentRole(
+      attachments,
+      UIAttachmentRole.AttachmentStoredRole,
+    )
+
+    return pmtFilesByRole.length > 0
+  }
+
+  static createDummyFile(): IPFSFile {
+    const file: File = new File(['dummy'], 'dummy', {
+      type: 'text/plain',
+    })
+    const limitFileUploadSize = 1024 * 1024
+    const attachment = new IPFSFile(
+      file,
+      AttachmentType.Attachment,
+      limitFileUploadSize,
+    )
+
+    return attachment
   }
   /*** static: end */
 }

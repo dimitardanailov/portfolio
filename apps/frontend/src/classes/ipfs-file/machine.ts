@@ -40,6 +40,10 @@ export const states = {
       event: 'IDLE_STORED_ROLE',
       value: 'idle_stored_role',
     },
+    DELETE_FILE_TO_DATABASE_IS_ACTIVE: {
+      event: 'DELETE_FILE_TO_DATABASE_IS_ACTIVE',
+      value: 'delete_file_to_database_is_active',
+    },
   },
 }
 
@@ -87,6 +91,13 @@ const machine = createMachine(
       },
       idle_stored_role: {
         entry: ['changeRole'],
+        on: {
+          DELETE_FILE_TO_DATABASE_IS_ACTIVE:
+            states.storedRole.DELETE_FILE_TO_DATABASE_IS_ACTIVE.value,
+        },
+      },
+      delete_file_to_database_is_active: {
+        type: 'final',
       },
     },
   },

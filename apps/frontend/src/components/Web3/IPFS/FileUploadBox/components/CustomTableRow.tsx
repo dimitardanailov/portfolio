@@ -1,3 +1,7 @@
+import {Dispatch, SetStateAction, useState, FC} from 'react'
+
+import {AppTimeout} from '@/classes'
+
 import TableCell from '@mui/material/TableCell'
 import TableRow from '@mui/material/TableRow'
 
@@ -20,17 +24,22 @@ import {
 
 const byteSize = require('byte-size')
 
-const CustomTableRow: React.FC<CustomTableRowProps> = ({
+const CustomTableRow: FC<CustomTableRowProps> = ({
   file,
   attachments,
   setAttachments,
   // stateDocumentsAttachmentMachine,
   // sendDocumentsAttachmentMachine,
-  // delay,
-  // fileUploadFile,
+  delay,
+  fileUploadFile,
 }) => {
   const size = byteSize(file.attachment.size)
   const printSize = `${size.value} ${size.unit}`
+
+  const [timeouts, setTimeouts]: [
+    AppTimeout[],
+    Dispatch<SetStateAction<AppTimeout[]>>,
+  ] = useState(AppTimeout.emptyArray())
 
   return (
     <TableRow hover role="checkbox" tabIndex={-1} key={file.documentUI.id}>
@@ -60,7 +69,14 @@ const CustomTableRow: React.FC<CustomTableRowProps> = ({
           <UploadButton
             disabled={file.isAttachmentIsSkippedToBeUploadedInDatabase()}
             onClick={() =>
-              removeFileFromTheList(file, attachments, setAttachments)
+              tryToUploadFile(
+                file,
+                attachments,
+                setAttachments,
+                delay,
+                fileUploadFile,
+                setTimeouts,
+              )
             }
           >
             Upload
