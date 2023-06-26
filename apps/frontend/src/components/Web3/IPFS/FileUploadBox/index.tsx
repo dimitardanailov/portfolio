@@ -19,7 +19,6 @@ import {
 } from '@/styled-components/file-upload'
 
 import {createMimeTypeAllowedFiles} from '@/helpers'
-import customId from '@/helpers/dom/custom-id'
 
 import {UploadComponentProps, IPFSFileUploadBoxProps} from './props'
 
