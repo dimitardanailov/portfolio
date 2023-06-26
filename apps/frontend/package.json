@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typegen": "npx xstate typegen \"libs/**/*.ts?(x)\"",
+    "typegen": "npx xstate typegen \"src/**/*.ts?(x)\"",
     "postinstall": "npm run typegen"
   },
   "dependencies": {

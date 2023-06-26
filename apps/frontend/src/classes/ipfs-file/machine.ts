@@ -52,7 +52,7 @@ const machine = createMachine(
     schema: {
       context: {} as MachineContext,
     },
-    // tsTypes: {} as import('./machine.typegen').Typegen0,
+    tsTypes: {} as import('./machine.typegen').Typegen0,
     id: 'ipfs-file-machine',
     initial: states.candidateRole.IDLE_CANDIDATE_ROLE.value,
     context: {
