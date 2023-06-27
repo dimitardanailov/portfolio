@@ -2,8 +2,15 @@
 
 import Typography from '@mui/material/Typography'
 import Layout from '@/components/MainLayout'
+import LeftDrawer from '@/components/Drawers/LeftDrawer'
 
-const Page = () => {
+import {drawerWidth} from '@/config/layout'
+
+const Title = () => {
+  return 'Responsive drawer'
+}
+
+const Content = () => {
   return (
     <>
       <Typography paragraph>
@@ -39,5 +46,12 @@ const Page = () => {
 }
 
 export default function Transactions() {
-  return <Layout Body={<Page />} />
+  return (
+    <Layout
+      PageContent={Content}
+      HeaderTitle={Title}
+      drawerWidth={drawerWidth}
+      LeftDrawer={LeftDrawer}
+    />
+  )
 }

@@ -1,4 +1,4 @@
-import {FC, useState} from 'react'
+import React, {FC, useState} from 'react'
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import CssBaseline from '@mui/material/CssBaseline'
@@ -8,12 +8,11 @@ import MenuIcon from '@mui/icons-material/Menu'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
 
-import LeftDrawer from '@/components/Drawers/LeftDrawer'
-
-const drawerWidth = 240
-
 interface Props {
-  Body: JSX.Element
+  HeaderTitle: React.FC
+  PageContent: React.FC
+  LeftDrawer: React.FC
+  drawerWidth: number
   /**
    * Injected by the documentation to work in an iframe.
    * You won't need it on your project.
@@ -21,7 +20,13 @@ interface Props {
   window?: () => Window
 }
 
-const Layout: FC<Props> = ({window, Body}) => {
+const Layout: FC<Props> = ({
+  window,
+  drawerWidth,
+  PageContent,
+  HeaderTitle,
+  LeftDrawer,
+}) => {
   const [mobileOpen, setMobileOpen] = useState(false)
 
   const handleDrawerToggle = () => {
@@ -52,7 +57,7 @@ const Layout: FC<Props> = ({window, Body}) => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-            Responsive drawer
+            <HeaderTitle />
           </Typography>
         </Toolbar>
       </AppBar>
@@ -92,7 +97,7 @@ const Layout: FC<Props> = ({window, Body}) => {
         sx={{flexGrow: 1, p: 3, width: {sm: `calc(100% - ${drawerWidth}px)`}}}
       >
         <Toolbar />
-        {Body}
+        <PageContent />
       </Box>
     </Box>
   )
