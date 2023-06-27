@@ -32,7 +32,6 @@ const AttachmentExample: React.FC<AttachmentExampleProps> = ({
   setAttachments,
 }) => {
   const maximumFileUploadInMb = 5
-  // const token = process.env.WEB3_STORAGE_KEY || ''
 
   return (
     <>
@@ -84,7 +83,7 @@ function AttachmentListIsEmpty() {
   )
 }
 
-export default function IPFS() {
+export default function Page() {
   return (
     <>
       <div>

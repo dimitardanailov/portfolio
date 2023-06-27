@@ -14,7 +14,10 @@ export default function NavBar() {
           <Link href="/dashboard">Dashboard</Link>
         </li>
         <li>
-          <Link href="/ipfs">IPFS</Link>
+          <Link href="/ipfs/empty">IPFS - empty container</Link>
+        </li>
+        <li>
+          <Link href="/ipfs/dummy">IPFS - dummy container</Link>
         </li>
       </ul>
     </nav>
