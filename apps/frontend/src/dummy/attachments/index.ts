@@ -152,6 +152,10 @@ function getAttachments() {
 }
 
 function generateDummyAttachments(role: UIAttachmentRole): IPFSFile[] {
+  // Prevent:
+  // ReferenceError: File is not defined
+  if (typeof window === 'undefined') return []
+
   const attachments = getAttachments()
 
   const dummyAttachments = attachments.map(
