@@ -34,11 +34,11 @@ class AppWeb3Storage {
       })
   }
 
-  fetchAttachments(): Promise<unknown> {
+  fetchAttachments(maxResults: number = 20): Promise<unknown> {
     const promise = new Promise((resolve, reject) => {
       try {
         const items = this._web3Storage.list({
-          maxResults: 20,
+          maxResults,
         })
 
         resolve(items)
