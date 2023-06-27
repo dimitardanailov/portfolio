@@ -1,29 +1,28 @@
 'use client'
 
-import {useState} from 'react'
+import type {NextPage} from 'next'
 
-import IPFSFile from '@/classes/ipfs-file'
-import {FileType} from '@/enums'
+import Layout from '@/components/MainLayout'
+import LeftDrawer from '@/components/Drawers/LeftDrawer'
+import {menuItems} from '@/menu'
 
-import NavBar from '@/components/NavBar'
-import IPFSContainer from '../components/IPFSContainer'
+import {drawerWidth} from '@/config/layout'
 
-export default function Page() {
-  const [attachments, setAttachments] = useState<IPFSFile[]>([])
-  const allowedFiles = [FileType.PDF, FileType.EXCEL, FileType.WORD]
+import Content from './Content'
 
+const Title = () => {
+  return 'IPFS - empty contrainer'
+}
+
+const Page: NextPage = () => {
   return (
-    <>
-      <div>
-        <NavBar />
-      </div>
-      <section>
-        <IPFSContainer
-          allowedFiles={allowedFiles}
-          attachments={attachments}
-          setAttachments={setAttachments}
-        />
-      </section>
-    </>
+    <Layout
+      PageContent={Content}
+      HeaderTitle={Title}
+      drawerWidth={drawerWidth}
+      LeftDrawer={<LeftDrawer items={menuItems} />}
+    />
   )
 }
+
+export default Page

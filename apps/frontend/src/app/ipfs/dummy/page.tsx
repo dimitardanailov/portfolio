@@ -1,40 +1,28 @@
 'use client'
 
-import {useState} from 'react'
+import type {NextPage} from 'next'
 
-import NavBar from '@/components/NavBar'
-import {FileType, UIAttachmentRole} from '@/enums'
-import {IPFSFile} from '@/classes'
+import Layout from '@/components/MainLayout'
+import LeftDrawer from '@/components/Drawers/LeftDrawer'
+import {menuItems} from '@/menu'
 
-import IPFSContainer from '../components/IPFSContainer'
+import {drawerWidth} from '@/config/layout'
 
-import {generateDummyAttachments} from '@/dummy/attachments'
+import Content from './Content'
 
-export default function Page() {
-  const dummyQueueAttachments = generateDummyAttachments(
-    UIAttachmentRole.AttachmentCandidateRole,
-  )
+const Title = () => {
+  return 'IPFS - dummy contrainer'
+}
 
-  const dummyStoredAttachments = generateDummyAttachments(
-    UIAttachmentRole.AttachmentStoredRole,
-  )
-
-  const dummyAttachments = dummyQueueAttachments.concat(dummyStoredAttachments)
-  const [attachments, setAttachments] = useState<IPFSFile[]>(dummyAttachments)
-  const allowedFiles = [FileType.PDF, FileType.EXCEL, FileType.WORD]
-
+const Page: NextPage = () => {
   return (
-    <>
-      <div>
-        <NavBar />
-      </div>
-      <section>
-        <IPFSContainer
-          allowedFiles={allowedFiles}
-          attachments={attachments}
-          setAttachments={setAttachments}
-        />
-      </section>
-    </>
+    <Layout
+      PageContent={Content}
+      HeaderTitle={Title}
+      drawerWidth={drawerWidth}
+      LeftDrawer={<LeftDrawer items={menuItems} />}
+    />
   )
 }
+
+export default Page

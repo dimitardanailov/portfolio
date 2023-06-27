@@ -1,11 +1,8 @@
 'use client'
 
-import type {NextPage} from 'next'
-
 import styled from 'styled-components'
 
 import {useEffect} from 'react'
-import NavBar from '@/components/NavBar'
 import Wallet from '@/components/Web3/Metamask/Wallet'
 
 import {useListen} from '@/hooks/useListen'
@@ -19,7 +16,7 @@ const WalletBox = styled.div`
   padding: 2 rem;
 `
 
-const HomePage: NextPage = () => {
+const Content = () => {
   const {dispatch} = useMetamask()
   const listen = useListen()
 
@@ -50,15 +47,10 @@ const HomePage: NextPage = () => {
   }, [])
 
   return (
-    <>
-      <div>
-        <NavBar />
-      </div>
-      <WalletBox>
-        <Wallet />
-      </WalletBox>
-    </>
+    <WalletBox>
+      <Wallet />
+    </WalletBox>
   )
 }
 
-export default HomePage
+export default Content

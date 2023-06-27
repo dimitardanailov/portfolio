@@ -26,7 +26,7 @@ export const IPFSEmpty: MenuItem = {
 export const IPFSDummy: MenuItem = {
   key: 'ipfs-dummy-container',
   text: 'IPFS-dummy',
-  href: '/ipfs/empty',
+  href: '/ipfs/dummy',
   Icon: <FileCopyIcon />,
 }
 
