@@ -1,6 +1,7 @@
 import WalletIcon from '@mui/icons-material/Wallet'
 import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile'
 import FileCopyIcon from '@mui/icons-material/FileCopy'
+import ListIcon from '@mui/icons-material/List'
 
 export type MenuItem = {
   key: string
@@ -30,4 +31,11 @@ export const IPFSDummy: MenuItem = {
   Icon: <FileCopyIcon />,
 }
 
-export const menuItems: MenuItem[] = [Metamask, IPFSEmpty, IPFSDummy]
+export const IPFSList: MenuItem = {
+  key: 'ipfs-list',
+  text: 'IPFS-list',
+  href: '/ipfs/list',
+  Icon: <ListIcon />,
+}
+
+export const menuItems: MenuItem[] = [Metamask, IPFSEmpty, IPFSDummy, IPFSList]

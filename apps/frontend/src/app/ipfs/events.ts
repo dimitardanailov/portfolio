@@ -27,4 +27,16 @@ function fileUploadFile<FileUploadFileType>(
   appStorage.uploadFile(file, callback, errorCallback)
 }
 
-export {fileUploadFile}
+function fetchRemoteAttachments(callback: Function, errorCallback: Function) {
+  const appStorage = AppWeb3Storage.makeClient()
+  const promise = appStorage.fetchAttachments()
+  promise
+    .then(response => {
+      callback(response)
+    })
+    .catch(e => {
+      errorCallback()
+    })
+}
+
+export {fileUploadFile, fetchRemoteAttachments}
