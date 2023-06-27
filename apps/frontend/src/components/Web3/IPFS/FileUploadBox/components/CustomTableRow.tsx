@@ -28,8 +28,6 @@ const CustomTableRow: FC<CustomTableRowProps> = ({
   file,
   attachments,
   setAttachments,
-  // stateDocumentsAttachmentMachine,
-  // sendDocumentsAttachmentMachine,
   delay,
   fileUploadFile,
 }) => {

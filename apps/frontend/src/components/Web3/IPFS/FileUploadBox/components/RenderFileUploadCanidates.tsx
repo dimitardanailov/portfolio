@@ -104,9 +104,6 @@ const ExternalRenderFileUploadCanidates: FC<RenderFileUploadCanidatesProps> = ({
   attachments,
   setAttachments,
   type,
-  // stateDocumentsAttachmentMachine,
-  // sendDocumentsAttachmentMachine,
-  // serviceDocumentsAttachmentMachine,
   delay,
   fileUploadFile,
 }) => {

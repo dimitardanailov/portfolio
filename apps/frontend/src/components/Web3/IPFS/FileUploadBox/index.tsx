@@ -29,7 +29,6 @@ const AddFileInAttachmentCandidateRoleQueue: React.FC<UploadComponentProps> = ({
   setAttachments,
   maximumFileUploadInMb,
   type,
-  // sendDocumentsAttachmentMachine,
   uploadButtonText,
   id,
 }) => {
