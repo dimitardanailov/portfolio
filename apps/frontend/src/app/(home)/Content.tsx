@@ -1,20 +1,13 @@
 'use client'
 
-import styled from 'styled-components'
-
 import {useEffect} from 'react'
+
 import Wallet from '@/components/Web3/Metamask/Wallet'
 
 import {useListen} from '@/hooks/useListen'
 import {useMetamask} from '@/hooks/useMetamask'
 
-const WalletBox = styled.div`
-  position: relative;
-  display: flex;
-
-  background-color: #ccc;
-  padding: 2 rem;
-`
+import {WalletWrapper} from './styled-components'
 
 const Content = () => {
   const {dispatch} = useMetamask()
@@ -47,9 +40,9 @@ const Content = () => {
   }, [])
 
   return (
-    <WalletBox>
+    <WalletWrapper>
       <Wallet />
-    </WalletBox>
+    </WalletWrapper>
   )
 }
 
