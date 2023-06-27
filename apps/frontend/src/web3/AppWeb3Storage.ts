@@ -51,8 +51,7 @@ class AppWeb3Storage {
   }
 
   static makeClient() {
-    // const token = AppWeb3Storage.getAccessToken()
-    const token = AppWeb3Storage.getToken()
+    const token = AppWeb3Storage.getAccessToken()
     const _web3Storage = new Web3Storage({token})
 
     return new AppWeb3Storage(_web3Storage)
@@ -60,10 +59,6 @@ class AppWeb3Storage {
 
   static getAccessToken(): string {
     return process.env.NEXT_PUBLIC_WEB3_KEY || ''
-  }
-
-  static getToken() {
-    return 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweGIzNGUyZEVmOWI4NDc5Rjk1OWQ4MkUwNkU4NzMwOTkyOGRiY2NmNjAiLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2ODc1NzkwNzk5ODYsIm5hbWUiOiJJUEZTLW1ldGFtYXNrIn0.E_SLACqIUFNMxSZzsnA54xYc23lY_nykCRUlIfv9bXg'
   }
 }
 

@@ -15,6 +15,4 @@ export interface BaseProps extends StateProps {
   id: string
 }
 
-export interface FileUploadProps extends StateProps {
-  // fileUploadFile: IPFSUploadFileType
-}
+export interface FileUploadProps extends StateProps {}
