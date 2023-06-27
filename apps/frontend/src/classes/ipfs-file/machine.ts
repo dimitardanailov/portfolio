@@ -49,6 +49,11 @@ export const states = {
 
 const machine = createMachine(
   {
+    // XState will always call an action with the event
+    // directly responsible for the related transition,
+    // you also automatically opt-into
+    // preserveActionOrder (opens new window).
+    predictableActionArguments: true,
     schema: {
       context: {} as MachineContext,
     },
