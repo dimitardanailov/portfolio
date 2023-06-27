@@ -1,40 +1,35 @@
+import {FC} from 'react'
+
+import Link from 'next/link'
+
 import Divider from '@mui/material/Divider'
-import InboxIcon from '@mui/icons-material/MoveToInbox'
 import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
 import ListItemButton from '@mui/material/ListItemButton'
 import ListItemIcon from '@mui/material/ListItemIcon'
 import ListItemText from '@mui/material/ListItemText'
-import MailIcon from '@mui/icons-material/Mail'
 import Toolbar from '@mui/material/Toolbar'
 
-function LeftDrawer() {
+import type {MenuItem} from '@/menu'
+
+interface Props {
+  items: MenuItem[]
+}
+
+const LeftDrawer: FC<Props> = ({items}) => {
   return (
     <div>
       <Toolbar />
       <Divider />
       <List>
-        {['Metamask', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
+        {items.map((item: MenuItem) => (
+          <ListItem key={item.key} disablePadding>
+            <Link href={item.href}>
+              <ListItemButton>
+                <ListItemIcon>{item.Icon}</ListItemIcon>
+                <ListItemText primary={item.text} />
+              </ListItemButton>
+            </Link>
           </ListItem>
         ))}
       </List>

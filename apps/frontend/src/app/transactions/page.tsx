@@ -3,6 +3,7 @@
 import Typography from '@mui/material/Typography'
 import Layout from '@/components/MainLayout'
 import LeftDrawer from '@/components/Drawers/LeftDrawer'
+import {menuItems} from '@/menu'
 
 import {drawerWidth} from '@/config/layout'
 
@@ -51,7 +52,7 @@ export default function Transactions() {
       PageContent={Content}
       HeaderTitle={Title}
       drawerWidth={drawerWidth}
-      LeftDrawer={LeftDrawer}
+      LeftDrawer={<LeftDrawer items={menuItems} />}
     />
   )
 }

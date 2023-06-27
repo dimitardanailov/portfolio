@@ -11,7 +11,7 @@ import Typography from '@mui/material/Typography'
 interface Props {
   HeaderTitle: React.FC
   PageContent: React.FC
-  LeftDrawer: React.FC
+  LeftDrawer: JSX.Element
   drawerWidth: number
   /**
    * Injected by the documentation to work in an iframe.
@@ -79,7 +79,7 @@ const Layout: FC<Props> = ({
             '& .MuiDrawer-paper': {boxSizing: 'border-box', width: drawerWidth},
           }}
         >
-          <LeftDrawer />
+          {LeftDrawer}
         </Drawer>
         <Drawer
           variant="permanent"
@@ -89,7 +89,7 @@ const Layout: FC<Props> = ({
           }}
           open
         >
-          <LeftDrawer />
+          {LeftDrawer}
         </Drawer>
       </Box>
       <Box
