@@ -15,9 +15,12 @@ export default function Page() {
     UIAttachmentRole.AttachmentCandidateRole,
   )
 
-  const [attachments, setAttachments] = useState<IPFSFile[]>(
-    dummyQueueAttachments,
+  const dummyStoredAttachments = generateDummyAttachments(
+    UIAttachmentRole.AttachmentStoredRole,
   )
+
+  const dummyAttachments = dummyQueueAttachments.concat(dummyStoredAttachments)
+  const [attachments, setAttachments] = useState<IPFSFile[]>(dummyAttachments)
   const allowedFiles = [FileType.PDF, FileType.EXCEL, FileType.WORD]
 
   return (

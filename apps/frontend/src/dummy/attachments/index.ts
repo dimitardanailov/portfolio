@@ -168,7 +168,7 @@ function generateDummyAttachments(role: UIAttachmentRole): IPFSFile[] {
 
       const limitFileUploadSize = 1024 * 1024
 
-      const pmtFile = new IPFSFile(
+      const appFile = new IPFSFile(
         file,
         attachmentType,
         limitFileUploadSize,
@@ -176,10 +176,10 @@ function generateDummyAttachments(role: UIAttachmentRole): IPFSFile[] {
       )
 
       if (role === UIAttachmentRole.AttachmentStoredRole) {
-        pmtFile.setUiAttachmentRoleToStoredRole()
+        appFile.setUiAttachmentRoleToStoredRole()
       }
 
-      return pmtFile
+      return appFile
     },
   )
 
