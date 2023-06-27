@@ -53,7 +53,7 @@ const InternalDialog: FC<DialogProps> = ({
           </DialogContentText>
         </DialogContent>
 
-        <DialogActions>Buttons</DialogActions>
+        <DialogActions>Under Construction</DialogActions>
       </StyledWrapper>
     </Dialog>
   )
