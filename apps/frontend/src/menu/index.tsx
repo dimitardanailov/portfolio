@@ -38,4 +38,27 @@ export const IPFSList: MenuItem = {
   Icon: <ListIcon />,
 }
 
-export const menuItems: MenuItem[] = [Metamask, IPFSEmpty, IPFSDummy, IPFSList]
+export const CoinbaseProducts: MenuItem = {
+  key: 'coinbase-orders-book',
+  text: 'Products',
+  href: '/coinbase/products',
+  Icon: <ListIcon />,
+}
+
+export const CoinbaseOrderBooks: MenuItem = {
+  key: 'coinbase-orders-book',
+  text: 'Orders books',
+  href: '/coinbase/orders/book',
+  Icon: <ListIcon />,
+}
+
+export const menuItems: MenuItem[] = [
+  Metamask,
+  IPFSEmpty,
+  IPFSDummy,
+  IPFSList,
+
+  // Coinbase
+  CoinbaseProducts,
+  CoinbaseOrderBooks,
+]
