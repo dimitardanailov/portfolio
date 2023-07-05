@@ -10,9 +10,11 @@ const Content = () => {
   }
 
   axios(config)
+    // @ts-ignore
     .then(response => {
       console.log('coinbase:', JSON.stringify(response.data))
     })
+    // @ts-ignore
     .catch(error => {
       console.log(error)
     })

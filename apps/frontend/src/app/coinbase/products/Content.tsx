@@ -14,9 +14,11 @@ const Content = () => {
   }
 
   axios(config)
+    // @ts-ignore
     .then(response => {
       setProducts(response.data)
     })
+    // @ts-ignore
     .catch(error => {
       console.log(error)
     })
