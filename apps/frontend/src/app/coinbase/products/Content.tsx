@@ -26,6 +26,7 @@ const Content = () => {
   return (
     <ul>
       {products.map(function (product) {
+        // @ts-ignore
         return <li key={product.id}>{product.id}</li>
       })}
     </ul>
