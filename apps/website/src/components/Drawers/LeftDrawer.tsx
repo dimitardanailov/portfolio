@@ -24,7 +24,7 @@ const LeftDrawer: FC<Props> = ({items}) => {
       <List>
         {items.map((item: MenuItem) => (
           <ListItem key={item.key} disablePadding>
-            <Link href={item.href}>
+            <Link href={item.href} title={item.title}>
               <ListItemButton>
                 <ListItemIcon>{item.Icon}</ListItemIcon>
                 <ListItemText primary={item.text} />
