@@ -1,0 +1,24 @@
+{
+  "Custom React": {
+    "prefix": "ddreactfc",
+    "body": [
+      "'use client'",
+      "",
+      "import {FC} from 'react'",
+      "",
+      "export interface Props {",
+      "  component: string",
+      "}",
+      "",
+      "const $0: FC<Props> = ({component}) => {",
+      "  return (",
+      "    <>",
+      "      {component}",
+      "    </>",
+      " );",
+      "}",
+      "",
+      "export default $0"
+    ]
+  }
+}
