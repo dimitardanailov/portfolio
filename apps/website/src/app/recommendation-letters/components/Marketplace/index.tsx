@@ -3,11 +3,11 @@
 import {FC} from 'react'
 
 export interface Props {
-  component: string
+  text: string
 }
 
-const MarketPlace: FC<Props> = ({component}) => {
-  return <>{component}</>
+const MarketPlace: FC<Props> = ({text}) => {
+  return <>Marketplace: {text}</>
 }
 
 export default MarketPlace

@@ -3,11 +3,11 @@
 import {FC} from 'react'
 
 export interface Props {
-  component: string
+  text: string
 }
 
-const Industry: FC<Props> = ({component}) => {
-  return <>{component}</>
+const Industry: FC<Props> = ({text}) => {
+  return <>Industry: {text}</>
 }
 
 export default Industry

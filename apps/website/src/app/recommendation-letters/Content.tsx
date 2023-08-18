@@ -3,6 +3,8 @@
 import {Keyword} from '@/components/SEO'
 import {Slogan} from '@/styled-components'
 
+import {PropineLetter, AsianAbsoluteLetter} from './projects'
+
 const Content = () => {
   return (
     <>
@@ -20,6 +22,8 @@ const Content = () => {
         <Keyword word="AWS" /> and <Keyword word="Blockchain" />; My work was
         five star recommendation letters:
       </p>
+      <PropineLetter />
+      <AsianAbsoluteLetter />
     </>
   )
 }

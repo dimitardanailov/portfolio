@@ -3,11 +3,11 @@
 import {FC} from 'react'
 
 export interface Props {
-  component: string
+  text: string
 }
 
-const HeadQuater: FC<Props> = ({component}) => {
-  return <>HeadQuarter: {component}</>
+const HeadQuater: FC<Props> = ({text}) => {
+  return <>HeadQuarter: {text}</>
 }
 
 export default HeadQuater
