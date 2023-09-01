@@ -10,7 +10,7 @@ import {
   Position,
 } from '../../components'
 
-const AsianAbsoluteLetter: FC = () => {
+const Letter: FC = () => {
   return (
     <>
       <ProjectTitle title="AsianAbsolute.com" href="/" />
@@ -35,4 +35,4 @@ const AsianAbsoluteLetter: FC = () => {
   )
 }
 
-export default AsianAbsoluteLetter
+export default Letter

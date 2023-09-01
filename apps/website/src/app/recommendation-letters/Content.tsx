@@ -3,7 +3,13 @@
 import {Keyword} from '@/components/SEO'
 import {Slogan} from '@/styled-components'
 
-import {PropineLetter, AsianAbsoluteLetter} from './projects'
+import {
+  PropineLetter,
+  AsianAbsoluteLetter,
+  ElephantstockLetter,
+  FleetpalLetter,
+  GetcraftLetter,
+} from './projects'
 
 const Content = () => {
   return (
@@ -24,6 +30,9 @@ const Content = () => {
       </p>
       <PropineLetter />
       <AsianAbsoluteLetter />
+      <ElephantstockLetter />
+      <FleetpalLetter />
+      <GetcraftLetter />
     </>
   )
 }
