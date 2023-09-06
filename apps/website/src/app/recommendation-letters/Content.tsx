@@ -9,6 +9,8 @@ import {
   ElephantstockLetter,
   FleetpalLetter,
   GetcraftLetter,
+  QuestaraiLetter,
+  WollowSoftLetter,
 } from './projects'
 
 const Content = () => {
@@ -33,6 +35,8 @@ const Content = () => {
       <ElephantstockLetter />
       <FleetpalLetter />
       <GetcraftLetter />
+      <QuestaraiLetter />
+      <WollowSoftLetter />
     </>
   )
 }
