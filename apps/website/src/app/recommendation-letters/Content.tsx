@@ -16,6 +16,14 @@ import {
 const Content = () => {
   return (
     <>
+      <Slogan>
+        Implementer of high technologies when solving complex business
+        situations/problems
+      </Slogan>
+      <h4>
+        Able to identify problems, analyze answers and implement the optimal
+        solutions
+      </h4>
       <PropineLetter />
       <AsianAbsoluteLetter />
       <ElephantstockLetter />
