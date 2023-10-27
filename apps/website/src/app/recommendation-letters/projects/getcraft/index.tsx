@@ -10,7 +10,7 @@ import {
   Position,
 } from '../../components'
 
-import {AlexLetter, FannyLetter, BayuLetter} from './components'
+import {AlexLetter, FannyLetter, BayuLetter, MarselLetter} from './components'
 
 const Letter: FC = () => {
   return (
@@ -23,6 +23,7 @@ const Letter: FC = () => {
       <AlexLetter />
       <FannyLetter />
       <BayuLetter />
+      <MarselLetter />
       <div>
         Mitco, is a unique name for us Indonesian to pronounce, yet his tech
         skill is extra ordinary. He is good a communicator and a knowledgeable
