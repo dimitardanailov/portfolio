@@ -10,7 +10,7 @@ import {
   Position,
 } from '../../components'
 
-import {AlexLetter, FannyLetter} from './components'
+import {AlexLetter, FannyLetter, BayuLetter} from './components'
 
 const Letter: FC = () => {
   return (
@@ -22,15 +22,7 @@ const Letter: FC = () => {
       <Position text="Software Consultant" />
       <AlexLetter />
       <FannyLetter />
-      <div>
-        With his experience, Mitco able to show awesome skill, knowledge and
-        critical thinking during working with him. He could play solo and also
-        collaboratively which making him easier to adapt various condition and
-        challenge. He also loves to give some advice during discussion and in
-        the same time open for any input which making us grow together as a
-        team. Will all of this experience, I believe he would be a great asset
-        to any company or team. Good luck Mitco!!!
-      </div>
+      <BayuLetter />
       <div>
         Mitco, is a unique name for us Indonesian to pronounce, yet his tech
         skill is extra ordinary. He is good a communicator and a knowledgeable
