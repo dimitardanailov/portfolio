@@ -10,7 +10,7 @@ import {
   Position,
 } from '../../components'
 
-import {IvelinLetter, MoLetter, AshtonLetter} from './components'
+import {IvelinLetter, MoLetter, AshtonLetter, HristoLetter} from './components'
 
 const Letter: FC = () => {
   return (
@@ -26,15 +26,7 @@ const Letter: FC = () => {
       <IvelinLetter />
       <MoLetter />
       <AshtonLetter />
-      <div>
-        <p>
-          Dimitar is an outstanding mentor. His guidance helped me progress with
-          Ruby on Rails with ease and discover more about developing web-based
-          software. Even after my internship at wollow-soft ended, he continued
-          assisting me with advice. Definitely a great person to learn from and
-          to work with!
-        </p>
-      </div>
+      <HristoLetter />
       <div>
         <p>
           Dimitar is a personable individual that gets on well with those around
