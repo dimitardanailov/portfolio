@@ -4,6 +4,7 @@ import AshtonLetter from './AshtonLetter'
 import HristoLetter from './HristoLetter'
 import TsvetanLetter from './TsvetanLetter'
 import VladimirLetter from './VladimirLetter'
+import AntoanLetter from './AntoanLetter'
 
 export {
   IvelinLetter,
@@ -12,4 +13,5 @@ export {
   HristoLetter,
   TsvetanLetter,
   VladimirLetter,
+  AntoanLetter,
 }
