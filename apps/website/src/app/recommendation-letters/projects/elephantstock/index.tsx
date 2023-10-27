@@ -11,6 +11,7 @@ import {
 } from '../../components'
 
 import DavidLetter from './components/DavidLetter'
+import ShlomiLetter from './components/ShlomiLetter'
 
 const Letter: FC = () => {
   return (
@@ -24,12 +25,7 @@ const Letter: FC = () => {
       <HeadQuater text="USA and Israel" />
       <Position text="Software Engineering Manager / Team Lead" />
       <DavidLetter />
-      <p>
-        I worked with similar in the same team, it was a pleasure working with
-        him. Dimitar brings lots of experience and a wide range of dev
-        knowledge, he has the ability to see the wide picture while paying
-        attention to the small details.
-      </p>
+      <ShlomiLetter />
     </>
   )
 }
