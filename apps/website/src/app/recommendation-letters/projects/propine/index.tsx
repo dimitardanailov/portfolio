@@ -1,14 +1,19 @@
 'use client'
 
 import {FC} from 'react'
+
+import {Keyword} from '@/components/SEO'
+
 import {
   ProjectTitle,
   HeadQuater,
   Industry,
   MarketPlace,
   Position,
+  PersonInfo,
 } from '../../components'
-import {Keyword} from '@/components/SEO'
+
+import zan from '@/data/testimonials/images/zan'
 
 const PropineLetter: FC = () => {
   return (
@@ -18,6 +23,11 @@ const PropineLetter: FC = () => {
       <MarketPlace text="Worldwide and Singapore" />
       <HeadQuater text="Singapore and USA" />
       <Position text="Blockchain Staff Engineer" />
+      <PersonInfo
+        name="Wong Liang Zan"
+        source={zan}
+        title="Co-Founder & CTO at Propine"
+      />
       <p>
         Mr Dimitar Danailov was employed at Propine Technologies Pte Ltd from
         September 1 2021 to August 5 2022 as a{' '}
