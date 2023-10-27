@@ -6,7 +6,7 @@ import {PersonInfo} from '../../../components'
 
 import source from '@/data/testimonials/images/getcraft/alex'
 
-const AlexLetter: FC = () => {
+const Letter: FC = () => {
   return (
     <>
       <PersonInfo name="Alex Miller" source={source} title="CTO GetCraft" />
@@ -32,4 +32,4 @@ const AlexLetter: FC = () => {
   )
 }
 
-export default AlexLetter
+export default Letter
