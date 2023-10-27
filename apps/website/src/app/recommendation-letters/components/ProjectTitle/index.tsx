@@ -2,6 +2,14 @@
 
 import {FC} from 'react'
 
+import styled from 'styled-components'
+
+import BaseTitle from '@/styled-components/Text/Title'
+
+const Title = styled(BaseTitle)`
+  font-size: 2rem;
+`
+
 export interface Props {
   title: string
   href: string
@@ -10,7 +18,9 @@ export interface Props {
 const ProjectTitle: FC<Props> = ({title, href}) => {
   return (
     <>
-      {title} - {href}
+      <Title>
+        {title} - {href}
+      </Title>
     </>
   )
 }

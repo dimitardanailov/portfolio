@@ -13,7 +13,7 @@ import {Keyword} from '@/components/SEO'
 const PropineLetter: FC = () => {
   return (
     <>
-      <ProjectTitle title="Propine.com" href="" />
+      <ProjectTitle title="Propine.com" href="https://propine.com/" />
       <Industry text="Fintech and Blockchain" />
       <MarketPlace text="Worldwide and Singapore" />
       <HeadQuater text="Singapore and USA" />
