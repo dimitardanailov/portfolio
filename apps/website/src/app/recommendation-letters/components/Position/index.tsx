@@ -2,14 +2,8 @@
 
 import {FC} from 'react'
 
-import styled from 'styled-components'
-
 import HFlexBox from '@/styled-components/Grid/HFlexBox'
-import BaseTitle from '@/styled-components/Text/Title'
-
-const Title = styled(BaseTitle)`
-  font-size: 1rem;
-`
+import {Label} from '../styled-components'
 
 export interface Props {
   text: string
@@ -18,8 +12,7 @@ export interface Props {
 const Position: FC<Props> = ({text}) => {
   return (
     <HFlexBox>
-      <Title>Position:</Title>
-      {text}
+      <Label>Position</Label>: {text}
     </HFlexBox>
   )
 }
