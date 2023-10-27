@@ -10,7 +10,7 @@ import {
   Position,
 } from '../../components'
 
-import {AlexLetter} from './components'
+import {AlexLetter, FannyLetter} from './components'
 
 const Letter: FC = () => {
   return (
@@ -21,7 +21,7 @@ const Letter: FC = () => {
       <HeadQuater text="Indonesia" />
       <Position text="Software Consultant" />
       <AlexLetter />
-
+      <FannyLetter />
       <div>
         With his experience, Mitco able to show awesome skill, knowledge and
         critical thinking during working with him. He could play solo and also
