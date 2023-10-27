@@ -10,7 +10,13 @@ import {
   Position,
 } from '../../components'
 
-import {IvelinLetter, MoLetter, AshtonLetter, HristoLetter} from './components'
+import {
+  IvelinLetter,
+  MoLetter,
+  AshtonLetter,
+  HristoLetter,
+  TsvetanLetter,
+} from './components'
 
 const Letter: FC = () => {
   return (
@@ -27,16 +33,7 @@ const Letter: FC = () => {
       <MoLetter />
       <AshtonLetter />
       <HristoLetter />
-      <div>
-        <p>
-          Dimitar is a personable individual that gets on well with those around
-          him. He is focused and dedicated to producing his very best at all
-          times. He has shown that he is able to deal with uncertainty and
-          dislocation. He is very good software engineer knows a lot of
-          technologies. Also great team leader. I recommend him highly – he will
-          not let you down!
-        </p>
-      </div>
+      <TsvetanLetter />
       <div>
         <p>
           Dimitar has proven to every colleague that he is capable of managing
