@@ -7,6 +7,11 @@ import Image from 'next/image'
 import styled from 'styled-components'
 
 import {HFlexBox, VFlexbox} from '@/styled-components/Grid'
+import BaseTitle from '@/styled-components/Text/Title'
+
+const Container = styled(HFlexBox)`
+  margin: 1rem 0.5rem;
+`
 
 const CustomImage = styled(Image)`
   border-radius: 100%;
@@ -14,6 +19,15 @@ const CustomImage = styled(Image)`
 
 const CustomVFlexbox = styled(VFlexbox)`
   margin-left: 1rem;
+`
+
+const NameTitle = styled(BaseTitle)`
+  font-size: 1.2rem;
+  font-weight: bold;
+`
+
+const Position = styled(BaseTitle)`
+  font-style: italic;
 `
 
 export interface Props {
@@ -26,7 +40,7 @@ const PersonInfo: FC<Props> = ({name, source, title}) => {
   const size = 120
 
   return (
-    <HFlexBox>
+    <Container>
       <CustomImage
         src={source}
         alt={title}
@@ -35,10 +49,10 @@ const PersonInfo: FC<Props> = ({name, source, title}) => {
         height={size}
       />
       <CustomVFlexbox>
-        <div>{name}</div>
-        <div>{title}</div>
+        <NameTitle>{name}</NameTitle>
+        <Position>{title}</Position>
       </CustomVFlexbox>
-    </HFlexBox>
+    </Container>
   )
 }
 
