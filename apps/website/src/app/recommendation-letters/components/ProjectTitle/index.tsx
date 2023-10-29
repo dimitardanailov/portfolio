@@ -2,6 +2,8 @@
 
 import {FC} from 'react'
 
+import Link from 'next/link'
+
 import styled from 'styled-components'
 
 import BaseTitle from '@/styled-components/Text/Title'
@@ -17,11 +19,9 @@ export interface Props {
 
 const ProjectTitle: FC<Props> = ({title, href}) => {
   return (
-    <>
-      <Title>
-        {title} - {href}
-      </Title>
-    </>
+    <Link href={href} target="_blank">
+      <Title>{title}</Title>
+    </Link>
   )
 }
 
