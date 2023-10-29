@@ -16,7 +16,10 @@ import source from '@/data/testimonials/images/asianabsolute/henry'
 const Letter: FC = () => {
   return (
     <>
-      <ProjectTitle title="AsianAbsolute.com" href="/" />
+      <ProjectTitle
+        title="AsianAbsolute.com"
+        href="https://asianabsolute.com/"
+      />
       <Industry text="Translation Agency" />
       <MarketPlace text="Worldwide" />
       <HeadQuater text="Australia and UK" />
