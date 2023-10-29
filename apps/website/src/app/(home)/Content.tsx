@@ -1,7 +1,15 @@
 'use client'
 
+import {Experience, Accomplishments, Skills} from './components'
+
 const Content = () => {
-  return 'Hello world'
+  return (
+    <>
+      <Accomplishments />
+      <Experience />
+      <Skills />
+    </>
+  )
 }
 
 export default Content
