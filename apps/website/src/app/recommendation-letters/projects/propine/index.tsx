@@ -2,6 +2,8 @@
 
 import {FC} from 'react'
 
+import Image from 'next/image'
+
 import {Keyword} from '@/components/SEO'
 
 import {
@@ -14,6 +16,16 @@ import {
 } from '../../components'
 
 import zan from '@/data/testimonials/images/zan'
+
+import source from '@/icons/Node.js_logo.svg'
+
+const TechIcon: FC = () => {
+  const size = 60
+
+  return (
+    <Image src={source} alt="test" title="test" width={size} height={size} />
+  )
+}
 
 const PropineLetter: FC = () => {
   return (
@@ -28,6 +40,7 @@ const PropineLetter: FC = () => {
         source={zan}
         title="Co-Founder & CTO at Propine"
       />
+      <TechIcon />
       <p>
         Mr Dimitar Danailov was employed at Propine Technologies Pte Ltd from
         September 1 2021 to August 5 2022 as a{' '}
