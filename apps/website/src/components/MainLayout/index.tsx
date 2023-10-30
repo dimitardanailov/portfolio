@@ -44,6 +44,7 @@ const Layout: FC<Props> = ({
         sx={{
           width: {sm: `calc(100% - ${drawerWidth}px)`},
           ml: {sm: `${drawerWidth}px`},
+          backgroundColor: '#000',
         }}
       >
         <Toolbar>
