@@ -55,7 +55,7 @@ const Letter: FC = () => {
         Microsoft Azure and used a SQL database. The applications covered
         functionality ranging from CRM, a vendor database, production tasks for
         our operations team working on translation and localisation projects,
-        and finance. I was impressed by Dimitar’s technical skills – as a
+        and finance. I was impressed by Dimitar&lsquo;s technical skills - as a
         solutions architect designing both front-end and back-end, his efficient
         coding and his ability to propose elegant solutions to meet our
         requirements. Dimitar was proactive in suggesting new technical
@@ -64,7 +64,7 @@ const Letter: FC = () => {
         Dimitar displayed admirable personal commitment in investing his
         personal time to work on our project and I considered him a true partner
         in our endeavor. I have no hesitation in recommending Dimitar and I am
-        confident that he will be an asset to any employer."
+        confident that he will be an asset to any employer.
       </p>
     </>
   )
