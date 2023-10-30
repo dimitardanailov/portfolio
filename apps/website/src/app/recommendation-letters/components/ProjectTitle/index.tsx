@@ -10,6 +10,8 @@ import BaseTitle from '@/styled-components/Text/Title'
 
 const Title = styled(BaseTitle)`
   font-size: 2rem;
+
+  margin-top: 1rem;
 `
 
 export interface Props {
