@@ -14,7 +14,7 @@ import {
   Technologies,
 } from '../../components'
 
-import zan from '@/data/testimonials/images/zan'
+import source from '@/data/testimonials/images/zan'
 
 const PropineLetter: FC = () => {
   return (
@@ -27,7 +27,7 @@ const PropineLetter: FC = () => {
       <Technologies technologies="Nodejs, AWS, Docker, Kubernetes, React, Nextjs, Etherium, Algorand, Cosmos" />
       <PersonInfo
         name="Wong Liang Zan"
-        source={zan}
+        source={source}
         title="Co-Founder & CTO at Propine"
       />
       <p>
@@ -36,7 +36,7 @@ const PropineLetter: FC = () => {
         <Keyword word="Blockchain Staff Engineer" /> . During his time with us,
         he has proven to be a reliable colleague. His strong work ethic has set
         a great example to the rest of the team. We would wholeheartedly
-        recommend him in whatever endeavors he so chooses.”
+        recommend him in whatever endeavors he so chooses.
       </p>
     </>
   )

@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .active-color {
-  color: orange;
+  color: #ff9800;
 }
