@@ -8,6 +8,8 @@ import MenuIcon from '@mui/icons-material/Menu'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
 
+import {onLCP, onFID, onCLS} from 'web-vitals'
+
 interface Props {
   HeaderTitle: React.FC
   PageContent: React.FC
@@ -35,6 +37,10 @@ const Layout: FC<Props> = ({
 
   const container =
     window !== undefined ? () => window().document.body : undefined
+
+  onCLS(console.log)
+  onFID(console.log)
+  onLCP(console.log)
 
   return (
     <Box sx={{display: 'flex'}}>
