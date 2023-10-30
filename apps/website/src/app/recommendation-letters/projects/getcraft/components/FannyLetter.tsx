@@ -31,10 +31,10 @@ const Letter: FC = () => {
           I have worked on with him being getting our new homepage up with the
           authentication and navigations, and recently our managed services
           feature for sales activations. No matter what the problem is, Dimitar
-          always starts with the right question, ie. 'Why?'. Dimitar knowledge
-          shares, keeping us updated on progress and adds diversity to the way
-          solutions are discovered. I have appreciated the time we have worked
-          together and sincerely thank Dimitar.
+          always starts with the right question, ie. &lsquo;Why?&lsquo;. Dimitar
+          knowledge shares, keeping us updated on progress and adds diversity to
+          the way solutions are discovered. I have appreciated the time we have
+          worked together and sincerely thank Dimitar.
         </p>
       </div>
     </>
