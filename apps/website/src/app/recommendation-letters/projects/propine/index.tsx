@@ -13,19 +13,10 @@ import {
   MarketPlace,
   Position,
   PersonInfo,
+  Technologies,
 } from '../../components'
 
 import zan from '@/data/testimonials/images/zan'
-
-import source from '@/icons/Node.js_logo.svg'
-
-const TechIcon: FC = () => {
-  const size = 60
-
-  return (
-    <Image src={source} alt="test" title="test" width={size} height={size} />
-  )
-}
 
 const PropineLetter: FC = () => {
   return (
@@ -35,12 +26,12 @@ const PropineLetter: FC = () => {
       <MarketPlace text="Worldwide and Singapore" />
       <HeadQuater text="Singapore and USA" />
       <Position text="Blockchain Staff Engineer" />
+      <Technologies technologies="Nodejs, AWS, Docker, Kubernetes, React, Nextjs, Etherium, Algorand, Cosmos" />
       <PersonInfo
         name="Wong Liang Zan"
         source={zan}
         title="Co-Founder & CTO at Propine"
       />
-      <TechIcon />
       <p>
         Mr Dimitar Danailov was employed at Propine Technologies Pte Ltd from
         September 1 2021 to August 5 2022 as a{' '}

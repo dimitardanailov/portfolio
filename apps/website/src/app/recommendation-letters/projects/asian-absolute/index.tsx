@@ -9,6 +9,7 @@ import {
   MarketPlace,
   Position,
   PersonInfo,
+  Technologies,
 } from '../../components'
 
 import source from '@/data/testimonials/images/asianabsolute/henry'
@@ -24,8 +25,9 @@ const Letter: FC = () => {
       <MarketPlace text="Worldwide" />
       <HeadQuater text="Australia and UK" />
       <Position text="Software Consultant" />
+      <Technologies technologies=".Net, Azure, SQL Server, Javascript" />
       <PersonInfo
-        name="Wong Liang Zan"
+        name="Henry Clough"
         source={source}
         title="Consultant. Former: Chairperson, Asian Absolute | Translation and Localisation Services"
       />

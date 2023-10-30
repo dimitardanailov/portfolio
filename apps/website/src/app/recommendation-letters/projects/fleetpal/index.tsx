@@ -8,6 +8,7 @@ import {
   Industry,
   MarketPlace,
   Position,
+  Technologies,
 } from '../../components'
 
 const Letter: FC = () => {
@@ -18,6 +19,7 @@ const Letter: FC = () => {
       <MarketPlace text="USA" />
       <HeadQuater text="USA and Israel" />
       <Position text="Software Consultant" />
+      <Technologies technologies="React, Nextjs, Vercel, GraphQL, Headless CMS" />
       <p>
         Dimitar is a very professional and experienced developer and consultant.
         His knowledge spreads across multiple industries, and it is not limited

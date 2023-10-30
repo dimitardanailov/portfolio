@@ -8,6 +8,7 @@ import {
   Industry,
   MarketPlace,
   Position,
+  Technologies,
 } from '../../components'
 
 import DavidLetter from './components/DavidLetter'
@@ -24,6 +25,7 @@ const Letter: FC = () => {
       <MarketPlace text="USA" />
       <HeadQuater text="USA and Israel" />
       <Position text="Software Engineering Manager / Team Lead" />
+      <Technologies technologies="Nodejs, Shopify, React, Angular, Algolia" />
       <DavidLetter />
       <ShlomiLetter />
     </>
