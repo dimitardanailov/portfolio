@@ -1,9 +1,12 @@
 'use client'
 
+import {listStyle} from './shared'
+
 const Accomplishments = () => {
   return (
     <>
-      <ul>
+      <div>Accomplishments</div>
+      <ul className={listStyle}>
         <li>
           13+ years experience. Portfolio includes clients located: USA,
           Singapore, Israel, Germany, Great Britain, Switzerland, United Arab
