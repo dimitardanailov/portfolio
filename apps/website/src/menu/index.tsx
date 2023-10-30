@@ -1,4 +1,5 @@
 import WalletIcon from '@mui/icons-material/Wallet'
+import HomeIcon from '@mui/icons-material/Home'
 
 export type MenuItem = {
   key: string
@@ -13,7 +14,7 @@ export const Home: MenuItem = {
   text: '<ddanailov />',
   href: '/',
   title: 'Dimitar Danailov: Software Development Contractor',
-  Icon: <WalletIcon />,
+  Icon: <HomeIcon />,
 }
 
 export const RecommendationLetters = {
