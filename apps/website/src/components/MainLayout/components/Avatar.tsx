@@ -43,6 +43,7 @@ const Avatar = () => {
           height={size}
           title={title}
           alt={title}
+          loading="lazy"
         />
         <Text>I&lsquo;m Open to help you!</Text>
       </VFlexbox>
