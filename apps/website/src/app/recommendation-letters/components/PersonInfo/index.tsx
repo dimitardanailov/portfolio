@@ -48,7 +48,6 @@ const PersonInfo: FC<Props> = ({name, source, title}) => {
         title={title}
         width={size}
         height={size}
-        loading="lazy"
       />
       <CustomVFlexbox>
         <NameTitle>{name}</NameTitle>
