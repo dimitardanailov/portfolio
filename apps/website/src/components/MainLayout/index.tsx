@@ -8,6 +8,8 @@ import MenuIcon from '@mui/icons-material/Menu'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
 
+import DrawerContainer from './components/DrawerContainer'
+
 interface Props {
   HeaderTitle: React.FC
   PageContent: React.FC
@@ -80,7 +82,7 @@ const Layout: FC<Props> = ({
             '& .MuiDrawer-paper': {boxSizing: 'border-box', width: drawerWidth},
           }}
         >
-          {LeftDrawer}
+          <DrawerContainer LeftDrawer={LeftDrawer} />
         </Drawer>
         <Drawer
           variant="permanent"
@@ -90,7 +92,7 @@ const Layout: FC<Props> = ({
           }}
           open
         >
-          {LeftDrawer}
+          <DrawerContainer LeftDrawer={LeftDrawer} />
         </Drawer>
       </Box>
       <Box
