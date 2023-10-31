@@ -18,6 +18,11 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
+        url: generateUrl('favicon.ico'),
+        type: 'image/ico',
+        sizes: '48x48',
+      },
+      {
         url: generateUrl('favicon-32x32.png'),
         type: 'image/png',
         sizes: '32x32',
