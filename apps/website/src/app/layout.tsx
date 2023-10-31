@@ -6,6 +6,10 @@ import '@/styles/global.css'
 
 const inter = Inter({subsets: ['latin']})
 
+const generateUrl = (url: string) => {
+  return `https://ddanailov.dev/${url}`
+}
+
 export const metadata: Metadata = {
   applicationName: 'Dimitar Danailov portfolio',
   authors: {
@@ -14,12 +18,12 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: 'https://ddanailov.vercel.app/favicon-32x32.png',
+        url: generateUrl('favicon-32x32.png'),
         type: 'image/png',
         sizes: '32x32',
       },
       {
-        url: 'https://ddanailov.vercel.app/favicon-16x16.png',
+        url: generateUrl('favicon-16x16.png'),
         type: 'image/png',
         sizes: '16x16',
       },
@@ -35,11 +39,11 @@ export const metadata: Metadata = {
       {
         width: '3840',
         height: '2160',
-        url: 'https://ddanailov.vercel.app/javascript-consultant.png',
+        url: generateUrl('javascript-consultant.png'),
       },
     ],
   },
-  manifest: 'https://ddanailov.vercel.app/site.webmanifest.json',
+  manifest: generateUrl('site.webmanifest.json'),
   category: 'Portfolio',
   other: {
     'fb:app_id': '1479131055619126',
