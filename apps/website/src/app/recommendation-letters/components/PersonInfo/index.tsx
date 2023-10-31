@@ -15,6 +15,7 @@ const Container = styled(HFlexBox)`
 
 const CustomImage = styled(Image)`
   border-radius: 100%;
+  border: 0.2rem solid #000;
 `
 
 const CustomVFlexbox = styled(VFlexbox)`
