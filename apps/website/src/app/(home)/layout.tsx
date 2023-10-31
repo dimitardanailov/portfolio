@@ -1,7 +1,7 @@
 import layout from '@/components/NextjsLayout'
 import generateMetadata, {InternalMetadata} from '@/seo/metadata'
 
-const title = 'Ex - contractor in Siemens and The international Red cross'
+const title = '13 years of helping build an inclusive web2 or web3 projects'
 const description =
   'Deep understanding for upcoming technologies to solve complex business problems;'
 const canonical = '/recommendation-letters'
