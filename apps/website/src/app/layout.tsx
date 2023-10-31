@@ -14,12 +14,12 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: 'https://ddanailov.dev/favicon-32x32.png',
+        url: 'https://ddanailov.vercel.app/favicon-32x32.png',
         type: 'image/png',
         sizes: '32x32',
       },
       {
-        url: 'https://ddanailov.dev/favicon-16x16.png',
+        url: 'https://ddanailov.vercel.app/favicon-16x16.png',
         type: 'image/png',
         sizes: '16x16',
       },
@@ -35,11 +35,11 @@ export const metadata: Metadata = {
       {
         width: '3840',
         height: '2160',
-        url: 'https://ddanailov.dev/javascript-consultant.png',
+        url: 'https://ddanailov.vercel.app/javascript-consultant.png',
       },
     ],
   },
-  manifest: 'https://ddanailov.dev/site.webmanifest',
+  manifest: 'https://ddanailov.vercel.app/site.webmanifest.json',
   category: 'Portfolio',
   other: {
     'fb:app_id': '1479131055619126',
