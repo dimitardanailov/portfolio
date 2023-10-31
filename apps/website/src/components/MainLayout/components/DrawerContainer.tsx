@@ -6,6 +6,7 @@ import {VFlexbox} from '@/styled-components/Grid'
 
 import styled from 'styled-components'
 
+import Avatar from './Avatar'
 import Icons from './Icons'
 
 const Container = styled(VFlexbox)`
@@ -22,6 +23,7 @@ const DrawerContainer: FC<Props> = ({LeftDrawer}) => {
   return (
     <Container>
       {LeftDrawer}
+      <Avatar />
       <Icons />
     </Container>
   )
