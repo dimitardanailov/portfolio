@@ -32,7 +32,7 @@ const Text = styled.span`
 
 const Avatar = () => {
   const size = 120
-  const title = ''
+  const title = "I'm Open to help you!"
 
   return (
     <Container>
@@ -44,7 +44,7 @@ const Avatar = () => {
           title={title}
           alt={title}
         />
-        <Text>I&lsquo;m Open to help you!</Text>
+        <Text>{title}</Text>
       </VFlexbox>
     </Container>
   )
