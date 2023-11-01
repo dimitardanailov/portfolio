@@ -32,7 +32,7 @@ const Text = styled.span`
 
 const Avatar = () => {
   const size = 120
-  const title = "I'm Open to help you!"
+  const title = "I'm here to help you!"
 
   return (
     <Container>
