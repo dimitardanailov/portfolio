@@ -1,10 +1,11 @@
 import layout from '@/components/NextjsLayout'
 import generateMetadata, {InternalMetadata} from '@/seo/metadata'
 
-const title = 'Remote consultant with technology stack: React, Nodejs and Go'
+const title =
+  'Deep understanding for upcoming technologies to solve complex business problems;'
 const description =
-  'My skills are: React, Nodejs, Typescript, Blockchain, Nextjs, Full Stack Development and Staff Management'
-const canonical = '/recommendation-letters'
+  'Expertise in writing JavaScript/TypeScript code characterized by its cleanliness, impressive performance, and potential for scalability'
+const canonical = '/hire-me'
 
 const props: InternalMetadata = {
   title,
