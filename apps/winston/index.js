@@ -4,7 +4,18 @@ const variable = {
   id: 123,
 }
 
+const params = {
+  id: 1,
+  testId: 2,
+  dbId: 3,
+  variable: 'apple',
+}
+
+const childLogger = logger.child({requestId: '451'})
+
 logger.info('variable', variable)
+childLogger.info('variable', variable)
+
 logger.error('error', variable)
 logger.debug('debug', variable)
 logger.silly('silly', variable)
