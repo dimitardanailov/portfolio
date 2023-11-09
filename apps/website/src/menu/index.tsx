@@ -1,6 +1,7 @@
 import WalletIcon from '@mui/icons-material/Wallet'
 import HomeIcon from '@mui/icons-material/Home'
 import WorkIcon from '@mui/icons-material/Work'
+import SchoolIcon from '@mui/icons-material/School'
 
 export type MenuItem = {
   key: string
@@ -34,4 +35,17 @@ export const HireMe = {
   Icon: <WorkIcon />,
 }
 
-export const menuItems: MenuItem[] = [Home, RecommendationLetters, HireMe]
+export const Certificates = {
+  key: 'certificates',
+  text: '<certificates />',
+  title: 'Certified Engineer by Google, Meta, AWS',
+  href: 'certificates',
+  Icon: <SchoolIcon />,
+}
+
+export const menuItems: MenuItem[] = [
+  Home,
+  HireMe,
+  RecommendationLetters,
+  Certificates,
+]
