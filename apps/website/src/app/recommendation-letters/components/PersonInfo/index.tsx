@@ -33,15 +33,23 @@ export interface Props {
   title: string
 }
 
-const Avatar = dynamic(() => import('./components/Avatar'), {ssr: false})
+const Avatar = dynamic(() => import('@/components/Avatar'), {ssr: false})
 
 const PersonInfo: FC<Props> = ({name, source, title}) => {
   const size = 120
+  const border = '0.2rem solid #000'
+  const borderRadius = 100
 
   return (
     <Container>
       <AvatarContainer size={size}>
-        <Avatar size={size} title={title} source={source} />
+        <Avatar
+          size={size}
+          title={title}
+          source={source}
+          border={border}
+          borderRadius={borderRadius}
+        />
       </AvatarContainer>
       <CustomVFlexbox>
         <NameTitle>{name}</NameTitle>
