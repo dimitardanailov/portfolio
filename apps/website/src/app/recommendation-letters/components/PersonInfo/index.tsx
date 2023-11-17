@@ -2,7 +2,7 @@
 
 import {FC} from 'react'
 
-import Image from 'next/image'
+import dynamic from 'next/dynamic'
 
 import styled from 'styled-components'
 
@@ -13,9 +13,15 @@ const Container = styled(HFlexBox)`
   margin: 1rem 0.5rem;
 `
 
-const CustomImage = styled(Image)`
-  border-radius: 100%;
-  border: 0.2rem solid #000;
+export interface AvatarContainerProps {
+  size: number
+}
+
+const AvatarContainer = styled.div<AvatarContainerProps>`
+  position: relative;
+
+  width: ${p => `${p.size}px`};
+  height: ${p => `${p.size}px`};
 `
 
 const CustomVFlexbox = styled(VFlexbox)`
@@ -37,18 +43,16 @@ export interface Props {
   title: string
 }
 
+const Avatar = dynamic(() => import('./components/Avatar'), {ssr: false})
+
 const PersonInfo: FC<Props> = ({name, source, title}) => {
   const size = 120
 
   return (
     <Container>
-      <CustomImage
-        src={source}
-        alt={title}
-        title={title}
-        width={size}
-        height={size}
-      />
+      <AvatarContainer size={size}>
+        <Avatar size={size} title={title} source={source} />
+      </AvatarContainer>
       <CustomVFlexbox>
         <NameTitle>{name}</NameTitle>
         <Position>{title}</Position>
