@@ -11,4 +11,8 @@ const Container = styled.div<Props>`
   height: ${p => `${p.size}px`};
 `
 
+export const Center = styled(Container)`
+  margin: 0 auto;
+`
+
 export default Container

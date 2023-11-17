@@ -1,24 +1,17 @@
 'use client'
 
-import Image from 'next/image'
+import dynamic from 'next/dynamic'
 
 import styled from 'styled-components'
 
 import {HFlexBox, VFlexbox} from '@/styled-components/Grid'
+import {Center as AvatarContainer} from '@/styled-components/Images/Container'
 
 import source from '@/data/me/120x120'
 
 const Container = styled(HFlexBox)`
   width: 100%;
   justify-content: center;
-`
-
-const CustomImage = styled(Image)`
-  position: relative;
-
-  border: 0.2rem solid #000;
-  border-radius: 100%;
-  margin: 0 auto;
 `
 
 const Text = styled.span`
@@ -30,24 +23,30 @@ const Text = styled.span`
   font-size: 1.2rem;
 `
 
-const Avatar = () => {
+const Avatar = dynamic(() => import('@/components/Avatar'), {ssr: false})
+
+const ProfileAvatar = () => {
   const size = 120
   const title = "I'm here to help you!"
+  const border = '0.2rem solid #000'
+  const borderRadius = 100
 
   return (
     <Container>
       <VFlexbox>
-        <CustomImage
-          src={source}
-          width={size}
-          height={size}
-          title={title}
-          alt={title}
-        />
+        <AvatarContainer size={size}>
+          <Avatar
+            size={size}
+            title={title}
+            source={source}
+            border={border}
+            borderRadius={borderRadius}
+          />
+        </AvatarContainer>
         <Text>{title}</Text>
       </VFlexbox>
     </Container>
   )
 }
 
-export default Avatar
+export default ProfileAvatar
