@@ -8,20 +8,10 @@ import styled from 'styled-components'
 
 import {HFlexBox, VFlexbox} from '@/styled-components/Grid'
 import BaseTitle from '@/styled-components/Text/Title'
+import AvatarContainer from '@/styled-components/Images/Container'
 
 const Container = styled(HFlexBox)`
   margin: 1rem 0.5rem;
-`
-
-export interface AvatarContainerProps {
-  size: number
-}
-
-const AvatarContainer = styled.div<AvatarContainerProps>`
-  position: relative;
-
-  width: ${p => `${p.size}px`};
-  height: ${p => `${p.size}px`};
 `
 
 const CustomVFlexbox = styled(VFlexbox)`
