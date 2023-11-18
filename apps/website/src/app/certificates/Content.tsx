@@ -72,8 +72,8 @@ const WebMobile = () => {
           <TargetBlankLink
             Element={
               <span className={textClassName}>
-                The Ultimate
-                <Keyword word="React Native" /> Series; Fundamentals;
+                The Ultimate <Keyword word="React Native" /> Series:
+                Fundamentals;
               </span>
             }
             href={link('mobile/react-native-intro.pdf')}
@@ -87,7 +87,7 @@ const WebMobile = () => {
                 Introduction to Mobile Development;
               </span>
             }
-            href={link('intro.pdf')}
+            href={link('mobile/intro.pdf')}
             title="Introduction to Mobile Development"
           />
         </li>
@@ -153,9 +153,9 @@ const DatabaseStorage = () => {
             href={link('databases/mongo-101js.png')}
             Element={
               <span className={textClassName}>
-                M101JS:
-                <Keyword word="MongoDB" /> for <Keyword word="Node.js" />{' '}
-                Developers. Authorized by MongoDB University;
+                M101JS: <Keyword word="MongoDB" /> for{' '}
+                <Keyword word="Node.js" /> Developers. Authorized by MongoDB
+                University;
               </span>
             }
           />
