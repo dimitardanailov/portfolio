@@ -2443,14 +2443,14 @@
   resolved "https://registry.yarnpkg.com/@web3-storage/parse-link-header/-/parse-link-header-3.1.0.tgz#4562724987649dd6d3e07c87be1826804d212ef7"
   integrity sha512-K1undnK70vLLauqdE8bq/l98isTF2FDhcP0UPpXVSjkSWe3xhAn5eRXk5jfA1E5ycNm84Ws/rQFUD7ue11nciw==
 
-"@xstate/cli@^0.5.2":
-  version "0.5.10"
-  resolved "https://registry.yarnpkg.com/@xstate/cli/-/cli-0.5.10.tgz#6471e7ff67efdf7d9356fcd9d0af860ced47dea0"
-  integrity sha512-EeBQ7AZInloO0VmwJQFAS8mUL3NNkZXjPSUpHAzGZ5wwFbtshkS/+5eBSUsjxGR60zVmKCRYam1FP/tAdzeDLQ==
+"@xstate/cli@^0.5.11":
+  version "0.5.11"
+  resolved "https://registry.yarnpkg.com/@xstate/cli/-/cli-0.5.11.tgz#c33bce0ed15841b684c7bb42d3723834d43098aa"
+  integrity sha512-RqpOaUS0KSUfeJDn8wk+QzRbfxO0XxDg0nFGxA9L/XTuu504leJ3SVh3TqX11IqEo54Sr+qtJaWTtTJVKCc1UA==
   dependencies:
     "@babel/core" "^7.21.4"
-    "@xstate/machine-extractor" "^0.12.2"
-    "@xstate/tools-shared" "^4.0.4"
+    "@xstate/machine-extractor" "^0.13.0"
+    "@xstate/tools-shared" "^4.0.5"
     chokidar "^3.5.3"
     commander "^8.0.0"
     dotenv "^16.0.3"
@@ -2459,10 +2459,10 @@
     xstate "^4.33.4"
     xstate-beta "npm:xstate@beta"
 
-"@xstate/machine-extractor@^0.12.2":
-  version "0.12.2"
-  resolved "https://registry.yarnpkg.com/@xstate/machine-extractor/-/machine-extractor-0.12.2.tgz#f5e992c177b4fa0d096152d490dd288c95b64d67"
-  integrity sha512-YPGViZCCwunr6h3Gy3A5t1n5vHZ8tXjFuCJslJ4OloNjp01kNZQolX6t0k4Byh+GKFtMv8PxpTaGy1VIFiwXlw==
+"@xstate/machine-extractor@^0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@xstate/machine-extractor/-/machine-extractor-0.13.0.tgz#93badaa8fff7daf6ea1cf15942df63a6549214e8"
+  integrity sha512-4basKJWMZmOe6LZu/x8y/fzt6lOEfkO2qTSr2QWSZ0bmaLf964U7lN7nPNIzcj//I5HEnGMtF/cVFBMdN6hIJg==
   dependencies:
     "@babel/parser" "^7.21.4"
     "@babel/traverse" "^7.21.4"
@@ -2477,12 +2477,12 @@
     use-isomorphic-layout-effect "^1.1.2"
     use-sync-external-store "^1.0.0"
 
-"@xstate/tools-shared@^4.0.4":
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/@xstate/tools-shared/-/tools-shared-4.0.4.tgz#cc7c44e0e73a6fdcddce14620195c58f648917a3"
-  integrity sha512-zHbZCEJMngdaj+x1nKm8LCn+fd4CwOUqfpJed8RjqenUImrhPhtTCurZrEeJLiCmpF+VqNflaODSu2b+Xx/M+A==
+"@xstate/tools-shared@^4.0.5":
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/@xstate/tools-shared/-/tools-shared-4.0.5.tgz#d5ecd5d586578c2eec68dcc069ba05dcb0d7cf26"
+  integrity sha512-A9xdk1Aw7bDmRIK6cv5yy+1vmK3S0neDrbeoS/B/A0JnYdhQJqPFB16qa8UrUmbaz79mjccAiqAxE5HNEOgm9A==
   dependencies:
-    "@xstate/machine-extractor" "^0.12.2"
+    "@xstate/machine-extractor" "^0.13.0"
 
 "@zxing/text-encoding@0.9.0":
   version "0.9.0"
@@ -2827,7 +2827,7 @@ axios@^0.21.2:
   dependencies:
     follow-redirects "^1.14.0"
 
-axios@^1.2.1, axios@^1.4.0:
+axios@^1.2.1, axios@^1.4.0, axios@^1.6.0:
   version "1.6.2"
   resolved "https://registry.yarnpkg.com/axios/-/axios-1.6.2.tgz#de67d42c755b571d3e698df1b6504cde9b0ee9f2"
   integrity sha512-7i24Ri4pmDRfJTR7LDBhsOTtcm+9kjX5WiY1X3wIisx6G9So3pfMkEiU7emUBe46oceVImccTEM3k6C5dbVW8A==
