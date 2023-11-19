@@ -13,7 +13,14 @@ const Accomplishments = () => {
           Singapore, Israel, Germany, Great Britain, Switzerland, United Arab
           Emirates, Indonesia;
         </li>
-        <li>Ex - contractor Siemens and The international Red cross;</li>
+        <li>
+          <TargetBlankLink
+            text="Ex - contractor Siemens"
+            title="Senior Architect"
+            href="/letters/senior-architect.pdf"
+          />{' '}
+          and The international Red cross;
+        </li>
         <li>Ex CTO, Staff Engineer, Architect and Engineering manager;</li>
         <li>Management and Leadership skills: 10+ years;</li>
         <li>
