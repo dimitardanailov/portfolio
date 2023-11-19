@@ -6,7 +6,7 @@ import {listStyle} from './shared'
 const Accomplishments = () => {
   return (
     <>
-      <div>Accomplishments</div>
+      <div className="font-bold">Accomplishments</div>
       <ul className={listStyle}>
         <li>
           13+ years experience. My portfolio includes clients located: USA,
