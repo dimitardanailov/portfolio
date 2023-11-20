@@ -25,7 +25,11 @@ const Contractor = () => {
           : August - present (Team size: 20+)
         </li>
         <li>
-          Blockchain Architect,{' '}
+          <PositionLink
+            sufix="blockchain-architect-siemens-energy"
+            position="Blockchain Architect"
+          />
+          ,{' '}
           <TargetBlankLink
             text="Siemens Energy"
             title="Blockchain Architect"
