@@ -42,8 +42,17 @@ const Contractor = () => {
           2023; (Team size: 8);
         </li>
         <li>
-          BlockChain Staff Engineer, Propine.com: Sep, 2021 - August, 2022;
-          (Team size: 20+);
+          <PositionLink
+            sufix="blockchain-staff-engineer-propine"
+            position="BlockChain Staff Engineer"
+          />
+          ,{' '}
+          <TargetBlankLink
+            text="Propine.com"
+            title="BlockChain Staff Engineer at Propine.com"
+            href="https://www.propine.com"
+          />
+          : Sep, 2021 - August, 2022; (Team size: 20+);
         </li>
         <li>
           Software Engineering Manager, Elephant stocks: Sep, 2021 - 2022; (Team
