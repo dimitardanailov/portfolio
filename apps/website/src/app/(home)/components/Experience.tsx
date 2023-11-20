@@ -1,6 +1,7 @@
 'use client'
 
 import TargetBlankLink from '@/components/TargetBlankLink'
+import PositionLink from './PositionLink'
 import {listStyle} from './shared'
 
 const conttainerClassName = 'mx-2'
@@ -11,7 +12,11 @@ const Contractor = () => {
       <section>Remote B2B Contractor (2018 - present)</section>
       <ul className={listStyle}>
         <li>
-          Full Stack Engineer,{' '}
+          <PositionLink
+            sufix="full-stack-engineer-collinson"
+            position="Full Stack Engineer"
+          />
+          ,{' '}
           <TargetBlankLink
             title="Full Stack Engineer"
             text="Collinson group"
