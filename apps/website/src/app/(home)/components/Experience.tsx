@@ -1,7 +1,7 @@
 'use client'
 
 import TargetBlankLink from '@/components/TargetBlankLink'
-import PositionLink from './PositionLink'
+import PositionLink from '@/components/PositionLink'
 import {listStyle} from './shared'
 
 const conttainerClassName = 'mx-2'
