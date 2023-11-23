@@ -9,7 +9,11 @@ const Component = () => {
 }
 
 function code({...props}) {
-  return <SyntaxHighlighter language="javascript" PreTag="div" {...props} />
+  return (
+    <SyntaxHighlighter language="javascript" PreTag="div" {...props}>
+      {props.children}
+    </SyntaxHighlighter>
+  )
 }
 
 export default Component
