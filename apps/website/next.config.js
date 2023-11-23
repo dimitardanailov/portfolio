@@ -3,8 +3,13 @@ const withPWA = require('next-pwa')({
   dest: 'public',
 })
 
+const withMDX = require('@next/mdx')()
+
 const nextConfig = {
   env: {},
+  // Configure `pageExtensions` to include MDX files
+  pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
+  // Optionally, add any other Next.js config below
   async redirects() {
     return [
       {
@@ -37,4 +42,4 @@ const nextConfig = {
   },
 }
 
-module.exports = withPWA(nextConfig)
+module.exports = withPWA(withMDX(nextConfig))
