@@ -11,16 +11,16 @@ export interface Props {
   title: string
   size: number
   border?: string
-  borderRadius?: number
+  radius?: number
 }
 
 interface CustomImageProps {
   border: string
-  borderRadius: number
+  radius: number
 }
 
 const CustomImage = styled(Image)<CustomImageProps>`
-  border-radius: ${p => p.borderRadius}%;
+  border-radius: ${p => p.radius}%;
   border: ${p => p.border};
 `
 
@@ -29,12 +29,12 @@ const Avatar: FC<Props> = ({
   title,
   source,
   border = '0.1rem solid #000',
-  borderRadius = 100,
+  radius = 100,
 }) => {
   return (
     <CustomImage
       border={border}
-      borderRadius={borderRadius}
+      radius={radius}
       src={source}
       alt={title}
       title={title}

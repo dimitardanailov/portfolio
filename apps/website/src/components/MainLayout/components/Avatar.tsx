@@ -40,7 +40,7 @@ const ProfileAvatar = () => {
             title={title}
             source={source}
             border={border}
-            borderRadius={borderRadius}
+            radius={borderRadius}
           />
         </AvatarContainer>
         <Text>{title}</Text>

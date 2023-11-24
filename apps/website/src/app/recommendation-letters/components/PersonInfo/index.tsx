@@ -48,7 +48,7 @@ const PersonInfo: FC<Props> = ({name, source, title}) => {
           title={title}
           source={source}
           border={border}
-          borderRadius={borderRadius}
+          radius={borderRadius}
         />
       </AvatarContainer>
       <CustomVFlexbox>
