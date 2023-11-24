@@ -33,7 +33,7 @@ const LeftDrawer: FC<Props> = ({items}) => {
             <Link href={item.href} title={item.title}>
               <ListItemButton>
                 <CustomListItemIcon>{item.Icon}</CustomListItemIcon>
-                <ListItemText primary={item.text} className="text-sm" />
+                <span className="text-sm">{item.text}</span>
               </ListItemButton>
             </Link>
           </ListItem>
