@@ -8,7 +8,7 @@ const description = `Technology stack (I'm happy to provide technical tips for e
   ', ',
 )}`
 
-const canonical = '/projects/blockchain-architect-siemens-energy'
+const canonical = '/positions/blockchain-architect-siemens-energy'
 
 const props: InternalMetadata = {
   title,
