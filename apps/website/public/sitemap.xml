@@ -1,24 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-   <url>
-        <loc>https://ddanailov.dev/</loc>
-        <lastmod>2020-07-06T19:26:02+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://ddanailov.dev/recommendation-letters</loc>
-        <lastmod>2023-11-01T20:32:05+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://ddanailov.dev/hire-me</loc>
-        <lastmod>2023-11-09T20:32:05+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://ddanailov.dev/recommendation-letters</loc>
-        <lastmod>2023-11-09T20:32:05+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://ddanailov.dev/positions</loc>
-        <lastmod>2023-23-09T20:32:05+00:00</lastmod>
-    </url>
+
+<url>
+  <loc>https://ddanailov.dev/</loc>
+  <lastmod>2023-11-26T11:12:48+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://ddanailov.dev/hire-me</loc>
+  <lastmod>2023-11-26T11:12:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ddanailov.dev/recommendation-letters</loc>
+  <lastmod>2023-11-26T11:12:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ddanailov.dev/certificates</loc>
+  <lastmod>2023-11-26T11:12:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ddanailov.dev/positions</loc>
+  <lastmod>2023-11-26T11:12:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ddanailov.dev/letters/senior-architect.pdf</loc>
+  <lastmod>2023-11-26T11:12:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ddanailov.dev/positions/full-stack-engineer-collinson</loc>
+  <lastmod>2023-11-26T11:12:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ddanailov.dev/positions/blockchain-architect-siemens-energy</loc>
+  <lastmod>2023-11-26T11:12:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ddanailov.dev/positions/blockchain-staff-engineer-propine</loc>
+  <lastmod>2023-11-26T11:12:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ddanailov.dev/certificates/defi/basics.pdf</loc>
+  <lastmod>2023-11-26T11:12:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ddanailov.dev/certificates/smart-contracts/basics.pdf</loc>
+  <lastmod>2023-11-26T11:12:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ddanailov.dev/certificates/blockchain/basics.pdf</loc>
+  <lastmod>2023-11-26T11:12:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ddanailov.dev/certificates/mobile/react-native-intro.pdf</loc>
+  <lastmod>2023-11-26T11:12:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ddanailov.dev/certificates/mobile/intro.pdf</loc>
+  <lastmod>2023-11-26T11:12:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ddanailov.dev/certificates/containerization/applications-aws.pdf</loc>
+  <lastmod>2023-11-26T11:12:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ddanailov.dev/certificates/machine-learning/introduction-tensorFlow.pdf</loc>
+  <lastmod>2023-11-26T11:12:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ddanailov.dev/certificates/databases/hadoop.pdf</loc>
+  <lastmod>2023-11-26T11:12:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ddanailov.dev/certificates/project-management/starting-successful-project.pdf</loc>
+  <lastmod>2023-11-26T11:12:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ddanailov.dev/certificates/project-management/foundations.pdf</loc>
+  <lastmod>2023-11-26T11:12:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
