@@ -21,7 +21,7 @@ interface Props {
 }
 
 const LeftDrawer: FC<Props> = ({items}) => {
-  const iconSize = 36
+  const iconSize = 32
   const iconColour = 'rgba(0, 0, 0, 0.54);'
   const paddingImageCointainer = '0.2rem 0.5rem'
 
@@ -31,7 +31,7 @@ const LeftDrawer: FC<Props> = ({items}) => {
         <Link href={item.href} title={item.title} key={item.key}>
           <ImageCointainer padding={paddingImageCointainer}>
             <DynamicIcon Icon={item.Icon} size={iconSize} color={iconColour} />
-            <span className="ml-3">{item.text}</span>
+            <span className="ml-3 left-drawer-text-item">{item.text}</span>
           </ImageCointainer>
         </Link>
       ))}
