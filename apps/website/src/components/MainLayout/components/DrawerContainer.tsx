@@ -2,18 +2,35 @@
 
 import {FC} from 'react'
 
+import dynamic from 'next/dynamic'
+
 import {VFlexbox} from '@/styled-components/Grid'
 
 import styled from 'styled-components'
 
 import Avatar from './Avatar'
-import Icons from './Icons'
 
 const Container = styled(VFlexbox)`
   height: 100%;
 
   justify-content: space-between;
+
+  overflow: hidden;
 `
+
+const Center = styled.div`
+  position: relative;
+
+  height: 180px;
+`
+
+const Footer = styled.footer`
+  position: relative;
+
+  height: 64px;
+`
+
+const Icons = dynamic(() => import('./Icons'), {ssr: false})
 
 export interface Props {
   LeftDrawer: JSX.Element
@@ -23,8 +40,13 @@ const DrawerContainer: FC<Props> = ({LeftDrawer}) => {
   return (
     <Container>
       {LeftDrawer}
-      <Avatar />
-      <Icons />
+      <Center>
+        <Avatar />
+      </Center>
+
+      <Footer>
+        <Icons />
+      </Footer>
     </Container>
   )
 }
