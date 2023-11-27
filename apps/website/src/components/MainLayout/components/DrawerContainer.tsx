@@ -14,8 +14,6 @@ const Container = styled(VFlexbox)`
   height: 100%;
 
   justify-content: space-between;
-
-  overflow: hidden;
 `
 
 const Center = styled.div`
