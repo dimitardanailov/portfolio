@@ -1,9 +1,17 @@
 'use client'
 
-import {tags} from './seo'
+import {Slogan} from '@/styled-components'
+import {title, tags} from './seo'
 
 const Content = () => {
-  return <>test</>
+  return (
+    <>
+      <Slogan>
+        Styled Components Registry the missing part between react, vercel and
+        nextjs
+      </Slogan>
+    </>
+  )
 }
 
 export default Content

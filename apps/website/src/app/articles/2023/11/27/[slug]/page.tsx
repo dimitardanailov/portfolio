@@ -12,7 +12,7 @@ import {drawerWidth} from '@/config/layout'
 import {LayoutProvider} from '@/providers'
 
 const Title = () => {
-  return <h1 className="text-xl">Software Development Contractor</h1>
+  return <h1 className="text-xl">React tips and tricks</h1>
 }
 
 const PageContent = () => {
