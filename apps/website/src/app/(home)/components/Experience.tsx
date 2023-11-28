@@ -58,6 +58,10 @@ const Contractor = () => {
           Software Engineering Manager, Elephant stocks: Sep, 2021 - 2022; (Team
           size: 20+);
         </li>
+        <li>
+          Software Architect, Getcraft.com: July, 2020 - June, 2021; (Team size:
+          20+)
+        </li>
       </ul>
     </div>
   )
