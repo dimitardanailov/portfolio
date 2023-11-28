@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 
-import {title, canonical} from './2023/11/27/[slug]/seo'
+import {title, canonical} from './2023/11/28/[slug]/seo'
 
 const Content = () => {
   return (
