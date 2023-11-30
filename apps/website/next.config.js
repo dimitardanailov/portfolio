@@ -41,6 +41,13 @@ const nextConfig = {
         destination: '/certificates',
         permanent: true,
       },
+      {
+        source:
+          '/articles/2023/11/28/system-design-collection-about-web-development---scalability-distributed-systems-real-time-and-streaming-microservices-and-monolith',
+        destination:
+          '/articles/2023/11/28/system-design-collection-about-web-development-scalability-distributed-systems-realtime-and-streaming-microservices-and-monolith',
+        permanent: true,
+      },
     ]
   },
 }
