@@ -14,3 +14,17 @@
 .left-drawer-text-item:hover {
   text-decoration: underline;
 }
+
+.blog-list-article {
+  position: relative;
+
+  padding-bottom: 0.5rem;
+}
+
+.blog-list-article:first-child {
+  margin-top: 0.5rem;
+}
+
+.text-bold {
+  font-weight: bold;
+}

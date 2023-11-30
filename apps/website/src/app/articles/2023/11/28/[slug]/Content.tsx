@@ -1,8 +1,15 @@
 'use client'
 
-import TargetBlankLink from '@/components/TargetBlankLink'
 import {Slogan} from '@/styled-components'
 import {Keyword} from '@/components/SEO'
+
+import ScalabilityWebDevelopmentDavidMalan from '@/blog/lectures/scalability-web-development-by-david-malan'
+import DistributedSystemsinOneLessonbyTimBerglund from '@/blog/lectures/distributed-systems-in-one-lesson-by-tim-berglund'
+import DistributedProgrammingDecentralizedWorld from '@/blog/lectures/distributed-programming-decentralized-world'
+import StreamingMillionLikesSecond from '@/blog/lectures/streaming-million-likes-second'
+import BuildingScalableHighlyConcurrentFaultTolerantSystems from '@/blog/lectures/building-scalable-highly-concurrent-fault-tolerant-systems'
+import MartinMicroservices from '@/blog/lectures/microservices-martin fowler-goto-2014'
+import Uber1000Services from '@/blog/lectures/uber-1000-services'
 
 const Content = () => {
   const listStyle = 'list-disc mx-6 mt-0 mb-5'
@@ -45,57 +52,29 @@ const Content = () => {
         </li>
       </ul>
 
-      <p>I&#39;ve been using like a list with materials:</p>
+      <p className="mt-1">Video presentations:</p>
 
-      <ul className={listStyle}>
+      <ul>
         <li>
-          <TargetBlankLink
-            href="https://youtu.be/-W9F__D3oY4?si=1J8XFY58ZwfZLn6X"
-            text="Scalability Web Development by David Malan"
-            title="CS75 (Summer 2012) Lecture 9 Scalability Harvard Web Development David Malan"
-          />
+          <ScalabilityWebDevelopmentDavidMalan />
         </li>
         <li>
-          <TargetBlankLink
-            href="https://youtu.be/Y6Ev8GIlbxc?si=0WAKvWdmEDmcrVW9"
-            text="Distributed Systems in One Lesson by Tim Berglund"
-            title="Distributed Systems in One Lesson by Tim Berglund"
-          />
+          <DistributedSystemsinOneLessonbyTimBerglund />
         </li>
         <li>
-          <TargetBlankLink
-            href="https://youtu.be/52SgGFpWjsY"
-            text="Agoric + Protocol Labs // Part 1 - Distributed Programming for a Decentralized World - Mark Miller"
-            title="Agoric + Protocol Labs // Part 1 - Distributed Programming for a Decentralized World - Mark Miller"
-          />
+          <DistributedProgrammingDecentralizedWorld />
         </li>
         <li>
-          <TargetBlankLink
-            href="https://youtu.be/yqc3PPmHvrA?si=ZYC2lA1DIXBc5lwe"
-            text="Streaming a Million Likes/Second: Real-Time Interactions on Live Video"
-            title="Streaming a Million Likes/Second: Real-Time Interactions on Live Video"
-          />
+          <StreamingMillionLikesSecond />
         </li>
         <li>
-          <TargetBlankLink
-            href="https://youtu.be/DihXpZ9xR8E?si=_jvR0KwUw_A9UHxV"
-            text="Building Scalable, Highly Concurrent and Fault-Tolerant Systems: Lessons Learned"
-            title="Building Scalable, Highly Concurrent and Fault-Tolerant Systems: Lessons Learned"
-          />
+          <BuildingScalableHighlyConcurrentFaultTolerantSystems />
         </li>
         <li>
-          <TargetBlankLink
-            href="https://youtu.be/wgdBVIX9ifA?si=GU0hLNilz-7Mn30E"
-            text="Microservices • Martin Fowler • GOTO 2014"
-            title="Microservices • Martin Fowler • GOTO 2014"
-          />
+          <MartinMicroservices />
         </li>
         <li>
-          <TargetBlankLink
-            href="https://youtu.be/kb-m2fasdDY?si=Bl9aA5KzSHnvksp0"
-            text="What I Wish I Had Known Before Scaling Uber to 1000 Services • Matt Ranney • GOTO 2016"
-            title="What I Wish I Had Known Before Scaling Uber to 1000 Services • Matt Ranney • GOTO 2016"
-          />
+          <Uber1000Services />
         </li>
       </ul>
     </>
