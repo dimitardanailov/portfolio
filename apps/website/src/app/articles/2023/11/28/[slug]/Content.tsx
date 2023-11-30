@@ -10,6 +10,7 @@ import StreamingMillionLikesSecond from '@/blog/lectures/streaming-million-likes
 import BuildingScalableHighlyConcurrentFaultTolerantSystems from '@/blog/lectures/building-scalable-highly-concurrent-fault-tolerant-systems'
 import MartinMicroservices from '@/blog/lectures/microservices-martin fowler-goto-2014'
 import Uber1000Services from '@/blog/lectures/uber-1000-services'
+import KrakenMicroservices from '@/blog/lectures/kraken-rust-microservices'
 
 const Content = () => {
   const listStyle = 'list-disc mx-6 mt-0 mb-5'
@@ -75,6 +76,9 @@ const Content = () => {
         </li>
         <li>
           <Uber1000Services />
+        </li>
+        <li>
+          <KrakenMicroservices />
         </li>
       </ul>
     </>
