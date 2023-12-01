@@ -11,6 +11,7 @@ import BuildingScalableHighlyConcurrentFaultTolerantSystems from '@/blog/lecture
 import MartinMicroservices from '@/blog/lectures/microservices-martin fowler-goto-2014'
 import Uber1000Services from '@/blog/lectures/uber-1000-services'
 import KrakenMicroservices from '@/blog/lectures/kraken-rust-microservices'
+import BuildingReliableSystemsDoorDash from '@/blog/lectures/building-reliable-systems-doordash'
 
 const Content = () => {
   const listStyle = 'list-disc mx-6 mt-0 mb-5'
@@ -79,6 +80,9 @@ const Content = () => {
         </li>
         <li>
           <KrakenMicroservices />
+        </li>
+        <li>
+          <BuildingReliableSystemsDoorDash />
         </li>
       </ul>
     </>
