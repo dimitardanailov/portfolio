@@ -25,15 +25,15 @@ const Component = () => {
             in December 2004.
           </span>
           <span className="block">
-            Lecture Info: From Fluent 2015. "JavaScript is almost 20 years old,
+            Lecture Info: From Fluent 2015. JavaScript is almost 20 years old,
             and moving faster than ever. ES6/2015 was voted through Ecma TC39 in
             Paris last month, ES7/2016 is being developed concurrently to prime
             the annual release pump, and use of compilers, notably Babel and
             Traceur, is on the rise. Low-level APIs such as SIMD, WebGL2, and
             64-bit integer Math methods combine with higher-level facilities
             from generators and promises to async/await to cover the space of
-            safely programmable hardware. Is there anything JS cannot do? I’ll
-            give some answers.
+            safely programmable hardware. Is there anything JS cannot do?
+            I&rsquo;ll give some answers.
           </span>
         </>
       </BlogLectureDescription>
