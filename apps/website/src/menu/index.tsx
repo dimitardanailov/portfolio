@@ -3,6 +3,7 @@ import HomeIcon from '@mui/icons-material/Home'
 import WorkIcon from '@mui/icons-material/Work'
 import SchoolIcon from '@mui/icons-material/School'
 import FeaturedPlayListIcon from '@mui/icons-material/FeaturedPlayList'
+import ArticleIcon from '@mui/icons-material/Article'
 
 export type MenuItem = {
   key: string
@@ -52,10 +53,19 @@ export const Positions = {
   Icon: <FeaturedPlayListIcon />,
 }
 
+export const Articles = {
+  key: 'articles',
+  text: '<articles />',
+  title: 'Articles about react, vercel, nextjs, nodejs, aws, blockchain',
+  href: 'articles',
+  Icon: <ArticleIcon />,
+}
+
 export const menuItems: MenuItem[] = [
   Home,
   HireMe,
   RecommendationLetters,
   Certificates,
   Positions,
+  Articles,
 ]
