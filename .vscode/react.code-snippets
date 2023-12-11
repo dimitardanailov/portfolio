@@ -20,5 +20,33 @@
       "",
       "export default $0"
     ]
+  },
+  "CustomYoutubeArticle": {
+    "prefix": "ddblogyoutubearticle",
+    "body": [
+      "'use client'",
+      "",
+      "import TargetBlankLink from '@/components/TargetBlankLink'",
+      "import BlogLectureTitle from '@/components/BlogLectureTitle'",
+      "import BlogLectureDescription from '@/components/BlogLectureDescription'",
+      "",
+      "const Component = () => {"
+      "  const title = ''",
+      "",
+      "  return (",
+      "    <article className=\"blog-list-article\">",
+      "      <BlogLectureTitle text={title} />"
+      "      <BlogLectureDescription>",
+      "        <>",
+      "        </>",
+      "      </BlogLectureDescription>",
+      "      <span className=\"text-bold\">Video: </span>",
+      "      <TargetBlankLink href=\"\" text={title} title={title} />",
+      "    </article>",
+      "  )",
+      "}",
+      "",
+      "export default Component",
+    ]
   }
 }
