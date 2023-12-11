@@ -4,6 +4,9 @@ import {Slogan} from '@/styled-components'
 import {Keyword} from '@/components/SEO'
 
 import EcmascriptHarmonyRiseCompilers from '@/blog/lectures/ecmascript-harmony-rise-compilers'
+import HoldingPerformancePromises from '@/blog/lectures/holding-performance-promises'
+import RailsConf2015StrongCodeReviewCulture from '@/blog/lectures/rails-2015-implementing-strong-code-review-culture'
+import DockerKubernetes from '@/blog/courses/docker-kubernetes-fundamentals'
 
 const Content = () => {
   const listStyle = 'list-disc mx-6 mt-0 mb-5'
@@ -30,6 +33,9 @@ const Content = () => {
         <li>
           <Keyword word="Pull requests tips and tricks" />
         </li>
+        <li>
+          <Keyword word="Docker Containers and Kubernetes Fundamentals" />
+        </li>
       </ul>
 
       <p className="mt-1">Video presentations:</p>
@@ -37,6 +43,15 @@ const Content = () => {
       <ul>
         <li>
           <EcmascriptHarmonyRiseCompilers />
+        </li>
+        <li>
+          <HoldingPerformancePromises />
+        </li>
+        <li>
+          <RailsConf2015StrongCodeReviewCulture />
+        </li>
+        <li>
+          <DockerKubernetes />
         </li>
       </ul>
     </>
