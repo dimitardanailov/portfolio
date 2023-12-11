@@ -22,7 +22,7 @@
     "@cosmjs/encoding": "^0.28.0",
     "@cosmjs/faucet": "^0.28.0",
     "@cosmjs/proto-signing": "^0.28.0",
-    "@cosmjs/stargate": "^0.28.0",
+    "@cosmjs/stargate": "^0.32.1",
     "bignumber.js": "^9.0.2",
     "dotenv": "^16.0.0",
     "elliptic": "^6.5.4",
