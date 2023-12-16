@@ -6,6 +6,8 @@ export const title = 'Backend nodejs engineering onboarding'
 
 export const canonical = folder + sanitizeUrl(title)
 
+export const slogan = 'The art of onboarding of a new backend engineer'
+
 export const tags = [
   'nodejs',
   'agile',

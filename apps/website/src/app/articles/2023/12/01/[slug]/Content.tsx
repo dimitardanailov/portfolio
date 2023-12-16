@@ -8,12 +8,14 @@ import HoldingPerformancePromises from '@/blog/lectures/holding-performance-prom
 import RailsConf2015StrongCodeReviewCulture from '@/blog/lectures/rails-2015-implementing-strong-code-review-culture'
 import DockerKubernetes from '@/blog/courses/docker-kubernetes-fundamentals'
 
+import {slogan} from './seo'
+
 const Content = () => {
   const listStyle = 'list-disc mx-6 mt-0 mb-5'
 
   return (
     <>
-      <Slogan>The art of onboarding of a new backend engineer</Slogan>
+      <Slogan>{slogan}</Slogan>
 
       <p>
         My manager gave me as a task to help of onboarding of a new team member

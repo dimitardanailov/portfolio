@@ -16,3 +16,8 @@ export const tags = [
 
 export const description =
   'Resources about system design, distributed systems, microservices and monolith'
+
+export const listItem = {
+  canonical,
+  slogan: title,
+}

@@ -2,14 +2,20 @@
 
 import Link from 'next/link'
 
-import {title, canonical} from './2023/11/28/[slug]/seo'
+import articles from './articles'
 
-const Content = () => {
-  return (
-    <>
-      <Link href={canonical}>{title}</Link>
-    </>
-  )
+const Content = async () => {
+  const listStyle = 'list-disc mx-6 mt-0 mb-5'
+
+  const listItems = articles.map((article, i) => (
+    <li key={i}>
+      <Link key={i} title={article.title} href={article.href}>
+        {article.text}
+      </Link>
+    </li>
+  ))
+
+  return <ul className={listStyle}>{listItems}</ul>
 }
 
 export default Content
