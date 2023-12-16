@@ -22,6 +22,7 @@
     "@types/react": "18.2.13",
     "@types/react-dom": "18.2.17",
     "@vercel/analytics": "^1.1.1",
+    "@vercel/speed-insights": "^1.0.2",
     "@xstate/cli": "^0.5.11",
     "@xstate/react": "^3.2.2",
     "autoprefixer": "^10.4.14",
