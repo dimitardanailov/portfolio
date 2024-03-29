@@ -9,7 +9,7 @@ const Accomplishments = () => {
       <div className="font-bold">Accomplishments</div>
       <ul className={listStyle}>
         <li>
-          13+ years experience. My portfolio includes clients located: USA,
+          14+ years experience. My portfolio includes clients located: USA,
           Singapore, Israel, Germany, Great Britain, Switzerland, United Arab
           Emirates, Indonesia;
         </li>
