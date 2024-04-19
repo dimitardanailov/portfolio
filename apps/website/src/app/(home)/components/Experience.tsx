@@ -22,7 +22,7 @@ const Contractor = () => {
             text="Collinson group"
             href="https://www.collinsongroup.com/"
           />
-          : August - present (Team size: 20+)
+          : August - present (Team size: 40+)
         </li>
         <li>
           <PositionLink
@@ -55,12 +55,22 @@ const Contractor = () => {
           : Sep, 2021 - August, 2022; (Team size: 20+);
         </li>
         <li>
-          Software Engineering Manager, Elephant stocks: Sep, 2021 - 2022; (Team
-          size: 20+);
+          Software Engineering Manager,{' '}
+          <TargetBlankLink
+            text="Elephant stocks"
+            title="Software Engineering Manager at Elephant stocks"
+            href="https://www.elephantstock.com/"
+          />
+          : Sep, 2021 - 2022; (Team size: 20+);
         </li>
         <li>
-          Software Architect, Getcraft.com: July, 2020 - June, 2021; (Team size:
-          20+)
+          Software Architect,{' '}
+          <TargetBlankLink
+            text="Getcraft.com"
+            title="Software Architect at Elephant stocks"
+            href="https://www.getcraft.com"
+          />
+          : July, 2020 - June, 2021; (Team size: 20+)
         </li>
       </ul>
     </div>
