@@ -41,7 +41,7 @@ export const Certificates = {
   key: 'certificates',
   text: '<certificates />',
   title: 'Certified Engineer by Google, Meta, AWS',
-  href: 'certificates',
+  href: '/certificates',
   Icon: <SchoolIcon />,
 }
 
@@ -49,7 +49,7 @@ export const Positions = {
   key: 'positions',
   text: '<positions />',
   title: 'Ex CTO, Staff Engineer, Architect and Engineering manager',
-  href: 'positions',
+  href: '/positions',
   Icon: <FeaturedPlayListIcon />,
 }
 
@@ -57,7 +57,7 @@ export const Articles = {
   key: 'articles',
   text: '<articles />',
   title: 'Articles about react, vercel, nextjs, nodejs, aws, blockchain',
-  href: 'articles',
+  href: '/articles',
   Icon: <ArticleIcon />,
 }
 

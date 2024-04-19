@@ -48,6 +48,11 @@ const nextConfig = {
           '/articles/2023/11/28/system-design-collection-about-web-development-scalability-distributed-systems-realtime-and-streaming-microservices-and-monolith',
         permanent: true,
       },
+      {
+        source: '/positions/positions',
+        destination: '/positions',
+        permanent: true,
+      },
     ]
   },
 }
