@@ -7,6 +7,8 @@ import {listStyle} from '@/shared/tailwind'
 import {Keyword} from '@/components/SEO'
 import TargetBlankLink from '@/components/TargetBlankLink'
 
+import {experienceByYears} from '@/constants/text'
+
 function link(sufix: string) {
   const domain = '/certificates/'
 
@@ -217,7 +219,7 @@ const Content = () => {
   return (
     <>
       <Slogan>
-        <span className="active-color">13 years</span> of{' '}
+        <span className="active-color">{experienceByYears} years</span> of{' '}
         <span className="active-color">helping</span> build an inclusive{' '}
         <span className="active-color">web2</span> or{' '}
         <span className="active-color">web3</span> projects
