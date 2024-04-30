@@ -32,7 +32,7 @@ export const RecommendationLetters = {
 export const HireMe = {
   key: 'hire-me',
   text: '<hire-me/>',
-  title: '13 years of helping build an inclusive web2 or web3 projects',
+  title: '14 years of helping build an inclusive web2 or web3 projects',
   href: '/hire-me',
   Icon: <WorkIcon />,
 }
