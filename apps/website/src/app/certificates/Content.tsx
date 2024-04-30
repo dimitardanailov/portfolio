@@ -20,6 +20,10 @@ const Blockchain = () => {
     <>
       <h2>Blockchain and Defi</h2>
       <ul className={listStyle}>
+        <li>Blockchain Basics. Authorized by Cyfrin Updraft</li>
+        <li>
+          Smart contract development with Solidity. Authorized by Cyfrin Updraft
+        </li>
         <li>
           <TargetBlankLink
             Element={
