@@ -9,13 +9,14 @@ const Skills: FC = () => {
     <>
       <div className="font-bold">Skills</div>
       <ul className={listStyle}>
-        <li>Nodejs: Typescript, Nestsjs, Express, Hapi, etherjs, web3js</li>
+        <li>Nodejs: Typescript, Nestjs, Express, Hapi, etherjs, web3js</li>
         <li>
           React: Typescript, Nextjs, Vercel, Redux, GraphQL, React Native;
         </li>
         <li>Cloud Development: AWS, Azure, Google Cloud;</li>
         <li>
-          Blockchain: Solidity, Etherium, Algorand, Cosmos, Elrond, Polygon;
+          Blockchain: Solidity, Etherium, Algorand, Cosmos, Elrond, Polygon,
+          ZkSync, Hardhat, Foundry;
         </li>
         <li>
           Database Systems: PostgreSQL, MySQL, MSSQL, NoSQL, MongoDB,
