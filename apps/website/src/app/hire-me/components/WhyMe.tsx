@@ -5,7 +5,7 @@ import {listStyle} from './shared'
 const Component = () => {
   return (
     <>
-      <div>Why me:</div>
+      <div className="font-bold">Why me:</div>
       <ul className={listStyle}>
         <li>
           Deep understanding for upcoming technologies to solve complex business
