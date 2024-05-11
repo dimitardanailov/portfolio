@@ -22,9 +22,7 @@ const Content = () => {
       </HFlexBox>
       <HFlexBox>
         <StrongLabel width={width}>Role:</StrongLabel>
-        <span>
-          <Keyword word="Blockchain Architect" /> / Senior Architect
-        </span>
+        <Keyword word="Blockchain / Senior Architect" />
       </HFlexBox>
       <HFlexBox>
         <StrongLabel width={width}>Team Size:</StrongLabel>

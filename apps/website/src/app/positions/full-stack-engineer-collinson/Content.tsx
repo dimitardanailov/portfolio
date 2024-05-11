@@ -5,6 +5,7 @@ import TargetBlankLink from '@/components/TargetBlankLink'
 import {HFlexBox} from '@/styled-components/Grid'
 
 import stack from './stack'
+import {Keyword} from '@/components/SEO'
 
 const Content = () => {
   const width = 130
@@ -21,7 +22,7 @@ const Content = () => {
       </HFlexBox>
       <HFlexBox>
         <StrongLabel width={width}>Role:</StrongLabel>
-        <span>Full Stack Engineer</span>
+        <Keyword word="Full Stack Engineer, Tech Lead" />
       </HFlexBox>
       <HFlexBox>
         <StrongLabel width={width}>Team Size:</StrongLabel>
