@@ -22,7 +22,7 @@ const Contractor = () => {
             text="Collinson group"
             href="https://www.collinsongroup.com/"
           />
-          : 2023 - 2024 (Team size: 40+)
+          : August, 2023 - March, 2024 (Team size: 40+)
         </li>
         <li>
           <PositionLink
@@ -38,8 +38,8 @@ const Contractor = () => {
           : March - June (2023) (Team size: 15+);
         </li>
         <li>
-          Fullstack JS DevOps Architect, The international red cross: 2022 -
-          2023; (Team size: 8);
+          Fullstack JS DevOps Architect, The international red cross: Oct, 2022
+          - Feb, 2023; (Team size: 8);
         </li>
         <li>
           <PositionLink
@@ -61,7 +61,7 @@ const Contractor = () => {
             title="Software Engineering Manager at Elephant stocks"
             href="https://www.elephantstock.com/"
           />
-          : Sep, 2020 - 2021; (Team size: 20+);
+          : Sep, 2020 - June, 2021; (Team size: 20+);
         </li>
         <li>
           Software Architect,{' '}
