@@ -10,7 +10,7 @@ const Content = async () => {
   const listItems = articles.map((article, i) => (
     <li key={i}>
       <Link key={i} title={article.title} href={article.href}>
-        {article.text}
+        <span className="hover:underline">{article.text}</span>
       </Link>
     </li>
   ))
