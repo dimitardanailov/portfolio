@@ -9,6 +9,8 @@ import TargetBlankLink from '@/components/TargetBlankLink'
 
 import {experienceByYears} from '@/constants/text'
 
+import {SectionTitle} from './components'
+
 function link(sufix: string) {
   const domain = '/certificates/'
 
@@ -18,11 +20,12 @@ function link(sufix: string) {
 const Blockchain = () => {
   return (
     <>
-      <h2>Blockchain and Defi</h2>
+      <SectionTitle text="Blockchain and Defi" />
       <ul className={listStyle}>
         <li>Blockchain Basics. Authorized by Cyfrin Updraft</li>
         <li>
-          Smart contract development with Solidity. Authorized by Cyfrin Updraft
+          <Keyword word="Smart contract development with Solidity" />.
+          Authorized by Cyfrin Updraft
         </li>
         <li>
           <TargetBlankLink
@@ -65,9 +68,11 @@ const Blockchain = () => {
 }
 
 const WebMobile = () => {
+  const sectionTitle = 'Web and Mobile Development'
+
   return (
     <>
-      <h2>Web and Mobile Development(React specialization)</h2>
+      <SectionTitle text={sectionTitle} />
 
       <ul className={listStyle}>
         <li>
@@ -84,7 +89,12 @@ const WebMobile = () => {
         </li>
         <li>
           <TargetBlankLink
-            Element={<span>Introduction to Mobile Development;</span>}
+            Element={
+              <span>
+                Introduction to Mobile Development with{' '}
+                <Keyword word="React Native" />;
+              </span>
+            }
             href={link('mobile/intro.pdf')}
             title="Introduction to Mobile Development"
           />
@@ -97,7 +107,7 @@ const WebMobile = () => {
 const CloudDevelopment = () => {
   return (
     <>
-      <h2>Cloud development and Containerization</h2>
+      <SectionTitle text="Cloud development and Containerization" />
       <ul className={listStyle}>
         <li>
           <TargetBlankLink
@@ -119,7 +129,7 @@ const CloudDevelopment = () => {
 const MachineLearning = () => {
   return (
     <>
-      <h2>Machine Learning and Artificial Intelligence</h2>
+      <SectionTitle text="Machine Learning and Artificial Intelligence" />
       <ul className={listStyle}>
         <li>
           <TargetBlankLink
@@ -143,7 +153,7 @@ const MachineLearning = () => {
 const DatabaseStorage = () => {
   return (
     <>
-      <h2>Databases and Storages</h2>
+      <SectionTitle text="Databases and Storages" />
       <ul className={listStyle}>
         <li>
           <TargetBlankLink
@@ -178,7 +188,7 @@ const DatabaseStorage = () => {
 const ProjectManagement = () => {
   return (
     <>
-      <h2>Project management and Agile Development</h2>
+      <SectionTitle text="Project management and Agile Development" />
       <ul className={listStyle}>
         <li>
           <TargetBlankLink
