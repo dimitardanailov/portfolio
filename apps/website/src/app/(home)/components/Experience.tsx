@@ -22,7 +22,7 @@ const Contractor = () => {
             text="Collinson group"
             href="https://www.collinsongroup.com/"
           />
-          : August - present (Team size: 40+)
+          : 2023 - 2024 (Team size: 40+)
         </li>
         <li>
           <PositionLink
@@ -61,7 +61,7 @@ const Contractor = () => {
             title="Software Engineering Manager at Elephant stocks"
             href="https://www.elephantstock.com/"
           />
-          : Sep, 2021 - 2022; (Team size: 20+);
+          : Sep, 2020 - 2021; (Team size: 20+);
         </li>
         <li>
           Software Architect,{' '}
@@ -70,7 +70,7 @@ const Contractor = () => {
             title="Software Architect at Elephant stocks"
             href="https://www.getcraft.com"
           />
-          : July, 2020 - June, 2021; (Team size: 20+)
+          : July, 2019 - June, 2020; (Team size: 20+)
         </li>
       </ul>
     </div>
@@ -82,9 +82,9 @@ const OnSite = () => {
     <div className={conttainerClassName}>
       <section>On site employment: 2010 - 2018</section>
       <ul className={listStyle}>
-        <li>Technical Architect, LiveArea: 2018 - 2019; (Team size: 10+);</li>
+        <li>Technical Architect, LiveArea: 2017 - 2018; (Team size: 10+);</li>
         <li>
-          Full Stack Software Architect, Mentormate: 2015 - 2018; (Team size:
+          Full Stack Software Architect, Mentormate: 2015 - 2017; (Team size:
           100+);
         </li>
         <li>
