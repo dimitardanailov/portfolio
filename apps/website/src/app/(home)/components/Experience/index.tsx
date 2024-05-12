@@ -2,7 +2,7 @@
 
 import TargetBlankLink from '@/components/TargetBlankLink'
 import PositionLink from '@/components/PositionLink'
-import {listStyle} from './shared'
+import {listStyle} from '../shared'
 
 const conttainerClassName = 'mx-2'
 
