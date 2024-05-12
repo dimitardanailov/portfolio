@@ -8,9 +8,9 @@ import {listStyle} from '@/shared/tailwind'
 
 import stack from './stack'
 
-const Content = () => {
-  const width = 130
+import {width} from '../consants'
 
+const Content = () => {
   return (
     <>
       <HFlexBox>

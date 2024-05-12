@@ -7,9 +7,9 @@ import {HFlexBox} from '@/styled-components/Grid'
 import stack from './stack'
 import {Keyword} from '@/components/SEO'
 
-const Content = () => {
-  const width = 130
+import {width} from '../consants'
 
+const Content = () => {
   return (
     <>
       <HFlexBox>
