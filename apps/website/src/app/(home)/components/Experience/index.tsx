@@ -2,9 +2,63 @@
 
 import TargetBlankLink from '@/components/TargetBlankLink'
 import PositionLink from '@/components/PositionLink'
+
+import positions from '@/app/positions/db'
+
 import {listStyle} from '../shared'
 
 const conttainerClassName = 'mx-2'
+
+const Collinson = () => {
+  return (
+    <>
+      <PositionLink
+        sufix="full-stack-engineer-collinson"
+        position="Full Stack Engineer, Tech Lead"
+      />
+      ,{' '}
+      <TargetBlankLink
+        title="Full Stack Engineer, Tech Lead"
+        text="Collinson group"
+        href="https://www.collinsongroup.com/"
+      />
+      : August, 2023 - March, 2024 (Team size: 40+)
+    </>
+  )
+}
+
+const Siemens = () => {
+  return (
+    <>
+      <PositionLink
+        sufix="blockchain-architect-siemens-energy"
+        position="Blockchain Architect"
+      />
+      ,{' '}
+      <TargetBlankLink
+        text="Siemens Energy"
+        title="Blockchain Architect"
+        href="https://www.siemens-energy.com/global/en/home.html"
+      />
+      : March - June (2023) (Team size: 15+);
+    </>
+  )
+}
+
+const TheInternationRedCross = () => {
+  const {position, teamSize, sufix, externalUrl, company, period} =
+    positions.theInternationRedCross
+
+  return (
+    <>
+      <PositionLink sufix={sufix} position={position} />,{' '}
+      <TargetBlankLink text={company} title={position} href={externalUrl} />
+      <span>
+        : {period} (Team size: {teamSize});
+      </span>
+    </>
+  )
+}
 
 const Contractor = () => {
   return (
@@ -12,34 +66,14 @@ const Contractor = () => {
       <section>Remote B2B Contractor (2018 - present)</section>
       <ul className={listStyle}>
         <li>
-          <PositionLink
-            sufix="full-stack-engineer-collinson"
-            position="Full Stack Engineer"
-          />
-          ,{' '}
-          <TargetBlankLink
-            title="Full Stack Engineer"
-            text="Collinson group"
-            href="https://www.collinsongroup.com/"
-          />
-          : August, 2023 - March, 2024 (Team size: 40+)
+          <Collinson />
+        </li>
+
+        <li>
+          <Siemens />
         </li>
         <li>
-          <PositionLink
-            sufix="blockchain-architect-siemens-energy"
-            position="Blockchain Architect"
-          />
-          ,{' '}
-          <TargetBlankLink
-            text="Siemens Energy"
-            title="Blockchain Architect"
-            href="https://www.siemens-energy.com/global/en/home.html"
-          />
-          : March - June (2023) (Team size: 15+);
-        </li>
-        <li>
-          Fullstack JS DevOps Architect, The international red cross: Oct, 2022
-          - Feb, 2023; (Team size: 8);
+          <TheInternationRedCross />
         </li>
         <li>
           <PositionLink
