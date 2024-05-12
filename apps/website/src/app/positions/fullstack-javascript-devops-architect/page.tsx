@@ -11,10 +11,10 @@ import {menuItems} from '@/menu'
 import {drawerWidth} from '@/config/layout'
 import {LayoutProvider} from '@/providers'
 
-import {role} from './details'
+import {position} from './details'
 
 const Title = () => {
-  return <h1>{role}</h1>
+  return <h1>{position}</h1>
 }
 
 const PageContent = () => {

@@ -6,7 +6,7 @@ import {HFlexBox} from '@/styled-components/Grid'
 
 import {Keyword} from '@/components/SEO'
 
-import {role, teamSize} from './details'
+import {position as role, teamSize} from './details'
 import stack from './stack'
 
 import {width} from '../consants'
