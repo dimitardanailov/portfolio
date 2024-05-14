@@ -40,6 +40,32 @@ const Content = () => {
         </li>
         <li>
           <TargetBlankLink
+            href="https://ddanailov.dev/letters/tech-lead.pdf"
+            title={generateLinkTitle('Recommendation Letter, Tech Lead')}
+            text="Recommendation Letter, Tech Lead"
+            hoverIsActive={true}
+          />
+        </li>
+        <li>
+          <TargetBlankLink
+            href="https://ddanailov.dev/letters/senior-architect.pdf"
+            title={generateLinkTitle('Experience letter, Siemens Energy')}
+            text="Experience letter, Siemens Energy"
+            hoverIsActive={true}
+          />
+        </li>
+        <li>
+          <TargetBlankLink
+            href="https://ddanailov.dev/letters/blockchain-staff-engineer.pdf"
+            title={generateLinkTitle(
+              'Recommendation letter, Blockchain Staff Engineer',
+            )}
+            text="Recommendation letter, Blockchain Staff Engineer"
+            hoverIsActive={true}
+          />
+        </li>
+        <li>
+          <TargetBlankLink
             href="https://ddanailov.dev/resumes/dimitar-danailov-documents.zip"
             title={generateLinkTitle('Documents')}
             text="Download all documents"
