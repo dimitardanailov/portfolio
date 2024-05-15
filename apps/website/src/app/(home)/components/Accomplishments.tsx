@@ -2,6 +2,7 @@
 
 import TargetBlankLink from '@/components/TargetBlankLink'
 import {listStyle} from './shared'
+import {experienceByYears} from '@/constants/text'
 
 const Accomplishments = () => {
   return (
@@ -9,9 +10,11 @@ const Accomplishments = () => {
       <div className="font-bold">Accomplishments</div>
       <ul className={listStyle}>
         <li>
-          14+ years experience. My portfolio includes clients located: USA,
-          Singapore, Israel, Germany, Great Britain, Switzerland, United Arab
-          Emirates, Indonesia;
+          <span className="font-bold">
+            {experienceByYears}+ years experience
+          </span>
+          . My portfolio includes clients located: USA, Singapore, Israel,
+          Germany, Great Britain, Switzerland, United Arab Emirates, Indonesia;
         </li>
         <li>
           <TargetBlankLink
@@ -25,7 +28,11 @@ const Accomplishments = () => {
         <li>Management and Leadership skills: 10+ years;</li>
         <li>
           <TargetBlankLink
-            text="Top 4% user in Stack Overflow"
+            Element={
+              <span className="Top 4% user in Stack Overflow">
+                Top 4% user in Stack Overflow
+              </span>
+            }
             title="Top 4% user in Stack Overflow"
             href="https://stackoverflow.com/users/609707/d-danailov"
           ></TargetBlankLink>
