@@ -1,7 +1,7 @@
 'use client'
 
 import {Slogan} from '@/styled-components'
-import {Documents, WhyMe, Expertise} from './components'
+import {Documents, WhyMe, Expertise, ArrangeMeeting} from './components'
 
 const Content = () => {
   return (
@@ -15,6 +15,7 @@ const Content = () => {
       <WhyMe />
       <Expertise />
       <Documents />
+      <ArrangeMeeting />
     </>
   )
 }
