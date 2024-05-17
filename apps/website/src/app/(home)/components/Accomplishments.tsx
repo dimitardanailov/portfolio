@@ -29,13 +29,11 @@ const Accomplishments = () => {
         <li>
           <TargetBlankLink
             Element={
-              <span className="Top 4% user in Stack Overflow">
-                Top 4% user in Stack Overflow
-              </span>
+              <span className="font-bold">Top 4% user in Stack Overflow</span>
             }
             title="Top 4% user in Stack Overflow"
             href="https://stackoverflow.com/users/609707/d-danailov"
-          ></TargetBlankLink>
+          />
         </li>
       </ul>
     </>
