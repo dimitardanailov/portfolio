@@ -13,7 +13,7 @@ const Accomplishments = () => {
           <span className="font-bold">
             {experienceByYears}+ years experience
           </span>
-          . My portfolio includes clients located: USA, Singapore, Israel,
+          . My portfolio includes clients based in USA, Singapore, Israel,
           Germany, Great Britain, Switzerland, United Arab Emirates, Indonesia;
         </li>
         <li>
