@@ -9,18 +9,22 @@ const Skills: FC = () => {
     <>
       <div className="font-bold">Skills</div>
       <ul className={listStyle}>
-        <li>Nodejs: Typescript, Nestjs, Express, Hapi, etherjs, web3js</li>
+        <li>
+          Nodejs: Typescript, Nestjs, Express, Hapi, etherjs, web3js,
+          zksync-ethers
+        </li>
         <li>
           React: Typescript, Nextjs, Vercel, Redux, GraphQL, React Native;
         </li>
         <li>Cloud Development: AWS, Azure, Google Cloud;</li>
+        <li>Blockchain EVM / Etherium: Solidity, Hardhat, Foundry;</li>
         <li>
-          Blockchain: Solidity, Etherium, Algorand, Cosmos, Elrond, Polygon,
-          ZkSync, Hardhat, Foundry;
+          Blockchain Custody Wallet: Algorand, Binance Smart Chain, Cosmos,
+          Elrond, Polygon
         </li>
         <li>
-          Database Systems: PostgreSQL, MySQL, MSSQL, NoSQL, MongoDB,
-          OpenSearch, Elastic Search;
+          Databases: PostgreSQL, MySQL, MSSQL, NoSQL, MongoDB, OpenSearch,
+          Elastic Search;
         </li>
         <li>
           Containers and orchestration: Docker, Kubernetes, OpenShift, Vagrant,
