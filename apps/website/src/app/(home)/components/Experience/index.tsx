@@ -1,5 +1,7 @@
 'use client'
 
+import Position from '@/types/Position'
+
 import ExperiencePosition from '@/components/ExperiencePosition'
 import TargetBlankLink from '@/components/TargetBlankLink'
 import PositionLink from '@/components/PositionLink'
@@ -28,21 +30,24 @@ const Siemens = () => {
   )
 }
 
+const Roles = () => {
+  const roles = Array.from(positions.values())
+
+  return roles.map((position: Position, index: number) => {
+    return (
+      <li key={index}>
+        <ExperiencePosition position={position} />
+      </li>
+    )
+  })
+}
+
 const Contractor = () => {
   return (
     <div className={conttainerClassName}>
       <section>Remote B2B Contractor (2018 - present)</section>
       <ul className={listStyle}>
-        <li>
-          <ExperiencePosition position={positions.collinsonGroup} />
-        </li>
-
-        <li>
-          <Siemens />
-        </li>
-        <li>
-          <ExperiencePosition position={positions.theInternationRedCross} />
-        </li>
+        <Roles />
         <li>
           <PositionLink
             sufix="blockchain-staff-engineer-propine"
