@@ -1,4 +1,4 @@
-import type Position from '../types/Position'
+import type Position from '@/types/Position'
 
 const position = 'Fullstack Javascript DevOps Architect'
 const teamSize = '8+'
