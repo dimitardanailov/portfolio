@@ -8,24 +8,26 @@ import stack from './stack'
 
 import {width} from '../consants'
 
+import position from './details'
+
 const Content = () => {
   return (
     <>
       <HFlexBox>
         <StrongLabel width={width}>Company:</StrongLabel>
         <TargetBlankLink
-          href="https://www.elephantstock.com/"
-          title="Software Engineering Manager, elephantstock.com"
-          text="Elephantstock.com"
+          href={position.externalUrl}
+          title={position.title}
+          text={position.company}
         />
       </HFlexBox>
       <HFlexBox>
         <StrongLabel width={width}>Role:</StrongLabel>
-        <span>Software Engineering Manager</span>
+        <span>{position.title}</span>
       </HFlexBox>
       <HFlexBox>
         <StrongLabel width={width}>Team Size:</StrongLabel>
-        <span>10+</span>
+        <span>{position.teamSize}</span>
       </HFlexBox>
       <HFlexBox>
         <StrongLabel width={width}>Technologies:</StrongLabel>

@@ -4,7 +4,6 @@ import Position from '@/types/Position'
 
 import ExperiencePosition from '@/components/ExperiencePosition'
 import TargetBlankLink from '@/components/TargetBlankLink'
-import PositionLink from '@/components/PositionLink'
 
 import positions from '@/app/positions/db'
 
@@ -12,30 +11,12 @@ import {listStyle} from '../shared'
 
 const conttainerClassName = 'mx-2'
 
-const Siemens = () => {
-  return (
-    <>
-      <PositionLink
-        sufix="blockchain-architect-siemens-energy"
-        position="Blockchain Architect"
-      />
-      ,{' '}
-      <TargetBlankLink
-        text="Siemens Energy"
-        title="Blockchain Architect"
-        href="https://www.siemens-energy.com/global/en/home.html"
-      />
-      : March - June (2023) (Team size: 15+);
-    </>
-  )
-}
-
 const Roles = () => {
   const roles = Array.from(positions.values())
 
-  return roles.map((position: Position, index: number) => {
+  return roles.map((position: Position) => {
     return (
-      <li key={index}>
+      <li key={position.sufix}>
         <ExperiencePosition position={position} />
       </li>
     )
@@ -49,32 +30,10 @@ const Contractor = () => {
       <ul className={listStyle}>
         <Roles />
         <li>
-          <PositionLink
-            sufix="blockchain-staff-engineer-propine"
-            position="BlockChain Staff Engineer"
-          />
-          ,{' '}
-          <TargetBlankLink
-            text="Propine.com"
-            title="BlockChain Staff Engineer at Propine.com"
-            href="https://www.propine.com"
-          />
-          : Sep, 2021 - August, 2022; (Team size: 20+);
-        </li>
-        <li>
-          Software Engineering Manager,{' '}
-          <TargetBlankLink
-            text="Elephant stocks"
-            title="Software Engineering Manager at Elephant stocks"
-            href="https://www.elephantstock.com/"
-          />
-          : Sep, 2020 - June, 2021; (Team size: 20+);
-        </li>
-        <li>
           Software Architect,{' '}
           <TargetBlankLink
             text="Getcraft.com"
-            title="Software Architect at Elephant stocks"
+            title="Software Architect at getcraft.com"
             href="https://www.getcraft.com"
           />
           : July, 2019 - June, 2020; (Team size: 20+)
