@@ -3,7 +3,6 @@
 import Position from '@/types/Position'
 
 import ExperiencePosition from '@/components/ExperiencePosition'
-import TargetBlankLink from '@/components/TargetBlankLink'
 
 import positions from '@/app/positions/db'
 
@@ -29,15 +28,6 @@ const Contractor = () => {
       <section>Remote B2B Contractor (2018 - present)</section>
       <ul className={listStyle}>
         <Roles />
-        <li>
-          Software Architect,{' '}
-          <TargetBlankLink
-            text="Getcraft.com"
-            title="Software Architect at getcraft.com"
-            href="https://www.getcraft.com"
-          />
-          : July, 2019 - June, 2020; (Team size: 20+)
-        </li>
       </ul>
     </div>
   )
