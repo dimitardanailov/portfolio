@@ -2,7 +2,10 @@
 
 import Collinson from './full-stack-engineer-collinson/Content'
 import SiemensEnergy from './blockchain-architect-siemens-energy/Content'
+import TheInternationRedCross from './fullstack-javascript-devops-architect/Content'
 import Propine from './blockchain-staff-engineer-propine/Content'
+import Elephantstock from './software-engineering-manager/Content'
+import GetCraft from './software-architect-getcraft/Content'
 
 import styled from 'styled-components'
 
@@ -24,7 +27,13 @@ const Content = () => {
       <Divider />
       <SiemensEnergy />
       <Divider />
+      <TheInternationRedCross />
+      <Divider />
       <Propine />
+      <Divider />
+      <Elephantstock />
+      <Divider />
+      <GetCraft />
     </>
   )
 }
