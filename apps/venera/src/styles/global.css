@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active-color {
+  color: #ff9800;
+  text-shadow: -1px 1px #000;
+}
+
+.left-drawer-text-item {
+  font-size: 0.9rem;
+}
+
+.left-drawer-text-item:hover {
+  text-decoration: underline;
+}
+
+.blog-list-article {
+  position: relative;
+
+  padding-bottom: 0.5rem;
+}
+
+.blog-list-article:first-child {
+  margin-top: 0.5rem;
+}
+
+.text-bold {
+  font-weight: bold;
+}
