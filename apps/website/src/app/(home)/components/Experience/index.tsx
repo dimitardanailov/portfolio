@@ -1,5 +1,6 @@
 'use client'
 
+import ExperiencePosition from '@/components/ExperiencePosition'
 import TargetBlankLink from '@/components/TargetBlankLink'
 import PositionLink from '@/components/PositionLink'
 
@@ -8,24 +9,6 @@ import positions from '@/app/positions/db'
 import {listStyle} from '../shared'
 
 const conttainerClassName = 'mx-2'
-
-const Collinson = () => {
-  return (
-    <>
-      <PositionLink
-        sufix="full-stack-engineer-collinson"
-        position="Full Stack Engineer, Tech Lead"
-      />
-      ,{' '}
-      <TargetBlankLink
-        title="Full Stack Engineer, Tech Lead"
-        text="Collinson group"
-        href="https://www.collinsongroup.com/"
-      />
-      : August, 2023 - March, 2024 (Team size: 40+)
-    </>
-  )
-}
 
 const Siemens = () => {
   return (
@@ -45,35 +28,20 @@ const Siemens = () => {
   )
 }
 
-const TheInternationRedCross = () => {
-  const {position, teamSize, sufix, externalUrl, company, period} =
-    positions.theInternationRedCross
-
-  return (
-    <>
-      <PositionLink sufix={sufix} position={position} />,{' '}
-      <TargetBlankLink text={company} title={position} href={externalUrl} />
-      <span>
-        : {period} (Team size: {teamSize});
-      </span>
-    </>
-  )
-}
-
 const Contractor = () => {
   return (
     <div className={conttainerClassName}>
       <section>Remote B2B Contractor (2018 - present)</section>
       <ul className={listStyle}>
         <li>
-          <Collinson />
+          <ExperiencePosition position={positions.collinsonGroup} />
         </li>
 
         <li>
           <Siemens />
         </li>
         <li>
-          <TheInternationRedCross />
+          <ExperiencePosition position={positions.theInternationRedCross} />
         </li>
         <li>
           <PositionLink

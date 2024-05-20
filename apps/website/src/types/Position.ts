@@ -1,5 +1,5 @@
 type Position = {
-  position: string
+  title: string
   teamSize: string
   sufix: string
   externalUrl: string

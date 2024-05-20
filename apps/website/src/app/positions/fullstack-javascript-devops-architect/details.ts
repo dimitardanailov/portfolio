@@ -4,7 +4,7 @@ const position = 'Fullstack Javascript DevOps Architect'
 const teamSize = '8+'
 
 const theInternationRedCross: Position = {
-  position,
+  title: position,
   teamSize,
   sufix: 'fullstack-javascript-devops-architect',
   externalUrl: 'https://www.icrc.org/en',
