@@ -32,6 +32,13 @@ const Content = () => {
         <StrongLabel width={width}>Technologies:</StrongLabel>
         <span>{stack.join(', ')}</span>
       </HFlexBox>
+      <HFlexBox>
+        <StrongLabel width={width}>Architecture:</StrongLabel>
+        <span>
+          Microservices, Private Blockchain, IoT, NFT / Energy ERC-721 tokens,
+          Upgradable smart contracts
+        </span>
+      </HFlexBox>
     </>
   )
 }
