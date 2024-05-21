@@ -19,6 +19,8 @@ const Divider = styled.span`
   display: block;
   margin: 0 auto;
   width: 100%;
+  height: 1px;
+  background-color: #ccc;
 
   margin-top: 1rem;
   margin-bottom: 1.5rem;
