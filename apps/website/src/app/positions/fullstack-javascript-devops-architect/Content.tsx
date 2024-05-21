@@ -36,7 +36,7 @@ const Content = () => {
       </HFlexBox>
       <HFlexBox>
         <StrongLabel width={width}>Architecture</StrongLabel>
-        <span>Microservices, Clean Architecture</span>
+        <span>Microservices, Clean Architecture, Polyrepo</span>
       </HFlexBox>
     </>
   )

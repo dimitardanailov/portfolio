@@ -33,6 +33,10 @@ const Content = () => {
         <StrongLabel width={width}>Technologies:</StrongLabel>
         <span>{stack.join(', ')}</span>
       </HFlexBox>
+      <HFlexBox>
+        <StrongLabel width={width}>Architecture</StrongLabel>
+        <span>Backend for frontend, Image recognition</span>
+      </HFlexBox>
     </>
   )
 }

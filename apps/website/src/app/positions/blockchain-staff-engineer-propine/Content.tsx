@@ -39,6 +39,10 @@ const Content = () => {
         <StrongLabel width={width}>Technologies:</StrongLabel>
         <span>{stack.join(', ')}</span>
       </HFlexBox>
+      <HFlexBox>
+        <StrongLabel width={width}>Architecture</StrongLabel>
+        <span>Microservices, Clean Architecture, Custody wallets</span>
+      </HFlexBox>
       <VFlexbox className="my-3">
         <StrongLabel width={width}>Responsibilities:</StrongLabel>
         <ul className={listStyle}>
