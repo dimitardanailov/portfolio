@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 interface Props {
   width: string
-  cursor: string
+  cursor?: string
 }
 
 export const Cell = styled.div<Props>`
