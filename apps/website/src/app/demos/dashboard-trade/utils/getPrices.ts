@@ -1,43 +1,26 @@
 import axios from 'axios'
 
 function getPrices(setPrices: unknown) {
-  const COINGECKO_API = 'https://api.coingecko.com/api/v3'
+  const domain = process.env.NEXT_PUBLIC_COINGECKO_DOMAIN
+  const key = process.env.NEXT_PUBLIC_COINGECKO_API_KEY
 
-  const coingeckoIds = ['solana']
-
-  const request = (setPrices: unknown) => {
-    axios
-      .get(`${COINGECKO_API}/simple/price`, {
-        params: {
-          ids: coingeckoIds.join(','),
-          vs_currencies: 'btc,usd,eth',
-          include_24hr_change: true,
-          include_7d_change: true,
-          include_last_updated_at: true,
-        },
-      })
-      .then(body => {
-        if (body.status === 200) {
-          const keys = Object.keys(body.data)
-          const coingeckoPrices = keys.map(key => {
-            const item = body.data[key]
-            return {
-              cryptoCurrency: key,
-              btc: item.btc,
-              usd: item.usd,
-              eth: item.eth,
-              btc_24h_change: item.btc_24h_change,
-              eth_24h_change: item.eth_24h_change,
-              usd_24h_change: item.usd_24h_change,
-            }
-          })
-
-          setPrices(coingeckoPrices)
-        }
-      })
+  const options = {
+    method: 'GET',
+    url: `${domain}/simple/price?ids=bitcoin&vs_currencies=usd`,
+    headers: {
+      accept: 'application/json',
+      'x-cg-demo-api-key': key,
+    },
   }
 
-  request(setPrices)
+  axios
+    .request(options)
+    .then(function (response) {
+      console.log('prices ...', response.data)
+    })
+    .catch(function (error) {
+      console.error('prices ...', error)
+    })
 }
 
 export default getPrices
