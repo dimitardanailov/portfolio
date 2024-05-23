@@ -1,6 +1,6 @@
 import comparing from './comparing'
 
-export function btcPairIsSupportedByCoinbase(cryptoSymbol: string) {
+export function btcPairs(cryptoSymbol: string) {
   const supportedCoins = [
     'ALGORAND',
     'matic-network',
