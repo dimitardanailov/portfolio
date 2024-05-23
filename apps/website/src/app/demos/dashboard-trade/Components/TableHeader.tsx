@@ -1,11 +1,20 @@
+'use client'
+
+import {FC} from 'react'
+
 import {TableHeader, TableCell, CoinCell, PriceUSDCell} from '../styled'
 
 import {PriceConfigurations, dimensions} from '../setting'
+import {MouseDatasetEventHandler} from '@/types/ui/DatasetEvent'
 
 const title = 'sort'
 const cursor = 'pointer'
 
-function USDCells() {
+interface Props {
+  handlerSortPrices: MouseDatasetEventHandler
+}
+
+const USDCells: FC<Props> = ({handlerSortPrices}) => {
   const {price, priceChanged} = dimensions.usd
 
   return (
@@ -15,6 +24,7 @@ function USDCells() {
         cursor={cursor}
         data-sort={PriceConfigurations.USD}
         width={price.width}
+        onClick={handlerSortPrices}
       >
         USD
       </PriceUSDCell>
@@ -30,7 +40,7 @@ function USDCells() {
   )
 }
 
-function BTCCells() {
+const BTCCells: FC<Props> = ({handlerSortPrices}) => {
   const {price, priceChanged} = dimensions.btc
 
   return (
@@ -41,6 +51,7 @@ function BTCCells() {
         cursor={cursor}
         data-sort={PriceConfigurations.BTC_HISTORY}
         width={priceChanged.width}
+        onClick={handlerSortPrices}
       >
         Old price BTC (24h)
       </TableCell>
@@ -48,7 +59,7 @@ function BTCCells() {
   )
 }
 
-function ETHCells() {
+const ETHCells: FC<Props> = ({handlerSortPrices}) => {
   const {price, priceChanged} = dimensions.eth
 
   return (
@@ -59,6 +70,7 @@ function ETHCells() {
         cursor={cursor}
         data-sort={PriceConfigurations.USD_HISTORY}
         width={priceChanged.width}
+        onClick={handlerSortPrices}
       >
         Old price ETH (24h)
       </TableCell>
@@ -66,15 +78,15 @@ function ETHCells() {
   )
 }
 
-function CoingeckoTableHeader() {
+const CoingeckoTableHeader: FC<Props> = ({handlerSortPrices}) => {
   const {coin} = dimensions
 
   return (
     <TableHeader>
       <CoinCell width={coin.width}>Coin</CoinCell>
-      <USDCells />
-      <BTCCells />
-      <ETHCells />
+      <USDCells handlerSortPrices={handlerSortPrices} />
+      <BTCCells handlerSortPrices={handlerSortPrices} />
+      <ETHCells handlerSortPrices={handlerSortPrices} />
     </TableHeader>
   )
 }
