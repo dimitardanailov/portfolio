@@ -27,7 +27,22 @@ function getPrices(setPrices: unknown) {
   axios
     .request(options)
     .then(function (response) {
-      console.log('prices ......', response.data)
+      const keys = Object.keys(response.data)
+
+      const coingeckoPrices = keys.map(key => {
+        const item = response.data[key]
+        return {
+          cryptoCurrency: key,
+          btc: item.btc,
+          usd: item.usd,
+          eth: item.eth,
+          btc_24h_change: item.btc_24h_change,
+          eth_24h_change: item.eth_24h_change,
+          usd_24h_change: item.usd_24h_change,
+        }
+      })
+
+      console.log('coingeckoPrices', coingeckoPrices)
     })
     .catch(function (error) {
       console.error('prices ...', error)
