@@ -1,8 +1,16 @@
 import {CoingeckoSimplePriceRequest} from '@/types/coingecko/simplePrices/RequestParams'
+import Currency from '@/enums/CoingeckoCryptoCurrency'
 
 export function getCoingeckoRequestParams(): CoingeckoSimplePriceRequest {
   const coingeckoIds = [
-    'bitcoin,ethereum,solana,chainlink,matic-network,near,cosmos',
+    Currency.BTC,
+    Currency.ETHEREUM,
+    Currency.SOLANA,
+    Currency.CHAINLINK,
+    Currency.POLYGON,
+    Currency.NEAR,
+    Currency.COSMOS,
+    Currency.POLKADOT,
   ]
 
   return {
