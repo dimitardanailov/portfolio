@@ -4,14 +4,18 @@ import {FC} from 'react'
 
 import {CoingeckoSimplePriceResponse} from '@/types/coingecko/simplePrices'
 
+import CoingeckoTableRow from './TableRow'
+
 export interface Props {
-  prices: Array<CoingeckoSimplePriceResponse>
+  items: Array<CoingeckoSimplePriceResponse>
 }
 
-const CoingeckoTableBody: FC<Props> = ({prices}) => {
-  const listItems = prices.map(
-    (prices: CoingeckoSimplePriceResponse, index: number) => (
-      <li key={index}>{prices.cryptoCurrency}</li>
+const CoingeckoTableBody: FC<Props> = ({items}) => {
+  const listItems = items.map(
+    (item: CoingeckoSimplePriceResponse, index: number) => (
+      <li key={index} className="list-none">
+        <CoingeckoTableRow item={item} />
+      </li>
     ),
   )
 
