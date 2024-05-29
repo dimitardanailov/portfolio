@@ -1,3 +1,3 @@
-import usePriceListNotifacationHook from './usePriceListNotifacationHook'
+import usePriceListNotifacationHook from './usePriceListNotifacation'
 
 export {usePriceListNotifacationHook}
