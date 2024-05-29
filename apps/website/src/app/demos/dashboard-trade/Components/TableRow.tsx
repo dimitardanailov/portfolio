@@ -1,6 +1,9 @@
 'use client'
 
 import {FC} from 'react'
+
+import CoinbaseIcon from '@/components/Icons/Coinbase'
+
 import styled from 'styled-components'
 
 import {CoingeckoSimplePriceResponse} from '@/types/coingecko/simplePrices'
@@ -10,6 +13,7 @@ import PriceComparing from './PriceComparing'
 
 import {TableRow, CoinCell, PriceUSDCell, TableCell} from '../styled/index'
 import {dimensions} from '../setting'
+import pricePercentFormat from '@/utils/format/pricePercentFormat'
 
 const CryptoIcon = styled.img`
   width: 18px;
@@ -31,7 +35,6 @@ const CoingeckoTableRow: FC<Props> = ({item}) => {
     currency: 'USD',
   })
   const price = formatter.format(item.usd)
-  const usdChange = item.usd.toFixed(2)
 
   const icon = `/icons/crypto/${item.cryptoCurrency}.svg`
 
@@ -42,19 +45,25 @@ const CoingeckoTableRow: FC<Props> = ({item}) => {
       </CoinCell>
       <PriceUSDCell width={dimensions.usd.price.width}>{price}</PriceUSDCell>
       <TableCell width={dimensions.usd.priceChanged.width}>
-        <PriceComparing percent={item.usd}>
-          {usdChange} % / {formatter.format(historicPrice.usd)}
+        <PriceComparing percent={item.usd_24h_change}>
+          <span>{pricePercentFormat(item.usd_24h_change)}</span>
+          <span>({formatter.format(historicPrice.usd)})</span>
         </PriceComparing>
       </TableCell>
       <TableCell width={dimensions.btc.price.width}>{item.btc}</TableCell>
       <TableCell width={dimensions.btc.priceChanged.width}>
         <PriceComparing percent={item.btc_24h_change}>
-          {item.btc_24h_change.toFixed(2)} % ({historicPrice.btc})
+          <span>{pricePercentFormat(item.btc_24h_change)}</span>
+          <span>({historicPrice.btc})</span>
         </PriceComparing>
       </TableCell>
       <TableCell width={dimensions.eth.price.width}>{item.eth}</TableCell>
       <TableCell width={dimensions.eth.priceChanged.width}>
-        <PriceComparing percent={item.eth_24h_change}>todo</PriceComparing>
+        <PriceComparing percent={item.eth_24h_change}>
+          <CoinbaseIcon cryptoCurrency={item.cryptoCurrency} />
+          <span>{pricePercentFormat(item.eth_24h_change)}</span>
+          <span>({historicPrice.eth})</span>
+        </PriceComparing>
       </TableCell>
     </TableRow>
   )

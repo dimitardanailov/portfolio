@@ -34,7 +34,7 @@ const USDCells: FC<Props> = ({handlerSortPrices}) => {
         data-sort={PriceConfigurations.USD_HISTORY}
         width={priceChanged.width}
       >
-        Old price USD (24h)
+        Historic
       </TableCell>
     </>
   )
@@ -53,7 +53,7 @@ const BTCCells: FC<Props> = ({handlerSortPrices}) => {
         width={priceChanged.width}
         onClick={handlerSortPrices}
       >
-        Old price BTC (24h)
+        Historic
       </TableCell>
     </>
   )
@@ -72,7 +72,7 @@ const ETHCells: FC<Props> = ({handlerSortPrices}) => {
         width={priceChanged.width}
         onClick={handlerSortPrices}
       >
-        Old price ETH (24h)
+        Historic price
       </TableCell>
     </>
   )
