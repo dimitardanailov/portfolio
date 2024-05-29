@@ -11,7 +11,7 @@ const title = 'sort'
 const cursor = 'pointer'
 
 interface Props {
-  handlerSortPrices: MouseDatasetEventHandler
+  handlerSortPrices: () => void
 }
 
 const USDCells: FC<Props> = ({handlerSortPrices}) => {

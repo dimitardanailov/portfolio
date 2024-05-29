@@ -1,9 +1,9 @@
-import {MouseDatasetEventHandler} from '@/types/ui/DatasetEvent'
+// import {MouseDatasetEventHandler} from '@/types/ui/DatasetEvent'
 
-const handlerSortPrices = async (event: MouseDatasetEventHandler) => {
-  const {sort} = event.target.dataset
+async function handlerSortPrices() {
+  // const {sort} = event.target.dataset
 
-  console.log('sort', sort)
+  console.log('clicked')
 }
 
 export default handlerSortPrices
