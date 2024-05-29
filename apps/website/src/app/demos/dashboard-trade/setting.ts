@@ -4,10 +4,10 @@ export const dimensions = {
   },
   usd: {
     price: {
-      width: '8.5%',
+      width: '12.5%',
     },
     priceChanged: {
-      width: '14%',
+      width: '20%',
     },
   },
   btc: {
@@ -15,7 +15,7 @@ export const dimensions = {
       width: '10.5%',
     },
     priceChanged: {
-      width: '24.25%',
+      width: '19.25%',
     },
   },
   eth: {
@@ -23,7 +23,7 @@ export const dimensions = {
       width: '10.5%',
     },
     priceChanged: {
-      width: '24.25%',
+      width: '19.25%',
     },
   },
 }

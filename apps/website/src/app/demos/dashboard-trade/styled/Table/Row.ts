@@ -8,6 +8,7 @@ export const TableRow = styled.div`
   align-items: center;
   border-bottom: 1px solid #cecece;
   justify-content: flex-start;
+  padding: 0.5rem 0;
 `
 
 export default TableRow

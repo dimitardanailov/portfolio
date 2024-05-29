@@ -50,19 +50,25 @@ const CoingeckoTableRow: FC<Props> = ({item}) => {
           <span>({formatter.format(historicPrice.usd)})</span>
         </PriceComparing>
       </TableCell>
-      <TableCell width={dimensions.btc.price.width}>{item.btc}</TableCell>
+      <TableCell width={dimensions.btc.price.width}>
+        {item.btc !== 1 && item.btc.toFixed(5)}
+      </TableCell>
       <TableCell width={dimensions.btc.priceChanged.width}>
         <PriceComparing percent={item.btc_24h_change}>
-          <span>{pricePercentFormat(item.btc_24h_change)}</span>
-          <span>({historicPrice.btc})</span>
+          <span title={historicPrice.btc.toString()}>
+            {pricePercentFormat(item.btc_24h_change)}
+          </span>
         </PriceComparing>
       </TableCell>
-      <TableCell width={dimensions.eth.price.width}>{item.eth}</TableCell>
+      <TableCell width={dimensions.eth.price.width}>
+        {item.eth !== 1 && item.eth.toFixed(5)}
+      </TableCell>
       <TableCell width={dimensions.eth.priceChanged.width}>
         <PriceComparing percent={item.eth_24h_change}>
           <CoinbaseIcon cryptoCurrency={item.cryptoCurrency} />
-          <span>{pricePercentFormat(item.eth_24h_change)}</span>
-          <span>({historicPrice.eth})</span>
+          <span title={historicPrice.eth.toString()}>
+            {pricePercentFormat(item.eth_24h_change)}
+          </span>
         </PriceComparing>
       </TableCell>
     </TableRow>
