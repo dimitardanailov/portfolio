@@ -1,7 +1,9 @@
 import {CoingeckoSimplePriceRequest} from '@/types/coingecko/simplePrices/RequestParams'
 
 export function getCoingeckoRequestParams(): CoingeckoSimplePriceRequest {
-  const coingeckoIds = ['bitcoin,chainlink,cosmos,solana']
+  const coingeckoIds = [
+    'bitcoin,ethereum,solana,chainlink,matic-network,near,cosmos',
+  ]
 
   return {
     ids: coingeckoIds.join(','),

@@ -33,7 +33,7 @@ const CoingeckoTableRow: FC<Props> = ({item}) => {
   const price = formatter.format(item.usd)
   const usdChange = item.usd.toFixed(2)
 
-  const icon = `https://ddanailov.dev/icons/crypto/${item.cryptoCurrency}.svg`
+  const icon = `/icons/crypto/${item.cryptoCurrency}.svg`
 
   return (
     <TableRow>
