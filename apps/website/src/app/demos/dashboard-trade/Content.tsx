@@ -7,10 +7,6 @@ import Collapse from '@mui/material/Collapse'
 
 import styled from 'styled-components'
 
-import {CoingeckoSimplePriceResponse} from '@/types/coingecko/simplePrices'
-
-import {getCoingeckoRequestParams} from './db'
-import getPrices from './utils/getPrices'
 import {handlerSortPrices} from './ui'
 import {useCryptoCurrencyList, usePriceListNotifacationHook} from './hooks'
 
@@ -27,7 +23,7 @@ const CustomAlert = styled(Alert)`
 `
 
 const Content = () => {
-  const {prices} = useCryptoCurrencyList()
+  const {prices, setPrices} = useCryptoCurrencyList()
 
   const [priceListNotifacationIsVisible, setPriceListNotifacationIsVisible] =
     useState(false)
@@ -47,7 +43,7 @@ const Content = () => {
 
   return (
     <>
-      <PageHeaderContainer />
+      <PageHeaderContainer setPrices={setPrices} />
       <Collapse in={priceListNotifacationIsVisible}>
         <CustomAlert severity="success">Alert</CustomAlert>
       </Collapse>

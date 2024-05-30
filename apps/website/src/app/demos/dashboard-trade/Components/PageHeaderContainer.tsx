@@ -1,8 +1,15 @@
 'use client'
 
+import {Dispatch, FC, SetStateAction} from 'react'
+
 import styled from 'styled-components'
 
 import BasicButton from '@/styled-components/Buttons/BasicButton'
+
+import {CoingeckoSimplePriceResponse} from '@/types/coingecko/simplePrices'
+
+import getPrices from '../utils/getPrices'
+import {getCoingeckoRequestParams} from '../db'
 
 const Wrapper = styled.div`
   position: relative;
@@ -20,10 +27,25 @@ const StyledButton = styled(BasicButton)`
   margin-left: auto;
 `
 
-const PageHeaderContainer = () => {
+export interface Props {
+  setPrices: Dispatch<SetStateAction<CoingeckoSimplePriceResponse[]>>
+}
+
+const PageHeaderContainer: FC<Props> = ({setPrices}) => {
+  const onClickHandler = () => {
+    getPrices(getCoingeckoRequestParams()).then(prices => {
+      setPrices(prices)
+    })
+  }
+
   return (
     <Wrapper>
-      <StyledButton type="button" fontSize="1.2rem" padding="1rem 2rem">
+      <StyledButton
+        type="button"
+        fontSize="1.2rem"
+        padding="1rem 2rem"
+        onClick={onClickHandler}
+      >
         Refresh
       </StyledButton>
     </Wrapper>
