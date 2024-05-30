@@ -1,27 +1,22 @@
 'use client'
 
-import {useEffect, useState, useRef} from 'react'
+import {useEffect, useState} from 'react'
 
-import Alert from '@mui/material/Alert'
 import Collapse from '@mui/material/Collapse'
-
-import styled from 'styled-components'
 
 import {handlerSortPrices} from './ui'
 import {useCryptoCurrencyList, usePriceListNotifacationHook} from './hooks'
+
+import Sorting from './types/Sorting'
 
 import {
   CoingeckoTableHeader,
   CoingeckoTableBody,
   PageHeaderContainer,
+  CustomAlert,
 } from './Components'
 
 import Table from './styled/Table/Table'
-
-const CustomAlert = styled(Alert)`
-  position: relative;
-  margin: 0.5rem;
-`
 
 const Content = () => {
   const [priceListNotifacationIsVisible, setPriceListNotifacationIsVisible] =
@@ -45,16 +40,9 @@ const Content = () => {
 
   return (
     <>
-      <PageHeaderContainer setPrices={setPrices} apiRequest={apiRequest} />
+      <PageHeaderContainer apiRequest={apiRequest} />
       <Collapse in={priceListNotifacationIsVisible}>
-        <CustomAlert severity="success">
-          <div>
-            <span>The list with crypto coins has a new version! </span>
-            <span>
-              Sort by {sorting.column}, order by {sorting.orderBy}.
-            </span>
-          </div>
-        </CustomAlert>
+        <CustomAlert sorting={sorting} />
       </Collapse>
       <p>
         Sort by usd price, Old price USD (24h), Old price BTC (24h), Old price
