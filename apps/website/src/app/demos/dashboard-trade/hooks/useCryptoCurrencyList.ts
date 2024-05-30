@@ -9,9 +9,10 @@ function useCryptoCurrencyList(
   setPriceListNotifacationIsVisible: Dispatch<SetStateAction<boolean>>,
 ) {
   const [prices, setPrices] = useState<Array<CoingeckoSimplePriceResponse>>([])
+  const params = getCoingeckoRequestParams()
 
   const apiRequest = useCallback(() => {
-    getPrices(getCoingeckoRequestParams()).then(prices => {
+    getPrices(params).then(prices => {
       setPrices(prices)
       setPriceListNotifacationIsVisible(true)
 
@@ -19,7 +20,7 @@ function useCryptoCurrencyList(
         setPriceListNotifacationIsVisible(false)
       }, 3000)
     })
-  }, [setPrices, setPriceListNotifacationIsVisible])
+  }, [setPrices, setPriceListNotifacationIsVisible, params])
 
   useEffect(() => {
     if (prices.length === 0) {
