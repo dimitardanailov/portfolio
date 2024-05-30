@@ -27,10 +27,3 @@ export const dimensions = {
     },
   },
 }
-
-export enum PriceConfigurations {
-  USD = 'usd',
-  USD_HISTORY = 'usd_24h_change',
-  BTC_HISTORY = 'btc_24h_change',
-  ETH_HISTORY = 'eth_24h_change',
-}

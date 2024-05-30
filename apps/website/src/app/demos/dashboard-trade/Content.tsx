@@ -4,7 +4,6 @@ import {useState} from 'react'
 
 import Collapse from '@mui/material/Collapse'
 
-import {handlerSortPrices} from './ui'
 import {useCryptoCurrencyList, useSortingCryptoCurrencyList} from './hooks'
 
 import {
@@ -24,7 +23,7 @@ const Content = () => {
     setPriceListNotifacationIsVisible,
   )
 
-  const {sorting} = useSortingCryptoCurrencyList({
+  const {sorting, setSorting} = useSortingCryptoCurrencyList({
     prices,
     setPrices,
     setPriceListNotifacationIsVisible,
@@ -41,7 +40,7 @@ const Content = () => {
         ETH (24h)
       </p>
       <Table>
-        <CoingeckoTableHeader handlerSortPrices={handlerSortPrices} />
+        <CoingeckoTableHeader setSorting={setSorting} sorting={sorting} />
         <CoingeckoTableBody items={prices} />
       </Table>
     </>

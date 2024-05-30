@@ -1,92 +1,101 @@
 'use client'
 
-import {FC} from 'react'
+import {Dispatch, FC, SetStateAction} from 'react'
 
 import {TableHeader, TableCell, CoinCell, PriceUSDCell} from '../styled'
 
-import {PriceConfigurations, dimensions} from '../setting'
-import {MouseDatasetEventHandler} from '@/types/ui/DatasetEvent'
+import SortingKey from '@/enums/cryptoCurrencyList/SortingKey'
 
-const title = 'sort'
-const cursor = 'pointer'
+import {dimensions} from '../setting'
+import SortingTableHeaderCell from './SortingTableHeaderCell'
+import Sorting from '../types/Sorting'
 
-interface Props {
-  handlerSortPrices: () => void
+export interface Props {
+  setSorting: Dispatch<SetStateAction<Sorting>>
+  sorting: Sorting
 }
 
-const USDCells: FC<Props> = ({handlerSortPrices}) => {
+const USDCells: FC<Props> = ({sorting, setSorting}) => {
   const {price, priceChanged} = dimensions.usd
 
   return (
     <>
-      <PriceUSDCell
-        title={title}
-        cursor={cursor}
-        data-sort={PriceConfigurations.USD}
+      <SortingTableHeaderCell
+        label="usd"
+        sortBy={SortingKey.USD}
+        sorting={sorting}
+        setSorting={setSorting}
         width={price.width}
-        onClick={handlerSortPrices}
-      >
-        USD
-      </PriceUSDCell>
-      <TableCell
-        title={title}
-        cursor={title}
-        data-sort={PriceConfigurations.USD_HISTORY}
+      />
+
+      <SortingTableHeaderCell
+        label="Day ago"
+        sortBy={SortingKey.USD_HISTORY}
+        sorting={sorting}
+        setSorting={setSorting}
         width={priceChanged.width}
-      >
-        Historic
-      </TableCell>
+      />
     </>
   )
 }
 
-const BTCCells: FC<Props> = ({handlerSortPrices}) => {
+const BTCCells: FC<Props> = ({sorting, setSorting}) => {
   const {price, priceChanged} = dimensions.btc
 
   return (
     <>
-      <TableCell width={price.width}>BTC</TableCell>
-      <TableCell
-        title={title}
-        cursor={cursor}
-        data-sort={PriceConfigurations.BTC_HISTORY}
+      <SortingTableHeaderCell
+        label="BTC"
+        sortBy={SortingKey.BTC}
+        sorting={sorting}
+        setSorting={setSorting}
+        width={price.width}
+      />
+
+      <SortingTableHeaderCell
+        label="Day ago"
+        sortBy={SortingKey.BTC_HISTORY}
+        sorting={sorting}
+        setSorting={setSorting}
         width={priceChanged.width}
-        onClick={handlerSortPrices}
-      >
-        Historic
-      </TableCell>
+      />
     </>
   )
 }
 
-const ETHCells: FC<Props> = ({handlerSortPrices}) => {
+const ETHCells: FC<Props> = ({sorting, setSorting}) => {
   const {price, priceChanged} = dimensions.eth
 
   return (
     <>
-      <TableCell width={price.width}>ETH</TableCell>
-      <TableCell
-        title={title}
-        cursor={cursor}
-        data-sort={PriceConfigurations.USD_HISTORY}
+      <SortingTableHeaderCell
+        label="ETH"
+        sortBy={SortingKey.ETH}
+        sorting={sorting}
+        setSorting={setSorting}
+        width={price.width}
+      />
+
+      <SortingTableHeaderCell
+        label="Day ago"
+        sortBy={SortingKey.ETH_HISTORY}
+        sorting={sorting}
+        setSorting={setSorting}
         width={priceChanged.width}
-        onClick={handlerSortPrices}
-      >
-        Historic price
-      </TableCell>
+      />
     </>
   )
 }
 
-const CoingeckoTableHeader: FC<Props> = ({handlerSortPrices}) => {
+const CoingeckoTableHeader: FC<Props> = ({sorting, setSorting}) => {
   const {coin} = dimensions
 
   return (
     <TableHeader>
       <CoinCell width={coin.width}>Coin</CoinCell>
-      <USDCells handlerSortPrices={handlerSortPrices} />
-      <BTCCells handlerSortPrices={handlerSortPrices} />
-      <ETHCells handlerSortPrices={handlerSortPrices} />
+      <USDCells setSorting={setSorting} sorting={sorting} />
+      <BTCCells setSorting={setSorting} sorting={sorting} />
+      <ETHCells setSorting={setSorting} sorting={sorting} />
     </TableHeader>
   )
 }

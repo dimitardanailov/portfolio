@@ -1,4 +1,4 @@
-import {MouseEventHandler} from 'react'
+import {MouseEvent} from 'react'
 
 export type DatasetEvent = {
   target: {
@@ -8,4 +8,4 @@ export type DatasetEvent = {
   }
 }
 
-export type MouseDatasetEventHandler = MouseEventHandler & DatasetEvent
+export type MouseDatasetEventHandler = MouseEvent & DatasetEvent
