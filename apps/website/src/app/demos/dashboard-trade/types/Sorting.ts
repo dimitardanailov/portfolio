@@ -1,6 +1,9 @@
+import SortingKey from '@/enums/cryptoCurrencyList/SortingKey'
+import Order from '@/enums/Order'
+
 type Sorting = {
-  column: string | null
-  orderBy: string | null
+  column: SortingKey
+  orderBy: Order
 }
 
 export default Sorting

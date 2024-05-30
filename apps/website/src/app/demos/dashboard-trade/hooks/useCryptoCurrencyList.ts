@@ -1,4 +1,4 @@
-import {useState, useEffect, Dispatch, SetStateAction} from 'react'
+import {useState, useEffect, Dispatch, SetStateAction, useCallback} from 'react'
 
 import {CoingeckoSimplePriceResponse} from '@/types/coingecko/simplePrices'
 
@@ -10,7 +10,7 @@ function useCryptoCurrencyList(
 ) {
   const [prices, setPrices] = useState<Array<CoingeckoSimplePriceResponse>>([])
 
-  const apiRequest = () => {
+  const apiRequest = useCallback(() => {
     getPrices(getCoingeckoRequestParams()).then(prices => {
       setPrices(prices)
       setPriceListNotifacationIsVisible(true)
@@ -19,14 +19,14 @@ function useCryptoCurrencyList(
         setPriceListNotifacationIsVisible(false)
       }, 3000)
     })
-  }
+  }, [setPrices, setPriceListNotifacationIsVisible])
 
   useEffect(() => {
     if (prices.length === 0) {
       setPriceListNotifacationIsVisible(false)
       apiRequest()
     }
-  })
+  }, [prices, apiRequest, setPriceListNotifacationIsVisible])
 
   return {
     prices,
