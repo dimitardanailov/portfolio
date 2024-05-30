@@ -1,12 +1,10 @@
 'use client'
 
-import {Dispatch, FC, SetStateAction} from 'react'
+import {FC} from 'react'
 
 import styled from 'styled-components'
 
 import BasicButton from '@/styled-components/Buttons/BasicButton'
-
-import {CoingeckoSimplePriceResponse} from '@/types/coingecko/simplePrices'
 
 const Wrapper = styled.div`
   position: relative;
@@ -25,11 +23,10 @@ const StyledButton = styled(BasicButton)`
 `
 
 export interface Props {
-  setPrices: Dispatch<SetStateAction<CoingeckoSimplePriceResponse[]>>
   apiRequest: () => void
 }
 
-const PageHeaderContainer: FC<Props> = ({setPrices, apiRequest}) => {
+const PageHeaderContainer: FC<Props> = ({apiRequest}) => {
   const onClickHandler = () => {
     apiRequest()
   }
