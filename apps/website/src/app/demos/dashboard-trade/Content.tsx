@@ -20,13 +20,15 @@ import Table from './styled/Table/Table'
 
 const CustomAlert = styled(Alert)`
   position: relative;
+  margin: 0.5rem;
 `
 
 const Content = () => {
-  const {prices, setPrices} = useCryptoCurrencyList()
-
   const [priceListNotifacationIsVisible, setPriceListNotifacationIsVisible] =
     useState(false)
+  const {prices, setPrices, apiRequest} = useCryptoCurrencyList(
+    setPriceListNotifacationIsVisible,
+  )
 
   const ASC = 'ASC'
   const DESC = 'DESC'
@@ -43,9 +45,16 @@ const Content = () => {
 
   return (
     <>
-      <PageHeaderContainer setPrices={setPrices} />
+      <PageHeaderContainer setPrices={setPrices} apiRequest={apiRequest} />
       <Collapse in={priceListNotifacationIsVisible}>
-        <CustomAlert severity="success">Alert</CustomAlert>
+        <CustomAlert severity="success">
+          <div>
+            <span>The list with crypto coins has a new version! </span>
+            <span>
+              Sort by {sorting.column}, order by {sorting.orderBy}.
+            </span>
+          </div>
+        </CustomAlert>
       </Collapse>
       <p>
         Sort by usd price, Old price USD (24h), Old price BTC (24h), Old price

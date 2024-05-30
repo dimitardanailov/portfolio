@@ -8,9 +8,6 @@ import BasicButton from '@/styled-components/Buttons/BasicButton'
 
 import {CoingeckoSimplePriceResponse} from '@/types/coingecko/simplePrices'
 
-import getPrices from '../utils/getPrices'
-import {getCoingeckoRequestParams} from '../db'
-
 const Wrapper = styled.div`
   position: relative;
 
@@ -29,13 +26,12 @@ const StyledButton = styled(BasicButton)`
 
 export interface Props {
   setPrices: Dispatch<SetStateAction<CoingeckoSimplePriceResponse[]>>
+  apiRequest: () => void
 }
 
-const PageHeaderContainer: FC<Props> = ({setPrices}) => {
+const PageHeaderContainer: FC<Props> = ({setPrices, apiRequest}) => {
   const onClickHandler = () => {
-    getPrices(getCoingeckoRequestParams()).then(prices => {
-      setPrices(prices)
-    })
+    apiRequest()
   }
 
   return (
