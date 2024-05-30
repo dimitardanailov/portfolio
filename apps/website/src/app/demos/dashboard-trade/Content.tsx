@@ -12,7 +12,7 @@ import {CoingeckoSimplePriceResponse} from '@/types/coingecko/simplePrices'
 import {getCoingeckoRequestParams} from './db'
 import getPrices from './utils/getPrices'
 import {handlerSortPrices} from './ui'
-import {usePriceListNotifacationHook} from './hooks'
+import {useCryptoCurrencyList, usePriceListNotifacationHook} from './hooks'
 
 import {
   CoingeckoTableHeader,
@@ -27,15 +27,7 @@ const CustomAlert = styled(Alert)`
 `
 
 const Content = () => {
-  const [prices, setPrices] = useState<Array<CoingeckoSimplePriceResponse>>([])
-
-  useEffect(() => {
-    if (prices.length === 0) {
-      getPrices(getCoingeckoRequestParams()).then(prices => {
-        setPrices(prices)
-      })
-    }
-  }, [prices.length, prices])
+  const {prices} = useCryptoCurrencyList()
 
   const [priceListNotifacationIsVisible, setPriceListNotifacationIsVisible] =
     useState(false)

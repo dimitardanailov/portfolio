@@ -1,3 +1,4 @@
 import usePriceListNotifacationHook from './usePriceListNotifacation'
+import useCryptoCurrencyList from './useCryptoCurrencyList'
 
-export {usePriceListNotifacationHook}
+export {usePriceListNotifacationHook, useCryptoCurrencyList}
