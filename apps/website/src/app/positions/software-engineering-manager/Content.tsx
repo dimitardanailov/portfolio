@@ -4,6 +4,9 @@ import StrongLabel from '@/styled-components/Text/StrongLabel'
 import TargetBlankLink from '@/components/TargetBlankLink'
 import {HFlexBox} from '@/styled-components/Grid'
 
+import DavidLetter from '@/app/recommendation-letters/projects/elephantstock/components/DavidLetter'
+import ShlomiLetter from '@/app/recommendation-letters/projects/elephantstock/components/ShlomiLetter'
+
 import stack from './stack'
 
 import {width} from '../consants'
@@ -37,6 +40,11 @@ const Content = () => {
         <StrongLabel width={width}>Architecture</StrongLabel>
         <span>Backend for frontend, Image recognition</span>
       </HFlexBox>
+      <HFlexBox>
+        <StrongLabel width={width}>Recommendations</StrongLabel>
+      </HFlexBox>
+      <DavidLetter />
+      <ShlomiLetter />
     </>
   )
 }
