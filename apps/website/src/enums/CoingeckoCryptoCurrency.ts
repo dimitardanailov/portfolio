@@ -7,6 +7,7 @@ enum CoingeckoCryptoCurrency {
   NEAR = 'near',
   COSMOS = 'cosmos',
   POLKADOT = 'polkadot',
+  CELESTIA = 'celestia',
 }
 
 export default CoingeckoCryptoCurrency

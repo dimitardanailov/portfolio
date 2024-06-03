@@ -11,6 +11,7 @@ export function getCoingeckoRequestParams(): CoingeckoSimplePriceRequest {
     Currency.NEAR,
     Currency.COSMOS,
     Currency.POLKADOT,
+    Currency.CELESTIA,
   ]
 
   return {
