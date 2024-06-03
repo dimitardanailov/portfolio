@@ -10,6 +10,7 @@ enum CoingeckoCryptoCurrency {
   CELESTIA = 'celestia',
   AVALANCHE = 'avalanche-2',
   INJECTIVE = 'injective-protocol',
+  GRAPH_PROTOCOL = 'the-graph',
 }
 
 export default CoingeckoCryptoCurrency

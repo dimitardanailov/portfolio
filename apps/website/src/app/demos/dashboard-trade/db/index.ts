@@ -14,6 +14,7 @@ export function getCoingeckoRequestParams(): CoingeckoSimplePriceRequest {
     Currency.CELESTIA,
     Currency.AVALANCHE,
     Currency.INJECTIVE,
+    Currency.GRAPH_PROTOCOL,
   ]
 
   return {
