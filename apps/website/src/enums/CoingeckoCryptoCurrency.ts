@@ -8,7 +8,7 @@ enum CoingeckoCryptoCurrency {
   COSMOS = 'cosmos',
   POLKADOT = 'polkadot',
   CELESTIA = 'celestia',
-  AVALANCHE = 'avalanche',
+  AVALANCHE = 'avalanche-2',
   INJECTIVE = 'injective-protocol',
 }
 
