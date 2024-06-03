@@ -8,6 +8,8 @@ enum CoingeckoCryptoCurrency {
   COSMOS = 'cosmos',
   POLKADOT = 'polkadot',
   CELESTIA = 'celestia',
+  AVALANCHE = 'avalanche',
+  INJECTIVE = 'injective-protocol',
 }
 
 export default CoingeckoCryptoCurrency
