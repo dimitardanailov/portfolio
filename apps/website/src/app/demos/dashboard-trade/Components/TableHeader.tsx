@@ -26,6 +26,7 @@ const USDCells: FC<Props> = ({sorting, setSorting}) => {
         sorting={sorting}
         setSorting={setSorting}
         width={price.width}
+        mobile={price.mobile}
       />
 
       <SortingTableHeaderCell
@@ -33,6 +34,7 @@ const USDCells: FC<Props> = ({sorting, setSorting}) => {
         sortBy={SortingKey.USD_HISTORY}
         sorting={sorting}
         setSorting={setSorting}
+        mobile={priceChanged.mobile}
         width={priceChanged.width}
       />
     </>
@@ -50,6 +52,7 @@ const BTCCells: FC<Props> = ({sorting, setSorting}) => {
         sorting={sorting}
         setSorting={setSorting}
         width={price.width}
+        mobile={price.mobile}
       />
 
       <SortingTableHeaderCell
@@ -58,6 +61,7 @@ const BTCCells: FC<Props> = ({sorting, setSorting}) => {
         sorting={sorting}
         setSorting={setSorting}
         width={priceChanged.width}
+        mobile={priceChanged.mobile}
       />
     </>
   )
@@ -74,6 +78,7 @@ const ETHCells: FC<Props> = ({sorting, setSorting}) => {
         sorting={sorting}
         setSorting={setSorting}
         width={price.width}
+        mobile={price.mobile}
       />
 
       <SortingTableHeaderCell
@@ -82,6 +87,7 @@ const ETHCells: FC<Props> = ({sorting, setSorting}) => {
         sorting={sorting}
         setSorting={setSorting}
         width={priceChanged.width}
+        mobile={priceChanged.mobile}
       />
     </>
   )
