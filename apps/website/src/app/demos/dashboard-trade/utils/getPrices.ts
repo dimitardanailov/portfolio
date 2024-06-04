@@ -45,8 +45,6 @@ function getPrices(
             },
           )
 
-          console.log('axios.prices', coingeckoPrices)
-
           resolve(coingeckoPrices)
         })
         .catch(function (error) {

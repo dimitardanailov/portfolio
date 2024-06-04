@@ -32,8 +32,6 @@ const SortingTableHeaderCell: FC<Props> = ({
     setSorting(updatedSorting)
   }
 
-  console.log('mobileETH....', mobile)
-
   return (
     <TableCell
       title={title}
