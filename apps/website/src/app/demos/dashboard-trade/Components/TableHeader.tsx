@@ -2,7 +2,7 @@
 
 import {Dispatch, FC, SetStateAction} from 'react'
 
-import {TableHeader, TableCell, CoinCell, PriceUSDCell} from '../styled'
+import {TableHeader, CoinCell} from '@/styled-components/Coingecko/Table'
 
 import SortingKey from '@/enums/cryptoCurrencyList/SortingKey'
 

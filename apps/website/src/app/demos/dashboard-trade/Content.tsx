@@ -4,6 +4,8 @@ import {useState} from 'react'
 
 import Collapse from '@mui/material/Collapse'
 
+import Table from '@/styled-components/Coingecko/Table/Table'
+
 import {useCryptoCurrencyList, useSortingCryptoCurrencyList} from './hooks'
 
 import {
@@ -12,8 +14,6 @@ import {
   PageHeaderContainer,
   CustomAlert,
 } from './Components'
-
-import Table from './styled/Table/Table'
 
 const Content = () => {
   const [priceListNotifacationIsVisible, setPriceListNotifacationIsVisible] =

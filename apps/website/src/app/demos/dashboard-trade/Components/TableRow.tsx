@@ -11,7 +11,12 @@ import HistoricPrice from '@/classes/HistoricPrice'
 
 import PriceComparing from './PriceComparing'
 
-import {TableRow, CoinCell, PriceUSDCell, TableCell} from '../styled/index'
+import {
+  TableRow,
+  CoinCell,
+  PriceUSDCell,
+  TableCell,
+} from '@/styled-components/Coingecko'
 import {dimensions} from '../setting'
 import pricePercentFormat from '@/utils/format/pricePercentFormat'
 

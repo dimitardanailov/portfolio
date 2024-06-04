@@ -2,7 +2,7 @@
 
 import {FC} from 'react'
 
-import {TableCell} from '../styled'
+import {TableCell} from '@/styled-components/Coingecko/'
 
 import {Props as SharedProps} from './TableHeader'
 import SortingKey from '@/enums/cryptoCurrencyList/SortingKey'
