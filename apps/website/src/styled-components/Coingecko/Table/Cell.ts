@@ -28,6 +28,10 @@ export const CoinCell = styled(Cell)`
   flex-direction: row;
   align-items: center;
   min-width: 120px;
+
+  @media (max-width: 1024px) {
+    min-width: 50px;
+  }
 `
 
 export const PriceUSDCell = styled(Cell)`
