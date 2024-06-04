@@ -14,7 +14,6 @@ const Wrapper = styled.div`
   flex-direction: center;
   justify-content: space-end;
   align-items: center;
-  width: 100%;
   margin: 0 auto;
 `
 
@@ -36,7 +35,7 @@ const PageHeaderContainer: FC<Props> = ({apiRequest}) => {
       <StyledButton
         type="button"
         fontSize="1.2rem"
-        padding="1rem 2rem"
+        padding="0.6rem 1.2rem"
         onClick={onClickHandler}
       >
         Refresh
