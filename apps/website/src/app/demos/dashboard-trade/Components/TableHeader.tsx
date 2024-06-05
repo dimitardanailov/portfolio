@@ -9,7 +9,7 @@ import SortingKey from '@/enums/cryptoCurrencyList/SortingKey'
 import Sorting from '@/types/coingecko/sorting/Sorting'
 
 import {dimensions} from '../setting'
-import SortingTableHeaderCell from './SortingTableHeaderCell'
+import SortingTableHeaderCell from '@/components/Coingecko/SortingTableHeaderCell'
 
 export interface Props {
   setSorting: Dispatch<SetStateAction<Sorting>>
