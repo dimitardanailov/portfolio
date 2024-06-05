@@ -11,32 +11,7 @@ import SortingTableHeaderCell from '@/components/Coingecko/SortingTableHeaderCel
 import Props from '@/interfaces/coingecko/sorting/SortingProps'
 
 import {dimensions, usdCellParams} from '../setting'
-
-const USDCells: FC<Props> = ({sorting, setSorting}) => {
-  const {lastUpdatedItemParams, historicItemParams} = usdCellParams
-
-  return (
-    <>
-      <SortingTableHeaderCell
-        label={lastUpdatedItemParams.label}
-        sortBy={SortingKey.USD}
-        sorting={sorting}
-        setSorting={setSorting}
-        width={lastUpdatedItemParams.width}
-        mobile={lastUpdatedItemParams.mobile}
-      />
-
-      <SortingTableHeaderCell
-        label={historicItemParams.label}
-        sortBy={SortingKey.USD_HISTORY}
-        sorting={sorting}
-        setSorting={setSorting}
-        mobile={historicItemParams.mobile}
-        width={historicItemParams.width}
-      />
-    </>
-  )
-}
+import USDHeaderCell from '@/components/Coingecko/USDHeaderCell'
 
 const BTCCells: FC<Props> = ({sorting, setSorting}) => {
   const {price, priceChanged} = dimensions.btc
@@ -96,7 +71,11 @@ const CoingeckoTableHeader: FC<Props> = ({sorting, setSorting}) => {
   return (
     <TableHeader>
       <CoinCell width={coin.width}>Coin</CoinCell>
-      <USDCells setSorting={setSorting} sorting={sorting} />
+      <USDHeaderCell
+        setSorting={setSorting}
+        sorting={sorting}
+        settings={usdCellParams}
+      />
       <BTCCells setSorting={setSorting} sorting={sorting} />
       <ETHCells setSorting={setSorting} sorting={sorting} />
     </TableHeader>
