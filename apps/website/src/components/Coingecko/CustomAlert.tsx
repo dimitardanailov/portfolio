@@ -30,7 +30,7 @@ const CustomAlert: FC<Props> = ({sorting}) => {
 
   return (
     <StyledAlert severity="success">
-      <span>The list with crypto coins has a new version! </span>
+      <span>The list with crypto coins has a new version!</span>
       <SortElement />
     </StyledAlert>
   )

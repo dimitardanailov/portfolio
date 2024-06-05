@@ -4,20 +4,21 @@ import {useState} from 'react'
 
 import Collapse from '@mui/material/Collapse'
 
+import CustomAlert from '@/components/Coingecko/CustomAlert'
+
 import {Slogan} from '@/styled-components'
 import Table from '@/styled-components/Coingecko/Table/Table'
-
-import {useCryptoCurrencyList, useSortingCryptoCurrencyList} from './hooks'
+import Box from '@/styled-components/Grid/HFlexBox'
 
 import {
   CoingeckoTableHeader,
   CoingeckoTableBody,
   PageHeaderContainer,
-  CustomAlert,
 } from './Components'
 
+import {useCryptoCurrencyList, useSortingCryptoCurrencyList} from './hooks'
+
 import stack from './stack'
-import Box from '@/styled-components/Grid/HFlexBox'
 
 const Content = () => {
   const [priceListNotifacationIsVisible, setPriceListNotifacationIsVisible] =
