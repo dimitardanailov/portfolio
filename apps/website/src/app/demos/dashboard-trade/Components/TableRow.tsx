@@ -5,8 +5,6 @@ import {FC} from 'react'
 import CoinbaseIcon from '@/components/Icons/Coinbase'
 import PriceComparing from '@/components/Coingecko/PriceComparing'
 
-import styled from 'styled-components'
-
 import {CoingeckoSimplePriceResponse} from '@/types/coingecko/simplePrices'
 import HistoricPrice from '@/classes/HistoricPrice'
 
@@ -19,12 +17,7 @@ import {
 import {dimensions} from '../setting'
 import pricePercentFormat from '@/utils/format/pricePercentFormat'
 
-const CryptoIcon = styled.img`
-  width: 18px;
-  height: 18px;
-
-  margin-right: 0.5rem;
-`
+import {CryptoIcon} from '@/styled-components/Coingecko/components'
 
 export interface Props {
   item: CoingeckoSimplePriceResponse
