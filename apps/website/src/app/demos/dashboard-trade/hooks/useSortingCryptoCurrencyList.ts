@@ -2,8 +2,8 @@ import {useState, useEffect, Dispatch, SetStateAction} from 'react'
 
 import {CoingeckoSimplePriceResponse} from '@/types/coingecko/simplePrices'
 
-import Sorting from '../types/Sorting'
-import updatePriceAndUI from '../ui/updatePriceAndUI'
+import Sorting from '@/types/coingecko/sorting/Sorting'
+import updatePriceAndUI from '@/utils/coingecko/ui/updatePriceAndUI'
 
 import SortingKey from '@/enums/cryptoCurrencyList/SortingKey'
 import Order from '@/enums/Order'

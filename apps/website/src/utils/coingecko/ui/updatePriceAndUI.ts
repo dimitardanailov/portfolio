@@ -1,8 +1,9 @@
+import {Dispatch, SetStateAction} from 'react'
+
 import {CoingeckoSimplePriceResponse} from '@/types/coingecko/simplePrices'
 import SortingKey from '@/enums/cryptoCurrencyList/SortingKey'
 import Order from '@/enums/Order'
 import sortPrices from '@/utils/cryptoCurrencyList/sortCryptoCurrencyList'
-import {Dispatch, SetStateAction} from 'react'
 
 interface Props {
   unsortedPrices: Array<CoingeckoSimplePriceResponse>
