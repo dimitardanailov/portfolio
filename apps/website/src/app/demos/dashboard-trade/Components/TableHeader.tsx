@@ -1,20 +1,16 @@
 'use client'
 
-import {Dispatch, FC, SetStateAction} from 'react'
+import {FC} from 'react'
 
 import {TableHeader, CoinCell} from '@/styled-components/Coingecko/Table'
 
 import SortingKey from '@/enums/cryptoCurrencyList/SortingKey'
 
-import Sorting from '@/types/coingecko/sorting/Sorting'
-
-import {dimensions} from '../setting'
 import SortingTableHeaderCell from '@/components/Coingecko/SortingTableHeaderCell'
 
-export interface Props {
-  setSorting: Dispatch<SetStateAction<Sorting>>
-  sorting: Sorting
-}
+import Props from '@/interfaces/coingecko/sorting/SortingProps'
+
+import {dimensions} from '../setting'
 
 const USDCells: FC<Props> = ({sorting, setSorting}) => {
   const {price, priceChanged} = dimensions.usd
