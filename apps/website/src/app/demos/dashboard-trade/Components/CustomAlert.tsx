@@ -4,7 +4,7 @@ import {FC} from 'react'
 
 import Alert from '@mui/material/Alert'
 
-import Sorting from '../types/Sorting'
+import Sorting from '@/types/coingecko/sorting/Sorting'
 
 import styled from 'styled-components'
 
