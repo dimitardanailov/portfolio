@@ -16,7 +16,8 @@ import {
   PageHeaderContainer,
 } from './Components'
 
-import {useCryptoCurrencyList, useSortingCryptoCurrencyList} from './hooks'
+import useSortingCryptoCurrencyList from '@/hooks/coingecko/simplePrices/useSortingCryptoCurrencyList'
+import {useCryptoCurrencyList} from './hooks'
 
 import stack from './stack'
 
