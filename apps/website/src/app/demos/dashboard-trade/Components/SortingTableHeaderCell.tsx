@@ -4,9 +4,10 @@ import {FC} from 'react'
 
 import {TableCell} from '@/styled-components/Coingecko/'
 
-import {Props as SharedProps} from './TableHeader'
+import SharedProps from '@/interfaces/coingecko/sorting/SortingProps'
+
 import SortingKey from '@/enums/cryptoCurrencyList/SortingKey'
-import setSortingParams from '../utils/setSortingParams'
+import setSortingParams from '@/utils/sorting/setSortingParams'
 import MobileSortingCellParams from '@/types/coingecko/cells/MobileSortingCellParams'
 
 const title = 'sort'
