@@ -5,23 +5,12 @@ import {
   CoingeckoSimplePriceResponse,
 } from '@/types/coingecko/simplePrices'
 
+import generateRequestParams from '@/utils/coingecko/simplePrices/generateRequestParams'
+
 function getPrices(
   params: CoingeckoSimplePriceRequest,
 ): Promise<Array<CoingeckoSimplePriceResponse>> {
-  const domain = process.env.NEXT_PUBLIC_COINGECKO_DOMAIN
-  const key = process.env.NEXT_PUBLIC_COINGECKO_API_KEY
-
-  const url = `${domain}/simple/price`
-
-  const options = {
-    method: 'GET',
-    url,
-    params: params,
-    headers: {
-      accept: 'application/json',
-      'x-cg-demo-api-key': key,
-    },
-  }
+  const options = generateRequestParams(params)
 
   const promise: Promise<Array<CoingeckoSimplePriceResponse>> = new Promise(
     (resolve, reject) => {
