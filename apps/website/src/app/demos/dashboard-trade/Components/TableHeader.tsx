@@ -10,29 +10,29 @@ import SortingTableHeaderCell from '@/components/Coingecko/SortingTableHeaderCel
 
 import Props from '@/interfaces/coingecko/sorting/SortingProps'
 
-import {dimensions} from '../setting'
+import {dimensions, usdCellParams} from '../setting'
 
 const USDCells: FC<Props> = ({sorting, setSorting}) => {
-  const {price, priceChanged} = dimensions.usd
+  const {lastUpdatedItemParams, historicItemParams} = usdCellParams
 
   return (
     <>
       <SortingTableHeaderCell
-        label="usd"
+        label={lastUpdatedItemParams.label}
         sortBy={SortingKey.USD}
         sorting={sorting}
         setSorting={setSorting}
-        width={price.width}
-        mobile={price.mobile}
+        width={lastUpdatedItemParams.width}
+        mobile={lastUpdatedItemParams.mobile}
       />
 
       <SortingTableHeaderCell
-        label="Day ago"
+        label={historicItemParams.label}
         sortBy={SortingKey.USD_HISTORY}
         sorting={sorting}
         setSorting={setSorting}
-        mobile={priceChanged.mobile}
-        width={priceChanged.width}
+        mobile={historicItemParams.mobile}
+        width={historicItemParams.width}
       />
     </>
   )
