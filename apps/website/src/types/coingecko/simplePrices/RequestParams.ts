@@ -1,3 +1,7 @@
+/**
+ * Docs:
+ * https://docs.coingecko.com/v3.0.1/reference/simple-price
+ */
 export type CoingeckoSimplePriceRequest = {
   ids: string
   vs_currencies: string
