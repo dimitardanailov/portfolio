@@ -11,6 +11,10 @@ enum CoingeckoCryptoCurrency {
   AVALANCHE = 'avalanche-2',
   INJECTIVE = 'injective-protocol',
   GRAPH_PROTOCOL = 'the-graph',
+
+  // SOLANA
+  JUPITER = 'jupiter-exchange-solana',
+  DRIFT_PROTOCOL = 'drift-protocol',
 }
 
 export default CoingeckoCryptoCurrency
