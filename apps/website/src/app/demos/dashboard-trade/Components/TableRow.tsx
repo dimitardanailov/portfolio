@@ -9,7 +9,7 @@ import {CoingeckoSimplePriceResponse} from '@/types/coingecko/simplePrices'
 import HistoricPrice from '@/classes/HistoricPrice'
 
 import {TableRow, CoinCell, TableCell} from '@/styled-components/Coingecko'
-import {dimensions, usdCellParams} from '../setting'
+import {dimensions, usdCellParams, btcCellParams} from '../setting'
 import pricePercentFormat from '@/utils/format/pricePercentFormat'
 
 import {CryptoIcon} from '@/styled-components/Coingecko/components'
@@ -32,14 +32,14 @@ const CoingeckoTableRow: FC<Props> = ({item}) => {
       </CoinCell>
       <USDTableRow item={item} settings={usdCellParams} />
       <TableCell
-        width={dimensions.btc.price.width}
-        mobile={dimensions.btc.priceChanged.mobile}
+        width={btcCellParams.lastUpdatedItemParams.width}
+        mobile={btcCellParams.lastUpdatedItemParams.mobile}
       >
         {item.btc !== 1 && item.btc.toFixed(5)}
       </TableCell>
       <TableCell
-        width={dimensions.btc.priceChanged.width}
-        mobile={dimensions.btc.priceChanged.mobile}
+        width={btcCellParams.historicItemParams.width}
+        mobile={btcCellParams.historicItemParams.mobile}
       >
         <PriceComparing percent={item.btc_24h_change}>
           <span title={historicPrice.btc.toString()}>

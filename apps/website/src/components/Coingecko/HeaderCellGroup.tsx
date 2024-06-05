@@ -11,16 +11,24 @@ import UICellParams from '@/types/coingecko/cells/UICellParams'
 
 interface Props extends SortingProps {
   settings: UICellParams
+  sortByLastUpdatedItem: SortingKey
+  sortByHistoricItem: SortingKey
 }
 
-const USDHeaderCell: FC<Props> = ({sorting, setSorting, settings}) => {
+const HeaderCellGroup: FC<Props> = ({
+  sorting,
+  setSorting,
+  settings,
+  sortByLastUpdatedItem,
+  sortByHistoricItem,
+}) => {
   const {lastUpdatedItemParams, historicItemParams} = settings
 
   return (
     <>
       <SortingTableHeaderCell
         label={lastUpdatedItemParams.label}
-        sortBy={SortingKey.USD}
+        sortBy={sortByLastUpdatedItem}
         sorting={sorting}
         setSorting={setSorting}
         width={lastUpdatedItemParams.width}
@@ -29,7 +37,7 @@ const USDHeaderCell: FC<Props> = ({sorting, setSorting, settings}) => {
 
       <SortingTableHeaderCell
         label={historicItemParams.label}
-        sortBy={SortingKey.USD_HISTORY}
+        sortBy={sortByHistoricItem}
         sorting={sorting}
         setSorting={setSorting}
         mobile={historicItemParams.mobile}
@@ -39,4 +47,4 @@ const USDHeaderCell: FC<Props> = ({sorting, setSorting, settings}) => {
   )
 }
 
-export default USDHeaderCell
+export default HeaderCellGroup
