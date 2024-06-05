@@ -3,13 +3,12 @@
 import {FC} from 'react'
 
 import CoinbaseIcon from '@/components/Icons/Coinbase'
+import PriceComparing from '@/components/Coingecko/PriceComparing'
 
 import styled from 'styled-components'
 
 import {CoingeckoSimplePriceResponse} from '@/types/coingecko/simplePrices'
 import HistoricPrice from '@/classes/HistoricPrice'
-
-import PriceComparing from './PriceComparing'
 
 import {
   TableRow,
