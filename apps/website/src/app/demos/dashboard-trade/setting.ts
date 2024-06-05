@@ -19,25 +19,28 @@ export const usdCellParams: UICellParams = {
   },
 }
 
+export const btcCellParams: UICellParams = {
+  lastUpdatedItemParams: {
+    label: 'BTC',
+    width: '10.5%',
+    mobile: {
+      hidden: true,
+    },
+  },
+  historicItemParams: {
+    label: 'Day ago',
+    width: '19.25%',
+    mobile: {
+      hidden: true,
+    },
+  },
+}
+
 export const dimensions = {
   coin: {
     width: '8%',
     mobile: {
       hidden: false,
-    },
-  },
-  btc: {
-    price: {
-      width: '10.5%',
-      mobile: {
-        hidden: true,
-      },
-    },
-    priceChanged: {
-      width: '19.25%',
-      mobile: {
-        hidden: true,
-      },
     },
   },
   eth: {
