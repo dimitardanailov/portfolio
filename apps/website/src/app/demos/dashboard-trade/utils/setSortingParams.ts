@@ -1,5 +1,5 @@
 import SortingKey from '@/enums/cryptoCurrencyList/SortingKey'
-import Sorting from '../types/Sorting'
+import Sorting from '@/types/coingecko/sorting/Sorting'
 import Order from '@/enums/Order'
 
 function setSortingParams(sortBy: SortingKey, sorting: Sorting): Sorting {
