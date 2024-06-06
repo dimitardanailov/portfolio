@@ -4,15 +4,10 @@ import {FC} from 'react'
 
 import HistoricPrice from '@/classes/HistoricPrice'
 import {PriceUSDCell, TableCell} from '@/styled-components/Coingecko'
-import {CoingeckoSimplePriceResponse} from '@/types/coingecko/simplePrices'
-import PriceComparing from './PriceComparing'
+import PriceComparing from '../PriceComparing'
 import pricePercentFormat from '@/utils/format/pricePercentFormat'
-import UICellParams from '@/types/coingecko/cells/UICellParams'
 
-export interface Props {
-  item: CoingeckoSimplePriceResponse
-  settings: UICellParams
-}
+import Props from './shared'
 
 const USDTableRow: FC<Props> = ({item, settings}) => {
   const historicPrice = new HistoricPrice()
