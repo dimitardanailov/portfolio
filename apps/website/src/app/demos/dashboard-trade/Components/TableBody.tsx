@@ -6,7 +6,7 @@ import {CoingeckoSimplePriceResponse} from '@/types/coingecko/simplePrices'
 
 import UIComponentProps from '@/types/coingecko/cells/UIComponentProps'
 
-import CoingeckoTableRow from './TableRow'
+import {TableRow} from '@/components/Coingecko/rows'
 
 type Props = {
   items: Array<CoingeckoSimplePriceResponse>
@@ -22,7 +22,7 @@ const CoingeckoTableBody: FC<Props> = ({
   const listItems = items.map(
     (item: CoingeckoSimplePriceResponse, index: number) => (
       <li key={index} className="list-none">
-        <CoingeckoTableRow
+        <TableRow
           item={item}
           coinCellParams={coinCellParams}
           usdCellParams={usdCellParams}
