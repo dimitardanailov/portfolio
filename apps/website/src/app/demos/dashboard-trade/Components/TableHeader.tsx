@@ -11,18 +11,16 @@ import Props from '@/interfaces/coingecko/sorting/SortingProps'
 import HeaderCellGroup from '@/components/Coingecko/HeaderCellGroup'
 
 import {
-  dimensions,
+  coinCellParams,
   usdCellParams,
   btcCellParams,
   ethCellParams,
 } from '../setting'
 
 const CoingeckoTableHeader: FC<Props> = ({sorting, setSorting}) => {
-  const {coin} = dimensions
-
   return (
     <TableHeader>
-      <CoinCell width={coin.width}>Coin</CoinCell>
+      <CoinCell width={coinCellParams.width}>Coin</CoinCell>
       <HeaderCellGroup
         setSorting={setSorting}
         sorting={sorting}

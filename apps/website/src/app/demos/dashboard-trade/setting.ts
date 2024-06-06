@@ -1,4 +1,11 @@
-import UICellParams from '@/types/coingecko/cells/UICellParams'
+import {UICellParams, UICoinCellParams} from '@/types/coingecko/cells'
+
+export const coinCellParams: UICoinCellParams = {
+  width: '8%',
+  mobile: {
+    hidden: false,
+  },
+}
 
 export const usdCellParams: UICellParams = {
   lastUpdatedItemParams: {
@@ -49,15 +56,6 @@ export const ethCellParams: UICellParams = {
     width: '19.25%',
     mobile: {
       hidden: true,
-    },
-  },
-}
-
-export const dimensions = {
-  coin: {
-    width: '8%',
-    mobile: {
-      hidden: false,
     },
   },
 }

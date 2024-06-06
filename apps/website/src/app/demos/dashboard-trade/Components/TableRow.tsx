@@ -10,7 +10,7 @@ import HistoricPrice from '@/classes/HistoricPrice'
 
 import {TableRow, CoinCell, TableCell} from '@/styled-components/Coingecko'
 import {
-  dimensions,
+  coinCellParams,
   usdCellParams,
   btcCellParams,
   ethCellParams,
@@ -32,7 +32,7 @@ const CoingeckoTableRow: FC<Props> = ({item}) => {
 
   return (
     <TableRow>
-      <CoinCell width={dimensions.coin.width}>
+      <CoinCell width={coinCellParams.width}>
         <CryptoIcon src={icon} title={item.cryptoCurrency} />
       </CoinCell>
       <USDTableRow item={item} settings={usdCellParams} />
