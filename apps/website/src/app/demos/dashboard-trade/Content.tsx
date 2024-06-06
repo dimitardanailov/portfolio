@@ -4,13 +4,14 @@ import {useState} from 'react'
 
 import Collapse from '@mui/material/Collapse'
 
+import GridTwoColumns from '@/components/Grid/TwoColumns'
+
 import TableBody from '@/components/Coingecko/TableBody'
 import TableHeader from '@/components/Coingecko/TableHeader'
 import CustomAlert from '@/components/Coingecko/CustomAlert'
 
 import {Slogan} from '@/styled-components'
 import Table from '@/styled-components/Coingecko/Table/Table'
-import Box from '@/styled-components/Grid/HFlexBox'
 
 import {PageHeaderContainer} from './Components'
 
@@ -43,18 +44,18 @@ const Content = () => {
   return (
     <>
       <Slogan>Coingecko portfolio fetcher</Slogan>
-      <Box>
-        <section className="w-6/12">
-          <div>Technologies: {stack.join(', ')}</div>
-          <p>
-            Sort by usd price, Old price USD (24h), Old price BTC (24h), Old
-            price ETH (24h)
-          </p>
-        </section>
-        <section className="w-6/12">
-          <PageHeaderContainer apiRequest={apiRequest} />
-        </section>
-      </Box>
+      <GridTwoColumns
+        LeftBox={
+          <>
+            <div>Technologies: {stack.join(', ')}</div>
+            <p>
+              Sort by usd price, Old price USD (24h), Old price BTC (24h), Old
+              price ETH (24h)
+            </p>
+          </>
+        }
+        RightBox={<PageHeaderContainer apiRequest={apiRequest} />}
+      />
 
       <Collapse in={priceListNotifacationIsVisible}>
         <CustomAlert sorting={sorting} />
