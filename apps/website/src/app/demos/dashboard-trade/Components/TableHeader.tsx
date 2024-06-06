@@ -6,43 +6,57 @@ import {TableHeader, CoinCell} from '@/styled-components/Coingecko/Table'
 
 import SortingKey from '@/enums/cryptoCurrencyList/SortingKey'
 
-import Props from '@/interfaces/coingecko/sorting/SortingProps'
+import SortingProps from '@/interfaces/coingecko/sorting/SortingProps'
 
 import HeaderCellGroup from '@/components/Coingecko/HeaderCellGroup'
 
-import {
+import {UICoinCellParams, UICellParams} from '@/types/coingecko/cells'
+
+interface Props extends SortingProps {
+  coinCellParams?: UICoinCellParams
+  usdCellParams?: UICellParams
+  btcCellParams?: UICellParams
+  ethCellParams?: UICellParams
+}
+
+const CoingeckoTableHeader: FC<Props> = ({
+  sorting,
+  setSorting,
   coinCellParams,
   usdCellParams,
   btcCellParams,
   ethCellParams,
-} from '../setting'
-
-const CoingeckoTableHeader: FC<Props> = ({sorting, setSorting}) => {
+}) => {
   return (
     <TableHeader>
-      <CoinCell width={coinCellParams.width}>Coin</CoinCell>
-      <HeaderCellGroup
-        setSorting={setSorting}
-        sorting={sorting}
-        settings={usdCellParams}
-        sortByLastUpdatedItem={SortingKey.USD}
-        sortByHistoricItem={SortingKey.USD_HISTORY}
-      />
-      <HeaderCellGroup
-        setSorting={setSorting}
-        sorting={sorting}
-        settings={btcCellParams}
-        sortByLastUpdatedItem={SortingKey.BTC}
-        sortByHistoricItem={SortingKey.BTC_HISTORY}
-      />
-
-      <HeaderCellGroup
-        setSorting={setSorting}
-        sorting={sorting}
-        settings={ethCellParams}
-        sortByLastUpdatedItem={SortingKey.ETH}
-        sortByHistoricItem={SortingKey.ETH_HISTORY}
-      />
+      {coinCellParams && <CoinCell width={coinCellParams.width}>Coin</CoinCell>}
+      {usdCellParams && (
+        <HeaderCellGroup
+          setSorting={setSorting}
+          sorting={sorting}
+          settings={usdCellParams}
+          sortByLastUpdatedItem={SortingKey.USD}
+          sortByHistoricItem={SortingKey.USD_HISTORY}
+        />
+      )}
+      {btcCellParams && (
+        <HeaderCellGroup
+          setSorting={setSorting}
+          sorting={sorting}
+          settings={btcCellParams}
+          sortByLastUpdatedItem={SortingKey.BTC}
+          sortByHistoricItem={SortingKey.BTC_HISTORY}
+        />
+      )}
+      {ethCellParams && (
+        <HeaderCellGroup
+          setSorting={setSorting}
+          sorting={sorting}
+          settings={ethCellParams}
+          sortByLastUpdatedItem={SortingKey.ETH}
+          sortByHistoricItem={SortingKey.ETH_HISTORY}
+        />
+      )}
     </TableHeader>
   )
 }

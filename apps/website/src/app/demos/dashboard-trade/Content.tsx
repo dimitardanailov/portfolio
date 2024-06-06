@@ -21,6 +21,13 @@ import {useCryptoCurrencyList} from './hooks'
 
 import stack from './stack'
 
+import {
+  coinCellParams,
+  usdCellParams,
+  ethCellParams,
+  btcCellParams,
+} from './setting'
+
 const Content = () => {
   const [priceListNotifacationIsVisible, setPriceListNotifacationIsVisible] =
     useState(false)
@@ -56,7 +63,14 @@ const Content = () => {
       </Collapse>
 
       <Table>
-        <CoingeckoTableHeader setSorting={setSorting} sorting={sorting} />
+        <CoingeckoTableHeader
+          setSorting={setSorting}
+          sorting={sorting}
+          coinCellParams={coinCellParams}
+          btcCellParams={btcCellParams}
+          ethCellParams={ethCellParams}
+          usdCellParams={usdCellParams}
+        />
         <CoingeckoTableBody items={prices} />
       </Table>
     </>
