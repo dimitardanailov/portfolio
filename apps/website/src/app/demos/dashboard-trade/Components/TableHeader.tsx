@@ -10,14 +10,9 @@ import SortingProps from '@/interfaces/coingecko/sorting/SortingProps'
 
 import HeaderCellGroup from '@/components/Coingecko/HeaderCellGroup'
 
-import {UICoinCellParams, UICellParams} from '@/types/coingecko/cells'
+import UIComponentProps from '@/types/coingecko/cells/UIComponentProps'
 
-interface Props extends SortingProps {
-  coinCellParams?: UICoinCellParams
-  usdCellParams?: UICellParams
-  btcCellParams?: UICellParams
-  ethCellParams?: UICellParams
-}
+type Props = SortingProps & UIComponentProps
 
 const CoingeckoTableHeader: FC<Props> = ({
   sorting,
