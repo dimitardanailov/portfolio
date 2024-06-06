@@ -4,7 +4,7 @@ import {useState} from 'react'
 
 import Collapse from '@mui/material/Collapse'
 
-import GridTwoColumns from '@/components/Grid/TwoColumns'
+import AdaptiveGridTwoEqualItems from '@/components/AdaptiveGrid/TwoEqualItems'
 
 import TableBody from '@/components/Coingecko/TableBody'
 import TableHeader from '@/components/Coingecko/TableHeader'
@@ -43,8 +43,8 @@ const Content = () => {
   return (
     <>
       <Slogan>Coingecko portfolio fetcher</Slogan>
-      <GridTwoColumns
-        LeftBox={
+      <AdaptiveGridTwoEqualItems
+        ItemA={
           <>
             <div>Technologies: {stack.join(', ')}</div>
             <p>
@@ -53,7 +53,7 @@ const Content = () => {
             </p>
           </>
         }
-        RightBox={<PageHeaderContainer apiRequest={apiRequest} />}
+        ItemB={<PageHeaderContainer apiRequest={apiRequest} />}
       />
 
       <Collapse in={priceListNotifacationIsVisible}>

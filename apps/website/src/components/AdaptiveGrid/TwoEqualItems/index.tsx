@@ -7,8 +7,8 @@ import Box from '@/styled-components/Grid/Mobile/HFlexBox'
 import styled from 'styled-components'
 
 export interface Props {
-  LeftBox: JSX.Element
-  RightBox: JSX.Element
+  ItemA: JSX.Element
+  ItemB: JSX.Element
 }
 
 const BoxWrapper = styled.div`
@@ -20,13 +20,13 @@ const BoxWrapper = styled.div`
   }
 `
 
-const GridTwoColumns: FC<Props> = ({LeftBox, RightBox}) => {
+const AdaptiveGridTwoEqualItems: FC<Props> = ({ItemA, ItemB}) => {
   return (
     <Box>
-      <BoxWrapper>{LeftBox}</BoxWrapper>
-      <BoxWrapper>{RightBox}</BoxWrapper>
+      <BoxWrapper>{ItemA}</BoxWrapper>
+      <BoxWrapper>{ItemB}</BoxWrapper>
     </Box>
   )
 }
 
-export default GridTwoColumns
+export default AdaptiveGridTwoEqualItems
