@@ -9,11 +9,10 @@ import GridTwoColumns from '@/components/Grid/TwoColumns'
 import TableBody from '@/components/Coingecko/TableBody'
 import TableHeader from '@/components/Coingecko/TableHeader'
 import CustomAlert from '@/components/Coingecko/CustomAlert'
+import PageHeaderContainer from '@/components/Coingecko/PageHeaderContainer'
 
 import {Slogan} from '@/styled-components'
 import Table from '@/styled-components/Coingecko/Table/Table'
-
-import {PageHeaderContainer} from './Components'
 
 import useSortingCryptoCurrencyList from '@/hooks/coingecko/simplePrices/useSortingCryptoCurrencyList'
 import {useCryptoCurrencyList} from './hooks'
