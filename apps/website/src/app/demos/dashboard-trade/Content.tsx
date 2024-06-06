@@ -68,7 +68,13 @@ const Content = () => {
           ethCellParams={ethCellParams}
           usdCellParams={usdCellParams}
         />
-        <CoingeckoTableBody items={prices} />
+        <CoingeckoTableBody
+          items={prices}
+          coinCellParams={coinCellParams}
+          btcCellParams={btcCellParams}
+          ethCellParams={ethCellParams}
+          usdCellParams={usdCellParams}
+        />
       </Table>
     </>
   )
