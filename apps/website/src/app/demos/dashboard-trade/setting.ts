@@ -1,6 +1,7 @@
 import {UICellParams, UICoinCellParams} from '@/types/coingecko/cells'
 
 export const coinCellParams: UICoinCellParams = {
+  label: 'Coin',
   width: '8%',
   mobile: {
     hidden: false,
