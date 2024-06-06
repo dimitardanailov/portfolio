@@ -4,6 +4,7 @@ import {useState} from 'react'
 
 import Collapse from '@mui/material/Collapse'
 
+import TableBody from '@/components/Coingecko/TableBody'
 import TableHeader from '@/components/Coingecko/TableHeader'
 import CustomAlert from '@/components/Coingecko/CustomAlert'
 
@@ -11,7 +12,7 @@ import {Slogan} from '@/styled-components'
 import Table from '@/styled-components/Coingecko/Table/Table'
 import Box from '@/styled-components/Grid/HFlexBox'
 
-import {CoingeckoTableBody, PageHeaderContainer} from './Components'
+import {PageHeaderContainer} from './Components'
 
 import useSortingCryptoCurrencyList from '@/hooks/coingecko/simplePrices/useSortingCryptoCurrencyList'
 import {useCryptoCurrencyList} from './hooks'
@@ -68,7 +69,7 @@ const Content = () => {
           ethCellParams={ethCellParams}
           usdCellParams={usdCellParams}
         />
-        <CoingeckoTableBody
+        <TableBody
           items={prices}
           coinCellParams={coinCellParams}
           btcCellParams={btcCellParams}
