@@ -6,39 +6,16 @@ import {TableHeader, CoinCell} from '@/styled-components/Coingecko/Table'
 
 import SortingKey from '@/enums/cryptoCurrencyList/SortingKey'
 
-import SortingTableHeaderCell from '@/components/Coingecko/SortingTableHeaderCell'
-
 import Props from '@/interfaces/coingecko/sorting/SortingProps'
 
 import HeaderCellGroup from '@/components/Coingecko/HeaderCellGroup'
 
-import {dimensions, usdCellParams, btcCellParams} from '../setting'
-
-const ETHCells: FC<Props> = ({sorting, setSorting}) => {
-  const {price, priceChanged} = dimensions.eth
-
-  return (
-    <>
-      <SortingTableHeaderCell
-        label="ETH"
-        sortBy={SortingKey.ETH}
-        sorting={sorting}
-        setSorting={setSorting}
-        width={price.width}
-        mobile={price.mobile}
-      />
-
-      <SortingTableHeaderCell
-        label="Day ago"
-        sortBy={SortingKey.ETH_HISTORY}
-        sorting={sorting}
-        setSorting={setSorting}
-        width={priceChanged.width}
-        mobile={priceChanged.mobile}
-      />
-    </>
-  )
-}
+import {
+  dimensions,
+  usdCellParams,
+  btcCellParams,
+  ethCellParams,
+} from '../setting'
 
 const CoingeckoTableHeader: FC<Props> = ({sorting, setSorting}) => {
   const {coin} = dimensions
@@ -61,7 +38,13 @@ const CoingeckoTableHeader: FC<Props> = ({sorting, setSorting}) => {
         sortByHistoricItem={SortingKey.BTC_HISTORY}
       />
 
-      <ETHCells setSorting={setSorting} sorting={sorting} />
+      <HeaderCellGroup
+        setSorting={setSorting}
+        sorting={sorting}
+        settings={ethCellParams}
+        sortByLastUpdatedItem={SortingKey.ETH}
+        sortByHistoricItem={SortingKey.ETH_HISTORY}
+      />
     </TableHeader>
   )
 }
