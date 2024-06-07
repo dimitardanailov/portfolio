@@ -7,14 +7,10 @@ import {
 import generateRequestParams from '@/utils/coingecko/simplePrices/generateRequestParams'
 
 class SimplePriceRequest {
-  params: CoingeckoSimplePriceRequest
-
-  constructor(params: CoingeckoSimplePriceRequest) {
-    this.params = params
-  }
-
-  async execute(): Promise<Array<CoingeckoSimplePriceResponse>> {
-    const options = generateRequestParams(this.params)
+  async execute(
+    params: CoingeckoSimplePriceRequest,
+  ): Promise<Array<CoingeckoSimplePriceResponse>> {
+    const options = generateRequestParams(params)
 
     const promise: Promise<Array<CoingeckoSimplePriceResponse>> = new Promise(
       (resolve, reject) => {

@@ -14,8 +14,12 @@ import PageHeaderContainer from '@/components/Coingecko/PageHeaderContainer'
 import {Slogan} from '@/styled-components'
 import Table from '@/styled-components/Coingecko/Table/Table'
 
-import useSortingCryptoCurrencyList from '@/hooks/coingecko/simplePrices/useSortingCryptoCurrencyList'
-import {useCryptoCurrencyList} from './hooks'
+import {
+  useCryptoCurrencyList,
+  useSortingCryptoCurrencyList,
+} from '@/hooks/coingecko/simplePrices'
+
+import {getCoingeckoRequestParams} from './db'
 
 import stack from './stack'
 
@@ -30,9 +34,11 @@ const Content = () => {
   const [priceListNotifacationIsVisible, setPriceListNotifacationIsVisible] =
     useState(false)
 
-  const {prices, setPrices, apiRequest} = useCryptoCurrencyList(
+  const params = getCoingeckoRequestParams()
+  const {prices, setPrices, apiRequest} = useCryptoCurrencyList({
     setPriceListNotifacationIsVisible,
-  )
+    params,
+  })
 
   const {sorting, setSorting} = useSortingCryptoCurrencyList({
     prices,
