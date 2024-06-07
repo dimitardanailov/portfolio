@@ -11,6 +11,8 @@ export function getCoingeckoRequestParams(): CoingeckoSimplePriceRequest {
     Currency.WEN_SOLANA,
     Currency.WORMHOLE,
     Currency.PARCL,
+    Currency.JITO_GOVERNANCE_TOKEN,
+    Currency.PYTH_NETWORK,
   ]
 
   return {

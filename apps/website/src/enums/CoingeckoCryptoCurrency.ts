@@ -18,6 +18,8 @@ enum CoingeckoCryptoCurrency {
   DRIFT_PROTOCOL = 'drift-protocol',
   WORMHOLE = 'wormhole',
   PARCL = 'parcl',
+  PYTH_NETWORK = 'pyth-network',
+  JITO_GOVERNANCE_TOKEN = 'jito-governance-token',
 }
 
 export default CoingeckoCryptoCurrency
