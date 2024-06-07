@@ -1,24 +1,28 @@
-export const dimensions = {
-  coin: {
-    width: '8%',
+import {UICellParams, UICoinCellParams} from '@/types/coingecko/cells'
+
+export const coinCellParams: UICoinCellParams = {
+  label: 'Coin',
+  width: '8%',
+  mobile: {
+    hidden: false,
+  },
+}
+
+export const usdCellParams: UICellParams = {
+  lastUpdatedItemParams: {
+    label: 'USD',
+    width: '46%',
     mobile: {
       hidden: false,
+      width: '46%',
     },
   },
-  usd: {
-    price: {
-      width: '30%',
-      mobile: {
-        hidden: false,
-        width: '30%',
-      },
-    },
-    priceChanged: {
-      width: '62%',
-      mobile: {
-        hidden: false,
-        width: '62%',
-      },
+  historicItemParams: {
+    label: 'Day ago',
+    width: '46%',
+    mobile: {
+      hidden: false,
+      width: '46%',
     },
   },
 }

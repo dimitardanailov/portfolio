@@ -8,6 +8,9 @@ export function getCoingeckoRequestParams(): CoingeckoSimplePriceRequest {
     Currency.SOLANA,
     Currency.DRIFT_PROTOCOL,
     Currency.JUPITER,
+    Currency.WEN_SOLANA,
+    Currency.WORMHOLE,
+    Currency.PARCL,
   ]
 
   return {

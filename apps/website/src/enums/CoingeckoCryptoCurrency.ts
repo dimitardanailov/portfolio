@@ -14,7 +14,10 @@ enum CoingeckoCryptoCurrency {
 
   // SOLANA
   JUPITER = 'jupiter-exchange-solana',
+  WEN_SOLANA = 'wen-4',
   DRIFT_PROTOCOL = 'drift-protocol',
+  WORMHOLE = 'wormhole',
+  PARCL = 'parcl',
 }
 
 export default CoingeckoCryptoCurrency
