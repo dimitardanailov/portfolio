@@ -20,6 +20,15 @@ enum CoingeckoCryptoCurrency {
   PARCL = 'parcl',
   PYTH_NETWORK = 'pyth-network',
   JITO_GOVERNANCE_TOKEN = 'jito-governance-token',
+
+  // ETHERIUM RESTAKE
+  STETH = 'staked-ether',
+  METH = 'mantle-staked-ether',
+  RSETH = 'kelp-dao-restaked-eth',
+  WEETH = 'wrapped-eeth',
+  EZETH = 'renzo-restaked-eth',
+  STONE = 'stakestone-ether',
+  CBETH = 'coinbase-wrapped-staked-eth',
 }
 
 export default CoingeckoCryptoCurrency
