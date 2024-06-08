@@ -73,6 +73,7 @@ const Content = () => {
           coinCellParams={coinCellParams}
           usdCellParams={usdCellParams}
           btcCellParams={btcCellParams}
+          ethCellParams={ethCellParams}
         />
         <TableBody
           items={prices}
