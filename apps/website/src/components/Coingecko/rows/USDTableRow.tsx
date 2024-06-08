@@ -9,6 +9,10 @@ import pricePercentFormat from '@/utils/format/pricePercentFormat'
 
 import Props from './shared'
 
+function maximumFractionDigits(price: number) {
+  return price > 1000 ? 0 : 2
+}
+
 const USDTableRow: FC<Props> = ({item, settings}) => {
   const historicPrice = new HistoricPrice()
   historicPrice.calculateHistoricDiff(item)
@@ -16,6 +20,7 @@ const USDTableRow: FC<Props> = ({item, settings}) => {
   const formatter = new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'USD',
+    maximumFractionDigits: maximumFractionDigits(item.usd),
   })
   const priceValue = formatter.format(item.usd)
   const {lastUpdatedItemParams, historicItemParams} = settings
