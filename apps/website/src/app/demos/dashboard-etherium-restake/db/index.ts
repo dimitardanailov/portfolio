@@ -6,6 +6,7 @@ export function getCoingeckoRequestParams(): CoingeckoSimplePriceRequest {
     Currency.BTC,
     Currency.ETHEREUM,
     Currency.STETH,
+    Currency.RETH,
     Currency.METH,
     Currency.RSETH,
     Currency.WEETH,

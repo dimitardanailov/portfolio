@@ -23,6 +23,7 @@ enum CoingeckoCryptoCurrency {
 
   // ETHERIUM RESTAKE
   STETH = 'staked-ether',
+  RETH = 'rocket-pool-eth',
   METH = 'mantle-staked-ether',
   RSETH = 'kelp-dao-restaked-eth',
   WEETH = 'wrapped-eeth',
