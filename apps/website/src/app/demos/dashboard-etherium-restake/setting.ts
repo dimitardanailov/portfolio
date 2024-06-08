@@ -5,6 +5,7 @@ export const coinCellParams: UICoinCellParams = {
   width: '8%',
   mobile: {
     hidden: false,
+    width: '12%',
   },
 }
 
@@ -22,7 +23,7 @@ export const usdCellParams: UICellParams = {
     width: '20%',
     mobile: {
       hidden: false,
-      width: '62%',
+      width: '58%',
     },
   },
 }
