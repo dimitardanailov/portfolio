@@ -19,6 +19,7 @@ enum CoingeckoCryptoCurrency {
   WORMHOLE = 'wormhole',
   PARCL = 'parcl',
   PYTH_NETWORK = 'pyth-network',
+  KAMINO = 'kamino',
   JITO_GOVERNANCE_TOKEN = 'jito-governance-token',
 
   // ETHERIUM RESTAKE

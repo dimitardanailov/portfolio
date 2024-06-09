@@ -13,6 +13,7 @@ export function getCoingeckoRequestParams(): CoingeckoSimplePriceRequest {
     Currency.PARCL,
     Currency.JITO_GOVERNANCE_TOKEN,
     Currency.PYTH_NETWORK,
+    Currency.KAMINO,
   ]
 
   return {
