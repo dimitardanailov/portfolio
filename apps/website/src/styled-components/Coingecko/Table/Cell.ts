@@ -27,10 +27,10 @@ export const CoinCell = styled(Cell)`
   display: flex;
   flex-direction: row;
   align-items: center;
-  min-width: 120px;
+  width: ${props => props.width};
 
   @media (max-width: 1024px) {
-    min-width: 50px;
+    width: ${props => (props.mobile?.width ? props.mobile?.width : '60px')};
   }
 `
 
