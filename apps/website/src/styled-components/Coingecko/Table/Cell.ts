@@ -22,12 +22,9 @@ export const Cell = styled.div<Props>`
 `
 
 export const CoinCell = styled(Cell)`
-  position: relative;
-
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: ${props => props.width};
 
   @media (max-width: 1024px) {
     width: ${props => (props.mobile?.width ? props.mobile?.width : '60px')};
