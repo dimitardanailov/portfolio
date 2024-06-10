@@ -31,6 +31,12 @@ enum CoingeckoCryptoCurrency {
   EZETH = 'renzo-restaked-eth',
   STONE = 'stakestone-ether',
   CBETH = 'coinbase-wrapped-staked-eth',
+
+  // ETHEREUM AIRDROPS
+  ENA = 'ethena',
+  MANTA = 'manta-network',
+  ETHFI = 'ether-fi',
+  REZ = 'renzo',
 }
 
 export default CoingeckoCryptoCurrency
