@@ -16,6 +16,7 @@ const Accomplishments = () => {
           . My portfolio includes clients based in USA, Singapore, Israel,
           Germany, Great Britain, Switzerland, United Arab Emirates, Indonesia;
         </li>
+        <li>Management and Leadership skills: 10+ years;</li>
         <li>
           <TargetBlankLink
             text="Ex - contractor Siemens"
@@ -24,8 +25,9 @@ const Accomplishments = () => {
           />{' '}
           and The international Red cross;
         </li>
-        <li>Ex CTO, Staff Engineer, Architect and Engineering manager;</li>
-        <li>Management and Leadership skills: 10+ years;</li>
+        <li>EX CTO;</li>
+        <li>2 x Staff Engineer / Engineering manager;</li>
+        <li>4 x Software Architect / Tech - Lead;</li>
         <li>
           <TargetBlankLink
             Element={
