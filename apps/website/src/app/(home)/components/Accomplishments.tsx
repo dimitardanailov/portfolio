@@ -25,7 +25,9 @@ const Accomplishments = () => {
           />{' '}
           and The international Red cross;
         </li>
-        <li>EX CTO;</li>
+        <li>
+          ex-CTO - Experience with management more than of than 5+ small teams;
+        </li>
         <li>2 x Staff Engineer / Engineering manager;</li>
         <li>4 x Software Architect / Tech - Lead;</li>
         <li>
