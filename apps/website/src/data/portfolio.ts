@@ -9,3 +9,5 @@ const clients = [
   'Indonesia',
   'Bulgaria',
 ]
+
+export {clients}

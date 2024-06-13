@@ -3,6 +3,7 @@
 import TargetBlankLink from '@/components/TargetBlankLink'
 import {listStyle} from './shared'
 import {experienceByYears} from '@/constants/text'
+import {clients} from '@/data/portfolio'
 
 const Accomplishments = () => {
   return (
@@ -13,8 +14,7 @@ const Accomplishments = () => {
           <span className="font-bold">
             {experienceByYears}+ years experience
           </span>
-          . My portfolio includes clients based in USA, Singapore, Israel,
-          Germany, Great Britain, Switzerland, United Arab Emirates, Indonesia;
+          . My portfolio includes clients based in {clients.join(', ')}
         </li>
         <li>Management and Leadership skills: 10+ years;</li>
         <li>
