@@ -1,21 +1,21 @@
 import {CoingeckoSimplePriceRequest} from '@/types/coingecko/simplePrices/RequestParams'
 import Currency from '@/enums/CoingeckoCryptoCurrency'
 
-export function getCoingeckoRequestParams(): CoingeckoSimplePriceRequest {
-  const coingeckoIds = [
-    Currency.BTC,
-    Currency.ETHEREUM,
-    Currency.SOLANA,
-    Currency.DRIFT_PROTOCOL,
-    Currency.JUPITER,
-    Currency.WEN_SOLANA,
-    Currency.WORMHOLE,
-    Currency.PARCL,
-    Currency.JITO_GOVERNANCE_TOKEN,
-    Currency.PYTH_NETWORK,
-    Currency.KAMINO,
-  ]
+export const coingeckoIds = [
+  Currency.BTC,
+  Currency.ETHEREUM,
+  Currency.SOLANA,
+  Currency.DRIFT_PROTOCOL,
+  Currency.JUPITER,
+  Currency.WEN_SOLANA,
+  Currency.WORMHOLE,
+  Currency.PARCL,
+  Currency.JITO_GOVERNANCE_TOKEN,
+  Currency.PYTH_NETWORK,
+  Currency.KAMINO,
+]
 
+export function getCoingeckoRequestParams(): CoingeckoSimplePriceRequest {
   return {
     ids: coingeckoIds.join(','),
     vs_currencies: 'usd',
