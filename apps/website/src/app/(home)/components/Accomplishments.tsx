@@ -39,6 +39,10 @@ const Accomplishments = () => {
             href="https://stackoverflow.com/users/609707/d-danailov"
           />
         </li>
+        <li>
+          Contract offer by The European Commission based in Brussels. Contract
+          type: Belguim (On-site); Position: Application Architect;
+        </li>
       </ul>
     </>
   )
