@@ -1,9 +1,11 @@
-import WalletIcon from '@mui/icons-material/Wallet'
 import HomeIcon from '@mui/icons-material/Home'
-import WorkIcon from '@mui/icons-material/Work'
 import SchoolIcon from '@mui/icons-material/School'
-import FeaturedPlayListIcon from '@mui/icons-material/FeaturedPlayList'
+import DeblurIcon from '@mui/icons-material/Deblur'
 import ArticleIcon from '@mui/icons-material/Article'
+import CameraIcon from '@mui/icons-material/Camera'
+import HandshakeIcon from '@mui/icons-material/Handshake'
+import RecordVoiceOverIcon from '@mui/icons-material/RecordVoiceOver'
+import PagesIcon from '@mui/icons-material/Pages'
 
 export type MenuItem = {
   key: string
@@ -15,7 +17,7 @@ export type MenuItem = {
 
 export const Home: MenuItem = {
   key: 'home',
-  text: '<ddanailov />',
+  text: 'summary',
   href: '/',
   title: 'Dimitar Danailov: Software Development Contractor',
   Icon: <HomeIcon />,
@@ -23,23 +25,23 @@ export const Home: MenuItem = {
 
 export const RecommendationLetters = {
   key: 'recommendation-letters',
-  text: '<recommendations />',
+  text: 'recommendations',
   title: '5 rated: Freelancer',
   href: '/recommendation-letters',
-  Icon: <WalletIcon />,
+  Icon: <RecordVoiceOverIcon />,
 }
 
 export const HireMe = {
   key: 'hire-me',
-  text: '<hire-me/>',
+  text: 'hire me',
   title: '14 years of helping build an inclusive web2 or web3 projects',
   href: '/hire-me',
-  Icon: <WorkIcon />,
+  Icon: <HandshakeIcon />,
 }
 
 export const Certificates = {
   key: 'certificates',
-  text: '<certificates />',
+  text: 'certificates',
   title: 'Certified Engineer by Google, Meta, AWS',
   href: '/certificates',
   Icon: <SchoolIcon />,
@@ -47,18 +49,26 @@ export const Certificates = {
 
 export const Positions = {
   key: 'positions',
-  text: '<positions />',
+  text: 'positions',
   title: 'Ex CTO, Staff Engineer, Architect and Engineering manager',
   href: '/positions',
-  Icon: <FeaturedPlayListIcon />,
+  Icon: <DeblurIcon />,
 }
 
 export const Articles = {
   key: 'articles',
-  text: '<articles />',
+  text: 'articles',
   title: 'Articles about react, vercel, nextjs, nodejs, aws, blockchain',
   href: '/articles',
-  Icon: <ArticleIcon />,
+  Icon: <PagesIcon />,
+}
+
+export const Demos = {
+  key: 'demos',
+  text: 'demos',
+  title: 'React, REST API, React Custom Hooks',
+  href: '/demos',
+  Icon: <CameraIcon />,
 }
 
 export const menuItems: MenuItem[] = [
@@ -68,4 +78,5 @@ export const menuItems: MenuItem[] = [
   Certificates,
   Positions,
   Articles,
+  Demos,
 ]
