@@ -4,6 +4,8 @@ import stack from './stack'
 const listItem = {
   ...props,
   stack,
+  github:
+    'https://github.com/dimitardanailov/portfolio/tree/main/apps/website/src/app/demos/dashboard-trade',
 }
 
 export default listItem
