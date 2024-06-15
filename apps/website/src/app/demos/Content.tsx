@@ -3,6 +3,7 @@
 import {Slogan} from '@/styled-components'
 
 import Link from 'next/link'
+import TargetBlankLink from '@/components/TargetBlankLink'
 
 import items from './items'
 import {description} from './seo'
@@ -36,6 +37,12 @@ const ListItems = () => {
       </Title>
 
       <p>Technologies: {item.stack.join(', ')}</p>
+      <TargetBlankLink
+        href={item.github}
+        hoverIsActive={true}
+        title="Source code preview"
+        text="Source code preview"
+      />
     </ListItem>
   ))
 
