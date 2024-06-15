@@ -4,6 +4,8 @@ import Currency from '@/enums/CoingeckoCryptoCurrency'
 export const coingeckoIds = [
   Currency.BTC,
   Currency.ETHEREUM,
+  Currency.AVALANCHE,
+  Currency.POLYGON,
   Currency.ARBITRUM,
   Currency.OPTIMISM,
   Currency.MODE,
