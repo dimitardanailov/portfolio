@@ -37,6 +37,15 @@ enum CoingeckoCryptoCurrency {
   MANTA = 'manta-network',
   ETHFI = 'ether-fi',
   REZ = 'renzo',
+
+  // L2
+  ARBITRUM = 'arbitrum',
+  OPTIMISM = 'optimism',
+  MODE = 'mode',
+  TAIKO = 'taiko',
+  ZKFAIR = 'zkfair',
+  MANTLE = 'mantle',
+  METIS = 'metis-token',
 }
 
 export default CoingeckoCryptoCurrency
