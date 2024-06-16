@@ -2,12 +2,13 @@
 
 import StrongLabel from '@/styled-components/Text/StrongLabel'
 import TargetBlankLink from '@/components/TargetBlankLink'
-import {HFlexBox} from '@/styled-components/Grid'
+import {HFlexBox, VFlexbox} from '@/styled-components/Grid'
 
 import stack from './stack'
 import {Keyword} from '@/components/SEO'
 
 import {width} from '../consants'
+import {listStyle} from '@/shared/tailwind'
 
 const Content = () => {
   return (
@@ -38,6 +39,36 @@ const Content = () => {
           Microservices, Clean Architecture, Onion architecture, Micro frontends
         </span>
       </HFlexBox>
+      <VFlexbox className="my-3">
+        <StrongLabel width={width}>Responsibilities:</StrongLabel>
+        <ul className={listStyle}>
+          <li>
+            <span className="font-bold">Backend Development:</span> Led the
+            communication interface between our application and SwissPort using
+            Node.js, TypeScript, GraphQL, and MongoDB.
+          </li>
+          <li>
+            <span className="font-bold">Front-end Support:</span> Assisted in
+            the development and maintenance of the front-end application
+            utilizing GraphQL, React, Next.js, and Vercel.
+          </li>
+          <li>
+            <span className="font-bold">System Design:</span> Designed critical
+            system components, ensuring a cohesive and efficient system
+            architecture.
+          </li>
+          <li>
+            <span className="font-bold">Mentorship:</span> Provided guidance and
+            support to junior developers, fostering their growth and ensuring
+            quality code practices.
+          </li>
+          <li>
+            <span className="font-bold">Automation Collaboration:</span>
+            Collaborated with the automation team to streamline and enhance
+            testing and deployment processes.
+          </li>
+        </ul>
+      </VFlexbox>
     </>
   )
 }
