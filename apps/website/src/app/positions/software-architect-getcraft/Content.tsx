@@ -10,6 +10,8 @@ import {width} from '../consants'
 
 import position from './details'
 
+import {Recommendations, Responsibilities} from './Components'
+
 const Content = () => {
   return (
     <>
@@ -33,6 +35,8 @@ const Content = () => {
         <StrongLabel width={width}>Technologies:</StrongLabel>
         <span>{stack.join(', ')}</span>
       </HFlexBox>
+      <Responsibilities />
+      <Recommendations />
     </>
   )
 }
