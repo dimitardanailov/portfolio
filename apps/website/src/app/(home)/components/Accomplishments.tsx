@@ -16,7 +16,7 @@ const Accomplishments = () => {
           </span>
           . My portfolio includes clients based in {clients.join(', ')}
         </li>
-        <li>Management and Leadership skills: 10+ years;</li>
+        <li>Leadership roles: 10+ years;</li>
         <li>
           <TargetBlankLink
             text="Ex - contractor Siemens"
