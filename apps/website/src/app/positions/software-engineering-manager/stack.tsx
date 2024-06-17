@@ -6,6 +6,7 @@ const stack = [
   'GraphQL',
   'Shopify',
   'Machine Learning',
+  'Algolia(AI search)',
 ]
 
 export default stack
