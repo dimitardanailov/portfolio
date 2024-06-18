@@ -11,6 +11,7 @@ import GetCraft from './software-architect-getcraft/Content'
 import LiveArea from './technical-architect/Content'
 import MentorMate from './full-stack-software-architect/Content'
 import CTO from './wollow-soft-cto/Content'
+import WollowDeveloper from './wollow-soft-developer-team-leader/Content'
 
 import {experienceByYears} from '@/constants/text'
 
@@ -55,6 +56,8 @@ const Content = () => {
       <MentorMate />
       <Divider />
       <CTO />
+      <Divider />
+      <WollowDeveloper />
     </>
   )
 }
