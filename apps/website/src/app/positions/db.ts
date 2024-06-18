@@ -7,12 +7,12 @@ import propine from './blockchain-staff-engineer-propine/details'
 import elephantstock from './software-engineering-manager/details'
 import getCraft from './software-architect-getcraft/details'
 
-const positions = new Map<string, Position>()
-positions.set('collinsonGroup', collinsonGroup)
-positions.set('siemens', siemens)
-positions.set('theInternationRedCross', theInternationRedCross)
-positions.set('propine', propine)
-positions.set('elephantstock', elephantstock)
-positions.set('getCraft', getCraft)
+const contractPositions = new Map<string, Position>()
+contractPositions.set('collinsonGroup', collinsonGroup)
+contractPositions.set('siemens', siemens)
+contractPositions.set('theInternationRedCross', theInternationRedCross)
+contractPositions.set('propine', propine)
+contractPositions.set('elephantstock', elephantstock)
+contractPositions.set('getCraft', getCraft)
 
-export default positions
+export {contractPositions}

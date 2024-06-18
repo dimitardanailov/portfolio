@@ -4,14 +4,14 @@ import Position from '@/types/Position'
 
 import ExperiencePosition from '@/components/ExperiencePosition'
 
-import positions from '@/app/positions/db'
+import {contractPositions} from '@/app/positions/db'
 
 import {listStyle} from '../shared'
 
 const conttainerClassName = 'mx-2'
 
 const Roles = () => {
-  const roles = Array.from(positions.values())
+  const roles = Array.from(contractPositions.values())
 
   return roles.map((position: Position) => {
     return (
