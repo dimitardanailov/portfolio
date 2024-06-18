@@ -1,33 +1,17 @@
 'use client'
 
-import Position from '@/types/Position'
-
-import ExperiencePosition from '@/components/ExperiencePosition'
-
-import {contractPositions} from '@/app/positions/db'
+import ContractRoles from './ContractRoles'
 
 import {listStyle} from '../shared'
 
 const conttainerClassName = 'mx-2'
-
-const Roles = () => {
-  const roles = Array.from(contractPositions.values())
-
-  return roles.map((position: Position) => {
-    return (
-      <li key={position.sufix}>
-        <ExperiencePosition position={position} />
-      </li>
-    )
-  })
-}
 
 const Contractor = () => {
   return (
     <div className={conttainerClassName}>
       <section>Remote B2B Contractor (2018 - present)</section>
       <ul className={listStyle}>
-        <Roles />
+        <ContractRoles />
       </ul>
     </div>
   )
