@@ -18,7 +18,7 @@ const Responsibilities = () => {
         <StrongLabel width={width}>Responsibilities:</StrongLabel>
         <ul className={listStyle}>
           <li>
-            <span className="font-bold">Innovation and Productivity:</span>
+            <span className="font-bold">Innovation and Productivity:</span>{' '}
             Added new technological perspectives and implemented innovative
             solutions to drive productivity and technological advancement.
           </li>
