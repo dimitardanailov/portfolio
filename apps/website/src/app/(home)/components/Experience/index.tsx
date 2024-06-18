@@ -33,10 +33,6 @@ const OnSite = () => {
           <ExperiencePosition position={mentorMatePosition} />
         </li>
         <li>
-          Full Stack Software Architect, Mentormate: 2015 - 2017; (Team size:
-          100+);
-        </li>
-        <li>
           Wollow Soft:
           <ul className={listStyle}>
             <li>CTO, Woollow Soft: 2014 - 2015; (Team size: 30+);</li>
