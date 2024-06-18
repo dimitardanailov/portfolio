@@ -2,7 +2,7 @@ import type Position from '@/types/Position'
 
 import {sufix, externalUrl, companyName, period} from './db'
 
-const position = 'CTO'
+const position = 'Developer and Team Leader'
 const teamSize = '20+'
 
 const wollowSoftCTO: Position = {

@@ -10,6 +10,7 @@ import {
   liveAreaPosition,
   mentorMatePosition,
   wollowSoftCTO,
+  wollowSoftDeveloper,
 } from '@/app/positions/db'
 
 const conttainerClassName = 'mx-2'
@@ -42,7 +43,9 @@ const OnSite = () => {
             <li>
               <ExperiencePosition position={wollowSoftCTO} />
             </li>
-            <li>Developer and Team Leader: 2010 - 2014; (Team size: 20+);</li>
+            <li>
+              <ExperiencePosition position={wollowSoftDeveloper} />
+            </li>
           </ul>
         </li>
       </ul>
