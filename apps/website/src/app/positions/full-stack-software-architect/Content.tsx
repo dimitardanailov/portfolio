@@ -38,7 +38,7 @@ const Responsibilities = () => {
             objectives to facilitate effective alignment and project success.
           </li>
           <li>
-            <span className="font-bold">Team Leadership and Development:</span>
+            <span className="font-bold">Team Leadership and Development:</span>{' '}
             Led the substantial growth of the engineering team, concentrating on
             efficient onboarding processes and continuous training to support
             team expansion and skill enhancement.
