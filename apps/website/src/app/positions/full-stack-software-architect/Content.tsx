@@ -18,9 +18,30 @@ const Responsibilities = () => {
         <StrongLabel width={width}>Responsibilities:</StrongLabel>
         <ul className={listStyle}>
           <li>
-            <span className="font-bold">Stakeholder Alignment:</span> Engaged
-            with various stakeholder groups to assess operational needs, define
-            business requirements, and produce precise architectural diagrams.
+            <div className="font-bold">Source Code Development:</div>
+            <ul className="list-disc mx-8">
+              <li>
+                Implemented various complex technological solutions including an
+                equation editor utilizing MathJax as an external library.
+              </li>
+              <li>
+                Developed a sophisticated tool for drawing different shapes
+                within a coordinate system using d3js.
+              </li>
+              <li>Created and maintained diverse native web components.</li>
+            </ul>
+          </li>
+          <li>
+            <span className="font-bold">Stakeholder Alignment:</span> Worked
+            closely with stakeholders both onsite in Minnesota and remotely from
+            Bulgaria, ensuring a deep understanding of their business needs and
+            objectives to facilitate effective alignment and project success.
+          </li>
+          <li>
+            <span className="font-bold">Team Leadership and Development:</span>
+            Led the substantial growth of the engineering team, concentrating on
+            efficient onboarding processes and continuous training to support
+            team expansion and skill enhancement.
           </li>
         </ul>
       </VFlexbox>
