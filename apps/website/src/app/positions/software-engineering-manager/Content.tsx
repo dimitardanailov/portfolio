@@ -27,11 +27,10 @@ const Responsibilities = () => {
             Parent References, Child References, and an Array of Ancestors.
           </li>
           <li>
-            <span className="font-bold">
-              AI-Powered Search: Upgraded the search system from Shopify&rsquo;s
-              default to an AI-enhanced search using Algolia, significantly
-              improving search performance.
-            </span>
+            <span className="font-bold">AI-Powered Search:</span>
+            Upgraded the search system from Shopify&rsquo;s default to an
+            AI-enhanced search using Algolia, significantly improving search
+            performance.
           </li>
           <li>
             <span className="font-bold">Image Processing:</span> Created an
