@@ -7,4 +7,8 @@ const stack = [
   'Google Chrome extensions',
 ]
 
-export {sufix, stack}
+const externalUrl = 'https://mentormate.com/'
+const companyName = 'Mentormate'
+const period = '2015 - 2017'
+
+export {sufix, stack, externalUrl, companyName, period}
