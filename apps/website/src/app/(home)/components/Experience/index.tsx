@@ -4,6 +4,10 @@ import ContractRoles from './ContractRoles'
 
 import {listStyle} from '../shared'
 
+import ExperiencePosition from '@/components/ExperiencePosition'
+
+import {liveAreaPosition} from '@/app/positions/db'
+
 const conttainerClassName = 'mx-2'
 
 const Contractor = () => {
@@ -22,7 +26,9 @@ const OnSite = () => {
     <div className={conttainerClassName}>
       <section>On site employment: 2010 - 2018</section>
       <ul className={listStyle}>
-        <li>Technical Architect, LiveArea: 2017 - 2018; (Team size: 10+);</li>
+        <li>
+          <ExperiencePosition position={liveAreaPosition} />
+        </li>
         <li>
           Full Stack Software Architect, Mentormate: 2015 - 2017; (Team size:
           100+);

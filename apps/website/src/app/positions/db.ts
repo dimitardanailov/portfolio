@@ -1,11 +1,15 @@
 import Position from '@/types/Position'
 
+// Contract Positions
 import theInternationRedCross from './fullstack-javascript-devops-architect/details'
 import collinsonGroup from './full-stack-engineer-collinson/details'
 import siemens from './blockchain-architect-siemens-energy/details'
 import propine from './blockchain-staff-engineer-propine/details'
 import elephantstock from './software-engineering-manager/details'
 import getCraft from './software-architect-getcraft/details'
+
+// Onsite employment
+import liveAreaPosition from './technical-architect/details'
 
 const contractPositions = new Map<string, Position>()
 contractPositions.set('collinsonGroup', collinsonGroup)
@@ -15,4 +19,4 @@ contractPositions.set('propine', propine)
 contractPositions.set('elephantstock', elephantstock)
 contractPositions.set('getCraft', getCraft)
 
-export {contractPositions}
+export {contractPositions, liveAreaPosition}
