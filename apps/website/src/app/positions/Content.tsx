@@ -8,6 +8,7 @@ import TheInternationRedCross from './fullstack-javascript-devops-architect/Cont
 import Propine from './blockchain-staff-engineer-propine/Content'
 import Elephantstock from './software-engineering-manager/Content'
 import GetCraft from './software-architect-getcraft/Content'
+import LiveArea from './technical-architect/Content'
 
 import {experienceByYears} from '@/constants/text'
 
@@ -46,6 +47,8 @@ const Content = () => {
       <Elephantstock />
       <Divider />
       <GetCraft />
+      <Divider />
+      <LiveArea />
     </>
   )
 }
