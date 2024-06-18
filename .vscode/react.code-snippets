@@ -76,8 +76,7 @@
     "body": [
       "import {InternalMetadata} from '@/seo/metadata'",
       "",
-      "import {sufix} from './db'",
-      "import stack from './stack'",
+      "import {sufix, stack} from './db'",
       "",
       "const title = '$0'",
       "const description = '$1'",
@@ -92,6 +91,19 @@
       "export default props",
       "",
       "export {title}"
+    ]
+  },
+  "Custom layout - layout.tsx": {
+    "prefix": "ddlayout",
+    "body": [
+      "import layout from '@/components/NextjsLayout'",
+      "import generateMetadata from '@/seo/metadata'",
+      "",
+      "import props from './seo'",
+      "",
+      "export const metadata = generateMetadata(props)",
+      "",
+      "export default layout"
     ]
   }
 }
