@@ -18,7 +18,22 @@ const Responsibilities = () => {
         <StrongLabel width={width}>Responsibilities:</StrongLabel>
         <ul className={listStyle}>
           <li>
-            <span className="font-bold">Stakeholder Alignment:</span>
+            <span className="font-bold">Team Oversight:</span>
+            Directed a team of 20-25 engineers, fostering a productive and
+            collaborative work environment.
+          </li>
+          <li>
+            <span className="font-bold">New Department Launch:</span>
+            Successfully opened and grew two new technical departments focused
+            on Ruby on Rails and .Net, expanding the company&lsquo;s service
+            offerings.
+          </li>
+          <li>
+            <span className="font-bold">Client Satisfaction Improvement:</span>
+            Addressed the issue of unhappy customers by implementing process
+            improvements to ensure timely project delivery, reducing delays that
+            had previously extended several weeks or months beyond client
+            agreements.
           </li>
         </ul>
       </VFlexbox>
