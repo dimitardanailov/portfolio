@@ -48,5 +48,50 @@
       "",
       "export default Component",
     ]
+  },
+  "Custom Position - details.ts": {
+    "prefix": "ddanailovpositiondetails",
+    "body": [
+      "import type Position from '@/types/Position'",
+      "",
+      "const position = '$0'",
+      "const teamSize = '$1'",
+      "",
+      "const $2: Position = {",
+      "  title: position",
+      "  teamSize,",
+      "  sufix: 'technical-architect',",
+      "  externalUrl: '$3',",
+      "  company: '$4',",
+      "  period: '$5',",
+      "}",
+      "",
+      "export {position, teamSize}",
+      "",
+      "export default $2"
+    ]
+  },
+  "Custom SEO page details - seo.ts": {
+    "prefix": "ddseo",
+    "body": [
+      "import {InternalMetadata} from '@/seo/metadata'",
+      "",
+      "import {sufix} from './db'",
+      "import stack from './stack'",
+      "",
+      "const title = '$0'",
+      "const description = '$1'",
+      "const canonical = '$2'",
+      "",
+      "const props: InternalMetadata = {",
+      "  title,",
+      "  description,",
+      "  canonical,",
+      "}",
+      "",
+      "export default props",
+      "",
+      "export {title}"
+    ]
   }
 }
