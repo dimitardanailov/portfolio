@@ -6,7 +6,11 @@ import {listStyle} from '../shared'
 
 import ExperiencePosition from '@/components/ExperiencePosition'
 
-import {liveAreaPosition, mentorMatePosition} from '@/app/positions/db'
+import {
+  liveAreaPosition,
+  mentorMatePosition,
+  wollowSoftCTO,
+} from '@/app/positions/db'
 
 const conttainerClassName = 'mx-2'
 
@@ -35,7 +39,9 @@ const OnSite = () => {
         <li>
           Wollow Soft:
           <ul className={listStyle}>
-            <li>CTO, Woollow Soft: 2014 - 2015; (Team size: 30+);</li>
+            <li>
+              <ExperiencePosition position={wollowSoftCTO} />
+            </li>
             <li>Developer and Team Leader: 2010 - 2014; (Team size: 20+);</li>
           </ul>
         </li>
