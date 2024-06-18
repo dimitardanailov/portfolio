@@ -6,7 +6,7 @@ import {listStyle} from '../shared'
 
 import ExperiencePosition from '@/components/ExperiencePosition'
 
-import {liveAreaPosition} from '@/app/positions/db'
+import {liveAreaPosition, mentorMatePosition} from '@/app/positions/db'
 
 const conttainerClassName = 'mx-2'
 
@@ -28,6 +28,9 @@ const OnSite = () => {
       <ul className={listStyle}>
         <li>
           <ExperiencePosition position={liveAreaPosition} />
+        </li>
+        <li>
+          <ExperiencePosition position={mentorMatePosition} />
         </li>
         <li>
           Full Stack Software Architect, Mentormate: 2015 - 2017; (Team size:

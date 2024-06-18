@@ -10,6 +10,7 @@ import getCraft from './software-architect-getcraft/details'
 
 // Onsite employment
 import liveAreaPosition from './technical-architect/details'
+import mentorMatePosition from './full-stack-software-architect/details'
 
 const contractPositions = new Map<string, Position>()
 contractPositions.set('collinsonGroup', collinsonGroup)
@@ -19,4 +20,4 @@ contractPositions.set('propine', propine)
 contractPositions.set('elephantstock', elephantstock)
 contractPositions.set('getCraft', getCraft)
 
-export {contractPositions, liveAreaPosition}
+export {contractPositions, liveAreaPosition, mentorMatePosition}

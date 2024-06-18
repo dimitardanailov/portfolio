@@ -1,7 +1,7 @@
 const sufix = 'full-stack-software-architect'
 
 const stack = [
-  'Javacript',
+  'Javascript',
   'Polymer',
   'Web Components',
   'Google Chrome extensions',
