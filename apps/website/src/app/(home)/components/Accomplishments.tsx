@@ -43,6 +43,20 @@ const Accomplishments = () => {
           Contract offer by The European Commission based in Brussels. Contract
           type: Belguim (On-site); Position: Application Architect;
         </li>
+        <li>
+          Open source contributor:{' '}
+          <TargetBlankLink
+            href="https://github.com/firefox-devtools/debugger/pulls?q=is%3Apr+is%3Aclosed+author%3Adimitardanailov"
+            title="Mozilla foundation"
+            text="Mozilla foundation"
+          />{' '}
+          and{' '}
+          <TargetBlankLink
+            href="https://github.com/firefox-devtools/debugger/pulls?q=is%3Apr+is%3Aclosed+author%3Adimitardanailov"
+            title="@xstate/react"
+            text="@xstate/react"
+          />
+        </li>
       </ul>
     </>
   )
