@@ -2,7 +2,7 @@
 
 import type {NextPage} from 'next'
 
-import Content from './Content'
+import Content from '@/app/demos/shared/coingecko/Content'
 
 import Layout from '@/components/MainLayout'
 import LeftDrawer from '@/components/Drawers/LeftDrawer'
