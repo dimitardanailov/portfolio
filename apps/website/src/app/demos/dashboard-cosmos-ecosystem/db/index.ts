@@ -6,6 +6,9 @@ export const coingeckoIds = [
   Currency.COSMOS,
   Currency.INJECTIVE,
   Currency.CELESTIA,
+  Currency.OSMOSIS,
+  Currency.DYMENSION,
+  Currency.SAGA,
 ]
 
 export function getCoingeckoRequestParams(): CoingeckoSimplePriceRequest {

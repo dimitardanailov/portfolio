@@ -46,6 +46,11 @@ enum CoingeckoCryptoCurrency {
   ZKFAIR = 'zkfair',
   MANTLE = 'mantle',
   METIS = 'metis-token',
+
+  // COSMOS ecosystem
+  OSMOSIS = 'osmosis',
+  DYMENSION = 'dymension',
+  SAGA = 'saga-2',
 }
 
 export default CoingeckoCryptoCurrency
