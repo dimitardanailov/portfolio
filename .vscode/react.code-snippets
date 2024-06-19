@@ -76,7 +76,6 @@
     "body": [
       "import {InternalMetadata} from '@/seo/metadata'",
       "",
-      "import {sufix, stack} from './db'",
       "",
       "const title = '$0'",
       "const description = '$1'",
