@@ -1,12 +1,9 @@
 import layout from '@/components/NextjsLayout'
 import generateMetadata, {InternalMetadata} from '@/seo/metadata'
 
-import stack from './stack'
-
-const title = 'Full stack engineer, Collinson group'
-const description = `Technology stack (I'm happy to provide technical tips for each technology in the list): ${stack.join(
-  ', ',
-)}`
+const title = 'Full Stack Engineer, Tech Lead'
+const description =
+  'Backend Development: Led the communication interface between our application and SwissPort using Node.js, TypeScript, GraphQL, and MongoDB.'
 
 const canonical = '/positions/full-stack-engineer-collinson'
 

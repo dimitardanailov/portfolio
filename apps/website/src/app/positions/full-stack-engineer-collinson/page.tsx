@@ -12,7 +12,7 @@ import {drawerWidth} from '@/config/layout'
 import {LayoutProvider} from '@/providers'
 
 const Title = () => {
-  return <h1>Full Stack Engineer</h1>
+  return <h1>Full Stack Engineer, Tech Lead</h1>
 }
 
 const PageContent = () => {
