@@ -4,6 +4,7 @@ import ContractRoles from './ContractRoles'
 import OnSite from './OnSite'
 
 import {listStyle} from '../shared'
+import PartTime from './PartTimeRoles'
 
 const conttainerClassName = 'mx-2'
 
@@ -24,6 +25,7 @@ const Experience = () => {
       <div className="font-bold">Experience</div>
       <Contractor />
       <OnSite />
+      <PartTime />
     </>
   )
 }
