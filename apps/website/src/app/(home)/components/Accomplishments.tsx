@@ -40,8 +40,8 @@ const Accomplishments = () => {
           />
         </li>
         <li>
-          Contract offer by The European Commission based in Brussels. Contract
-          type: Belguim (On-site); Position: Application Architect;
+          Contract offered by The European Commission based in Brussels.
+          Contract type: Belgium (On-site); Position: Application Architect;
         </li>
         <li>
           Open source contributor:{' '}
