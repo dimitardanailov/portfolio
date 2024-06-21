@@ -14,7 +14,7 @@ const Accomplishments = () => {
           <span className="font-bold">
             {experienceByYears}+ years experience
           </span>
-          . My portfolio includes clients based in {clients.join(', ')}
+          . My company worked with clients based in {clients.join(', ')}
         </li>
         <li>Leadership roles: 10+ years;</li>
         <li>
@@ -52,7 +52,7 @@ const Accomplishments = () => {
           />{' '}
           and{' '}
           <TargetBlankLink
-            href="https://github.com/firefox-devtools/debugger/pulls?q=is%3Apr+is%3Aclosed+author%3Adimitardanailov"
+            href="https://github.com/statelyai/xstate/pulls?q=is%3Apr+is%3Aclosed+author%3Adimitardanailov"
             title="@xstate/react"
             text="@xstate/react"
           />
