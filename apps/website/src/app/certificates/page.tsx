@@ -11,8 +11,10 @@ import {menuItems} from '@/menu'
 import {drawerWidth} from '@/config/layout'
 import {LayoutProvider} from '@/providers'
 
+import {title} from './seo'
+
 const Title = () => {
-  return <h1>Certified Engineer by Google, Meta, AWS</h1>
+  return <h1>{title}</h1>
 }
 
 const PageContent = () => {
