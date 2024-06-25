@@ -8,24 +8,30 @@ const Component = () => {
       <div className="font-bold">Why me:</div>
       <ul className={listStyle}>
         <li>
-          Deep understanding for upcoming technologies to solve complex business
-          problems;
+          Comprehensive understanding of cutting-edge technologies to solve
+          complex business challenges.
         </li>
         <li>
-          Expertise in writing JavaScript/TypeScript code characterized by its
-          cleanliness, impressive performance, and potential for scalability;
+          Skilled in developing clean, high-performing, and scalable
+          JavaScript/TypeScript applications;
         </li>
         <li>
-          Ability to use different design patterns like: Clean Architecture,
-          Cloud Native Principle, CAP Theorem, Coupling and cohesion, DRY
-          (Don&lsquo;t repeat yourself), AHA (Avoid Hasty Abstractions), SOLID,
-          etc;
+          Experienced with essential design patterns: Clean Architecture, Cloud
+          Native Principle, CAP Theorem, Coupling and cohesion, DRY (Don&lsquo;t
+          repeat yourself), AHA (Avoid Hasty Abstractions), SOLID, etc;
         </li>
         <li>
-          High - skilled engineer rated by c-level management, product and
-          project managers, developers;
+          Expertise in integrating diverse blockchain platforms such as Binance
+          Smart Chain, Polygon, Cosmos, and Algorand for seamless and efficient
+          cross-chain operations. Experienced in building scalable and secure
+          dApps on multiple blockchain networks, enhancing user experience and
+          operational efficiency.
         </li>
-        <li>Certified Engineer by Google, Meta, AWS;</li>
+        <li>
+          Recognized by top-tier management, product and project managers, and
+          development teams for engineering excellence;
+        </li>
+        <li>Certified by industry giants: Google, Meta, AWS;</li>
       </ul>
     </>
   )
