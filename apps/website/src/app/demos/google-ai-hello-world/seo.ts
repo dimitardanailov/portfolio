@@ -1,7 +1,8 @@
 import {InternalMetadata} from '@/seo/metadata'
 
-const title = 'Google AI - Hello world app'
-const description = ''
+const title = 'Application represents Google Gemini AI Engine'
+const description =
+  'The demo page represents using vercel AI and google gemini AI engine'
 const canonical = '/demos/google-ai-hello-world'
 
 const props: InternalMetadata = {
