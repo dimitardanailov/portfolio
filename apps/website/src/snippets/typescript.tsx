@@ -2,20 +2,17 @@
 
 import {FC} from 'react'
 
-import SyntaxHighlighter from 'react-syntax-highlighter'
+import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 
 export interface Props {
   Content: any
+  style?: {[key: string]: React.CSSProperties} | undefined
 }
 
-const Component: FC<Props> = ({Content}) => {
-  return <Content components={{code}} language="typescript" />
-}
-
-function code({...props}) {
+const Component: FC<Props> = ({Content, style}) => {
   return (
-    <SyntaxHighlighter language="typescript" PreTag="div" {...props}>
-      {props.children}
+    <SyntaxHighlighter language="typescript" PreTag="div" style={style}>
+      {Content}
     </SyntaxHighlighter>
   )
 }
