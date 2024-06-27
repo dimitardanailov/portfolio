@@ -29,6 +29,7 @@
     "ai": "^3.2.5",
     "autoprefixer": "^10.4.14",
     "axios": "^1.7.2",
+    "cytoscape": "^3.29.2",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.7",
     "mermaid": "^10.9.1",
@@ -54,6 +55,7 @@
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@types/cytoscape": "^3.21.4",
     "@types/mdx": "^2.0.10",
     "@types/node": "^20.3.1",
     "@types/react": "^18.2.14",

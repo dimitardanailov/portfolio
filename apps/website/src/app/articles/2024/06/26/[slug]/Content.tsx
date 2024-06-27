@@ -5,8 +5,11 @@ import {Slogan} from '@/styled-components'
 import Label from '@/components/SimpleLabel'
 import TopicAnalysisTable from '@/components/TopicAnalysisTable'
 
+// import Mermaid from './Mermaid'
+
 import {slogan} from './seo'
 import {topicAnalysis} from './db'
+// import diagram from './diagram'
 
 const Content = () => {
   const listStyle = 'list-disc mx-6 mt-0 mb-5'
