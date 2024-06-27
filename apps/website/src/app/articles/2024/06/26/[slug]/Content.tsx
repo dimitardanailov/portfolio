@@ -3,14 +3,16 @@
 import {Slogan} from '@/styled-components'
 
 import Label from '@/components/SimpleLabel'
+import TopicAnalysisTable from '@/components/TopicAnalysisTable'
 
 import {slogan} from './seo'
+import {topicAnalysis} from './db'
 
 const Content = () => {
   const listStyle = 'list-disc mx-6 mt-0 mb-5'
 
   return (
-    <>
+    <article>
       <Slogan>{slogan}</Slogan>
 
       <p>
@@ -26,37 +28,35 @@ const Content = () => {
         written to the database.
       </p>
 
-      <p>
+      <p className="mt-2">
         <span className="font-bold text-lg">When to Use Write-Back Cache:</span>
       </p>
 
       <ul className={listStyle}>
         <li>
-          <Label text="High Write Frequency" />
-          When the application has a high volume of write operations, and
-          performance is critical. The write-back cache can reduce the number of
-          write operations to the database, thus improving performance.
+          <Label text="High Write Frequency" /> When the application has a high
+          volume of write operations, and performance is critical. The
+          write-back cache can reduce the number of write operations to the
+          database, thus improving performance.
         </li>
         <li>
-          <Label text="Batch Processing" />
-          In scenarios where data can be processed in batches, such as analytics
-          workloads where intermediate results can be cached and written to the
-          database later.
+          <Label text="Batch Processing" /> In scenarios where data can be
+          processed in batches, such as analytics workloads where intermediate
+          results can be cached and written to the database later.
         </li>
         <li>
-          <Label text="Temporary Data Storage" />
-          When dealing with temporary data that does not need immediate
-          persistence, such as session data in a web application.
+          <Label text="Temporary Data Storage" /> When dealing with temporary
+          data that does not need immediate persistence, such as session data in
+          a web application.
         </li>
         <li>
-          <Label text="Network Latency" />
-          When the database is hosted on a remote server, and reducing the
-          number of network calls is beneficial.
+          <Label text="Network Latency" /> When the database is hosted on a
+          remote server, and reducing the number of network calls is beneficial.
         </li>
         <li>
-          <Label text="Cost Optimization" />
-          In cloud environments where database writes incur cost, reducing the
-          number of direct writes can lead to cost savings.
+          <Label text="Cost Optimization" /> In cloud environments where
+          database writes incur cost, reducing the number of direct writes can
+          lead to cost savings.
         </li>
       </ul>
 
@@ -68,32 +68,33 @@ const Content = () => {
 
       <ul className={listStyle}>
         <li>
-          <Label text="Data Integrity Critical" />
-          When data integrity is paramount, and any data loss due to cache
-          failure is unacceptable, such as in financial transactions.
+          <Label text="Data Integrity Critical" /> When data integrity is
+          paramount, and any data loss due to cache failure is unacceptable,
+          such as in financial transactions.
         </li>
         <li>
-          <Label text="Low Write Frequency" />
-          In applications where write operations are infrequent, the complexity
-          and potential issues of write-back caching may not be justified.
+          <Label text="Low Write Frequency" /> In applications where write
+          operations are infrequent, the complexity and potential issues of
+          write-back caching may not be justified.
         </li>
         <li>
-          <Label text="Real-Time Systems" />
-          For real-time systems where immediate data availability and
-          consistency are required, such as live trading platforms.
+          <Label text="Real-Time Systems" /> For real-time systems where
+          immediate data availability and consistency are required, such as live
+          trading platforms.
         </li>
         <li>
-          <Label text="Real-Time Systems" />
-          When data changes frequently and needs to be immediately reflected
-          across all systems and users, like collaborative editing tools.
+          <Label text="v" /> When data changes frequently and needs to be
+          immediately reflected across all systems and users, like collaborative
+          editing tools.
         </li>
         <li>
-          <Label text="Simple Architectures" />
-          In simpler applications where the overhead of managing a write-back
-          cache might outweigh the performance benefits.
+          <Label text="Simple Architectures" /> In simpler applications where
+          the overhead of managing a write-back cache might outweigh the
+          performance benefits.
         </li>
       </ul>
-    </>
+      <TopicAnalysisTable topicAnalysis={topicAnalysis} />
+    </article>
   )
 }
 
