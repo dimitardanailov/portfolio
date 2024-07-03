@@ -23,8 +23,8 @@ const Skills: FC = () => {
           Elrond, Polygon;
         </li>
         <li>
-          Machine Learning / Artificial Intelligence: Vercel AI SDK, Gemini Pro
-          and ChatGPT
+          Machine Learning / Artificial Intelligence: Vercel AI SDK, Gemini Pro,
+          ChatGPT, Large Language Models, Generative AI
         </li>
         <li>
           Databases: PostgreSQL, MySQL, MSSQL, NoSQL, MongoDB, OpenSearch,
