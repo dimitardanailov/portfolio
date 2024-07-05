@@ -12,7 +12,7 @@ import getCraft from './software-architect-getcraft/details'
 import liveAreaPosition from './technical-architect/details'
 import mentorMatePosition from './full-stack-software-architect/details'
 import wollowSoftCTO from './wollow-soft-cto/details'
-import wollowSoftDeveloper from './wollow-soft-developer-team-leader/details'
+import {position as wollowSoftDeveloper} from './wollow-soft-developer-team-leader/db'
 
 const contractPositions = new Map<string, Position>()
 contractPositions.set('collinsonGroup', collinsonGroup)
