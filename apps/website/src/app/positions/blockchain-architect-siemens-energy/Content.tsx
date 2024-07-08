@@ -5,7 +5,7 @@ import TargetBlankLink from '@/components/TargetBlankLink'
 import {HFlexBox} from '@/styled-components/Grid'
 import {Keyword} from '@/components/SEO'
 
-import stack from './stack'
+import {technologies, teamSize} from './db'
 
 import {width} from '../consants'
 
@@ -28,11 +28,11 @@ const Content = () => {
       </HFlexBox>
       <HFlexBox>
         <StrongLabel width={width}>Team Size:</StrongLabel>
-        <span>15+</span>
+        <span>{teamSize}</span>
       </HFlexBox>
       <HFlexBox>
         <StrongLabel width={width}>Technologies:</StrongLabel>
-        <span>{stack.join(', ')}</span>
+        <span>{technologies.join(', ')}</span>
       </HFlexBox>
       <HFlexBox>
         <StrongLabel width={width}>Architecture:</StrongLabel>
