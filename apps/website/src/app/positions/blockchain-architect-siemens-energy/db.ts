@@ -15,7 +15,7 @@ const teamSize = '15+'
 const companyName = 'Siemens Energy'
 const sufix = 'blockchain-architect-siemens-energy'
 const externalUrl = 'https://www.siemens-energy.com/global/en/home.html'
-const period = '(Mar - Jun 2023)'
+const period = 'Mar - Jun 2023'
 
 const position: Position = {
   title: 'Blockchain Architect',

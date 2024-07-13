@@ -1,10 +1,10 @@
 type Position = {
-  title: string
-  teamSize: string
-  sufix: string
-  externalUrl: string
-  company: string
-  period: string
+  readonly title: string
+  readonly teamSize: string
+  readonly sufix: string
+  readonly externalUrl: string
+  readonly company: string
+  readonly period: string
 }
 
 export default Position

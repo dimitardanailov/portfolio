@@ -6,7 +6,7 @@ import {HFlexBox, VFlexbox} from '@/styled-components/Grid'
 import {Keyword} from '@/components/SEO'
 import {listStyle} from '@/shared/tailwind'
 
-import stack from './stack'
+import {technologies, position} from './db'
 
 import {width} from '../consants'
 
@@ -16,15 +16,15 @@ const Content = () => {
       <HFlexBox>
         <StrongLabel width={width}>Company:</StrongLabel>
         <TargetBlankLink
-          href="https://www.propine.com"
-          title="Blockchain Staff Engineer, propine.com"
-          text="propine.com"
+          href={position.externalUrl}
+          title={position.title}
+          text={position.company}
         />
       </HFlexBox>
       <HFlexBox>
         <StrongLabel width={width}>Role:</StrongLabel>
         <span>
-          <Keyword word="Blockchain Staff Engineer" />
+          <Keyword word={position.title} />
         </span>
       </HFlexBox>
       <HFlexBox>
@@ -33,11 +33,11 @@ const Content = () => {
       </HFlexBox>
       <HFlexBox>
         <StrongLabel width={width}>Period:</StrongLabel>
-        <span>September, 2020 - August, 2021</span>
+        <span>{position.period}</span>
       </HFlexBox>
       <HFlexBox>
         <StrongLabel width={width}>Technologies:</StrongLabel>
-        <span>{stack.join(', ')}</span>
+        <span>{technologies.join(', ')}</span>
       </HFlexBox>
       <HFlexBox>
         <StrongLabel width={width}>Architecture</StrongLabel>

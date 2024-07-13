@@ -1,10 +1,10 @@
 import layout from '@/components/NextjsLayout'
 import generateMetadata, {InternalMetadata} from '@/seo/metadata'
 
-import stack from './stack'
+import {technologies} from './db'
 
 const title = 'Blockchain staff engineer, Propine.com'
-const description = `Technology stack (I'm happy to provide technical tips for each technology in the list): ${stack.join(
+const description = `Technology stack (I'm happy to provide technical tips for each technology in the list): ${technologies.join(
   ', ',
 )}`
 

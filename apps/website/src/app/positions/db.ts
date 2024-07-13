@@ -4,7 +4,7 @@ import Position from '@/types/Position'
 import theInternationRedCross from './fullstack-javascript-devops-architect/details'
 import collinsonGroup from './full-stack-engineer-collinson/details'
 import {position as siemens} from './blockchain-architect-siemens-energy/db'
-import propine from './blockchain-staff-engineer-propine/details'
+import propine from './blockchain-staff-engineer-propine/db'
 import elephantstock from './software-engineering-manager/details'
 import getCraft from './software-architect-getcraft/details'
 
