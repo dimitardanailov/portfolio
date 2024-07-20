@@ -4,7 +4,7 @@ import StrongLabel from '@/styled-components/Text/StrongLabel'
 import TargetBlankLink from '@/components/TargetBlankLink'
 import {HFlexBox, VFlexbox} from '@/styled-components/Grid'
 
-import stack from './stack'
+import {technologies, position} from './db'
 import {Keyword} from '@/components/SEO'
 
 import {width} from '../consants'
@@ -16,22 +16,22 @@ const Content = () => {
       <HFlexBox>
         <StrongLabel width={width}>Company:</StrongLabel>
         <TargetBlankLink
-          href="https://www.collinsongroup.com/"
-          title="Full Stack Engineer, collinsongroup.com"
-          text="Collinsongroup.com"
+          href={position.externalUrl}
+          title={position.title}
+          text={position.company}
         />
       </HFlexBox>
       <HFlexBox>
         <StrongLabel width={width}>Role:</StrongLabel>
-        <Keyword word="Full Stack Engineer, Tech Lead" />
+        <Keyword word={position.title} />
       </HFlexBox>
       <HFlexBox>
         <StrongLabel width={width}>Team Size:</StrongLabel>
-        <span>30+</span>
+        <span>{position.teamSize}</span>
       </HFlexBox>
       <HFlexBox>
         <StrongLabel width={width}>Technologies:</StrongLabel>
-        <span>{stack.join(', ')}</span>
+        <span>{technologies.join(', ')}</span>
       </HFlexBox>
       <HFlexBox>
         <StrongLabel width={width}>Architecture</StrongLabel>
