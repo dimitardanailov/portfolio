@@ -2,14 +2,11 @@
 
 import {Slogan} from '@/styled-components'
 
-import TopicAnalysisTable from '@/components/TopicAnalysisTable'
-import Body from './Body'
+import Article from './Article'
 
 // import Mermaid from './Mermaid'
 
 import {slogan} from './seo'
-import {topicAnalysis} from './db'
-
 import Tags from './Tags'
 
 // import diagram from './diagram'
@@ -17,12 +14,11 @@ import Tags from './Tags'
 const Content = () => {
   return (
     <article>
-      <Tags component="test" />
       <Slogan>{slogan}</Slogan>
 
-      <Body />
+      <Article />
 
-      <TopicAnalysisTable topicAnalysis={topicAnalysis} />
+      <Tags component={Article} />
     </article>
   )
 }

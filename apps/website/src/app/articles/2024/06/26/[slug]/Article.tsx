@@ -1,4 +1,7 @@
 import Label from '@/components/SimpleLabel'
+import TopicAnalysisTable from '@/components/TopicAnalysisTable'
+
+import {topicAnalysis} from './db'
 
 const Body = () => {
   const listStyle = 'list-disc mx-6 mt-0 mb-5'
@@ -83,6 +86,8 @@ const Body = () => {
           performance benefits.
         </li>
       </ul>
+
+      <TopicAnalysisTable topicAnalysis={topicAnalysis} />
     </>
   )
 }
