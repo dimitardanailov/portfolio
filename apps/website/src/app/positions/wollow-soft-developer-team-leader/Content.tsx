@@ -4,11 +4,11 @@ import StrongLabel from '@/styled-components/Text/StrongLabel'
 import TargetBlankLink from '@/components/TargetBlankLink'
 import {HFlexBox} from '@/styled-components/Grid'
 
-import {stack} from './db'
+import {technologies} from './db'
 
 import {width} from '../consants'
 
-import position from './details'
+import {position} from './db'
 import {Responsibilities} from './Components'
 
 const Content = () => {
@@ -32,7 +32,7 @@ const Content = () => {
       </HFlexBox>
       <HFlexBox>
         <StrongLabel width={width}>Technologies:</StrongLabel>
-        <span>{stack.join(', ')}</span>
+        <span>{technologies.join(', ')}</span>
       </HFlexBox>
       <HFlexBox>
         <StrongLabel width={width}>Architecture</StrongLabel>
