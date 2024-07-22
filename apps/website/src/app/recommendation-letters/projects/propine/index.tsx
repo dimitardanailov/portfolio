@@ -24,7 +24,7 @@ const PropineLetter: FC = () => {
       <MarketPlace text="Worldwide and Singapore" />
       <HeadQuater text="Singapore and USA" />
       <Position text="Blockchain Staff Engineer" />
-      <Technologies technologies="Nodejs, AWS, Docker, Kubernetes, React, Nextjs, Etherium, Algorand, Cosmos" />
+      <Technologies technologies="Nodejs, AWS, Docker, Kubernetes, React, Nextjs, Ethereum, Algorand, Cosmos" />
       <PersonInfo
         name="Wong Liang Zan"
         source={source}

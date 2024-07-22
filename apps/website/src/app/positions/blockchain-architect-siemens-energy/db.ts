@@ -2,7 +2,7 @@ import type {Position, ResumePosition} from '@/types'
 
 const technologies = [
   'HyperLedger Besu',
-  'Etherium',
+  'Ethereum',
   'etherjs',
   'web3js',
   'Typescript',
