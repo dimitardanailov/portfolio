@@ -195,6 +195,20 @@ const Body = () => {
       <ul className={listStyle}>
         <li>
           <TargetBlankLink
+            href="https://nxtide.com/offshore-development-center/global-offshore-software-development-rates-comparison-by-country/"
+            title="The offshore software development rates"
+            text="The offshore software development rates"
+          />
+        </li>
+        <li>
+          <TargetBlankLink
+            href="https://trends.google.com/trends/explore?date=today%205-y&q=Artificial%20intelligence&hl=en"
+            title="Google Trends: Artificial intelligence"
+            text="Google Trends: Artificial intelligence"
+          />
+        </li>
+        <li>
+          <TargetBlankLink
             href="https://huggingface.co/mitkox/OwnYourAI/blob/main/Own%20Your%20AI%20-%20Tech%20Deck.pdf"
             title="Own Your AI - Tech Deck"
             text="Own Your AI - Tech Deck"

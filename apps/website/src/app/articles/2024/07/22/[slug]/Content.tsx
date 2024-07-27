@@ -7,6 +7,7 @@ import Article from './Article'
 const Content = () => {
   return (
     <article>
+      <Slogan>You {'=>'} Product</Slogan>
       <Article />
     </article>
   )
