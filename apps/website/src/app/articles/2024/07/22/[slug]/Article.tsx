@@ -6,6 +6,26 @@ const Body = () => {
 
   return (
     <>
+      <p>
+        <span className="italic">Software contractor meaning</span>: A software
+        contractor operates <span className="font-bold">independently</span> or{' '}
+        <span className="font-bold">through a third-party agency</span>. They
+        sign a contract to work for a specified term, often on a project basis.
+        In contrast, a full-time software developer is a permanent employee of
+        their organization.
+      </p>
+      <p className="mt-2">
+        <span className="italic">
+          Freelancers and Contractors: Freelancers{' '}
+        </span>
+        <span className="font-bold">often</span> work with{' '}
+        <span className="font-bold">several clients simultaneously</span> ,
+        while contractors tend to work with{' '}
+        <span className="font-bold">one client</span> for a{' '}
+        <span className="font-bold">long-term period</span> or with multiple
+        consecutive clients over a year.
+      </p>
+
       <p className="mt-2">
         <span className="font-bold text-lg">Agencies, Income: 500+ $</span>
       </p>
@@ -98,8 +118,79 @@ const Body = () => {
           />
         </li>
       </ul>
+      <p className="mt-2">
+        <span className="font-bold text-lg">Certification</span>
+      </p>
+      <ul className={listStyle}>
+        <li>
+          <TargetBlankLink
+            href="https://www.coursera.org"
+            title="coursera.org"
+            text="Coursera"
+          />
+        </li>
+        <li>
+          <TargetBlankLink
+            href="https://udemy.com"
+            title="udemy.com"
+            text="udemy"
+          />
+        </li>
+        <li>
+          <TargetBlankLink
+            href="https://codewithmosh.com/"
+            title="codewithmosh.com/"
+            text="Code with mosh"
+          />
+        </li>
+        <li>
+          <TargetBlankLink
+            href="https://www.deeplearning.ai/"
+            title="deeplearning.ai"
+            text="deeplearning.ai"
+          />
+        </li>
+        <li>
+          <TargetBlankLink
+            href="https://updraft.cyfrin.io/"
+            title="updraft.cyfrin.io"
+            text="cyfrin.io"
+          />
+        </li>
+        <li>
+          <TargetBlankLink
+            href="https://egghead.io"
+            title="egghead.io"
+            text="egghead.io"
+          />
+        </li>
+      </ul>
+      <p className="mt-2">
+        <span className="font-bold text-lg">Partnership</span>
+      </p>
+      <ul className={listStyle}>
+        <li>Banking: Revolut, Wise</li>
+        <li>
+          Legal service:{' '}
+          <TargetBlankLink
+            href="https://pravenkonsultant.com"
+            title="pravenkonsultant.com"
+            text="pravenkonsultant.com"
+          />
+        </li>
+        <li>
+          i18n / Translation:{' '}
+          <TargetBlankLink
+            href="https://www.sofita.com/"
+            title="sofita.com"
+            text="sofita.com"
+          />
+        </li>
+        <li>Invoice platfrom: Google Docs (Custom template)</li>
+        <li>Email client: gmail.com</li>
+      </ul>
       <p>
-        <span className="bold">Resources</span>
+        <span className="font-bold">Resources</span>
       </p>
       <ul className={listStyle}>
         <li>
