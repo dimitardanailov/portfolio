@@ -132,12 +132,67 @@ const MachineLearning = () => {
       <SectionTitle text="Machine Learning and Artificial Intelligence" />
       <ul className={listStyle}>
         <li>
+          <li>
+            <TargetBlankLink
+              Element={
+                <span>
+                  ChatGPT <Keyword word="Prompt Engineering" /> for Developers.
+                  Authorized by DeepLearning;
+                </span>
+              }
+              title="ChatGPT Prompt Engineering for Developers"
+              href="https://learn.deeplearning.ai/accomplishments/403a9438-4d06-45c7-97ef-3d273b826cd7"
+            />
+          </li>
+          <li>
+            <TargetBlankLink
+              Element={
+                <span>
+                  JavaScript RAG Web Apps with LlamaIndex. Authorized by
+                  DeepLearning;
+                </span>
+              }
+              title="JavaScript RAG Web Apps with LlamaIndex"
+              href="https://learn.deeplearning.ai/accomplishments/8f5128db-870a-4ba6-9130-cad028783906?usp=sharing"
+            />
+          </li>
+          <li>
+            <TargetBlankLink
+              Element={
+                <span>Encoder-Decoder Architecture. Authorized by Google;</span>
+              }
+              title="Encoder-Decoder Architecture"
+              href="https://www.cloudskillsboost.google/public_profiles/2bccbc57-79c9-447e-8fef-ba6cdad8b524/badges/9659137?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share"
+            />
+          </li>
+          <li>
+            <TargetBlankLink
+              Element={
+                <span>
+                  Introduction to Generative AI. Authorized by Google;
+                </span>
+              }
+              title="Introduction to Generative AI"
+              href="https://www.cloudskillsboost.google/public_profiles/2bccbc57-79c9-447e-8fef-ba6cdad8b524/badges/9653511?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share"
+            />
+          </li>
+          <li>
+            <TargetBlankLink
+              Element={
+                <span>
+                  Introduction to Large Language models. Authorized by Google;
+                </span>
+              }
+              title="Introduction to Large Language models"
+              href="https://www.cloudskillsboost.google/public_profiles/2bccbc57-79c9-447e-8fef-ba6cdad8b524/badges/9653226?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share"
+            />
+          </li>
           <TargetBlankLink
             Element={
               <span>
                 Introduction to TensorFlow for{' '}
                 <Keyword word="Artificial Intelligence" />, Machine Learning,
-                and Deep Learning. Authorized by DeepLearning.AI;
+                and Deep Learning. Authorized by DeepLearning;
               </span>
             }
             title="Introduction to TensorFlow for Artificial Intelligence, Machine
@@ -193,7 +248,10 @@ const ProjectManagement = () => {
         <li>
           <TargetBlankLink
             Element={
-              <span>Project Initiation: Starting a Successful Project</span>
+              <span>
+                Project Initiation: Starting a Successful Project. Authorized by
+                Google;
+              </span>
             }
             href={link('project-management/starting-successful-project.pdf')}
             title="Project Initiation: Starting a Successful Project"
