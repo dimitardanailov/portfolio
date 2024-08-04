@@ -9,6 +9,8 @@ import TargetBlankLink from '@/components/TargetBlankLink'
 
 import {experienceByYears} from '@/constants/text'
 
+import ProjectManagement from './items/projectManagement'
+
 import {SectionTitle} from './components'
 
 function link(sufix: string) {
@@ -239,41 +241,6 @@ const DatabaseStorage = () => {
     </>
   )
 }
-
-const ProjectManagement = () => {
-  return (
-    <>
-      <SectionTitle text="Project management and Agile Development" />
-      <ul className={listStyle}>
-        <li>
-          <TargetBlankLink
-            Element={
-              <span>
-                Project Initiation: Starting a Successful Project. Authorized by
-                Google;
-              </span>
-            }
-            href={link('project-management/starting-successful-project.pdf')}
-            title="Project Initiation: Starting a Successful Project"
-          />
-        </li>
-
-        <li>
-          <TargetBlankLink
-            href={link('project-management/foundations.pdf')}
-            title="Foundations of Project Management"
-            Element={
-              <span>
-                Foundations of Project Management. Authorized by Google;
-              </span>
-            }
-          />
-        </li>
-      </ul>
-    </>
-  )
-}
-
 const Section = () => {
   return (
     <>
