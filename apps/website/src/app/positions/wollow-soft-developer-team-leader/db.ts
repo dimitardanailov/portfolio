@@ -14,10 +14,10 @@ const technologies = [
 
 const externalUrl = 'https://wollow-soft.com/'
 const companyName = 'Wollow Soft'
-const period = '2014 - 2015'
+const period = '2010 - 2014'
 
 const position: Position = {
-  title: 'CTO',
+  title: 'Developer and Team Lead',
   teamSize: '25+',
   sufix,
   externalUrl,
