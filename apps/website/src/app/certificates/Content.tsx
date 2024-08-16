@@ -9,7 +9,7 @@ import TargetBlankLink from '@/components/TargetBlankLink'
 
 import {experienceByYears} from '@/constants/text'
 
-import ProjectManagement from './items/projectManagement'
+import ProjectManagement from './items/ProjectManagement'
 
 import {SectionTitle} from './components'
 
