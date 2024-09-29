@@ -16,7 +16,7 @@ const Accomplishments = () => {
           </span>
           . My company worked with clients based in {clients.join(', ')}
         </li>
-        <li>Leadership roles: 10+ years;</li>
+        <li>Leadership roles: 12+ years;</li>
         <li>
           <TargetBlankLink
             text="Ex - contractor Siemens"
@@ -25,9 +25,7 @@ const Accomplishments = () => {
           />{' '}
           and The international Red cross;
         </li>
-        <li>
-          ex-CTO - Experience with management more than of than 5+ small teams;
-        </li>
+        <li>ex-CTO - Experience with management of small teams;</li>
         <li>2 x Staff Engineer / Engineering manager;</li>
         <li>4 x Software Architect / Tech - Lead;</li>
         <li>
