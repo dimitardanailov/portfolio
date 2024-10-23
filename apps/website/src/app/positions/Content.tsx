@@ -2,6 +2,7 @@
 
 import {Slogan} from '@/styled-components'
 
+import Occrp from './react-developer/Content'
 import Collinson from './full-stack-engineer-collinson/Content'
 import SiemensEnergy from './blockchain-architect-siemens-energy/Content'
 import TheInternationRedCross from './fullstack-javascript-devops-architect/Content'
@@ -39,6 +40,8 @@ const Content = () => {
         <span className="active-color">web2</span> or{' '}
         <span className="active-color">web3</span> projects
       </Slogan>
+      <Occrp />
+      <Divider />
       <Collinson />
       <Divider />
       <SiemensEnergy />
