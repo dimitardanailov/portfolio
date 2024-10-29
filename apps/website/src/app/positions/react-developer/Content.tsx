@@ -10,6 +10,8 @@ import {width} from '../consants'
 
 import {position} from './db'
 
+import Responsibilities from './Components/Responsibilities'
+
 const Content = () => {
   return (
     <>
@@ -37,6 +39,7 @@ const Content = () => {
         <StrongLabel width={width}>Architecture</StrongLabel>
         <span>Monolith, Graph Structures</span>
       </HFlexBox>
+      <Responsibilities />
     </>
   )
 }

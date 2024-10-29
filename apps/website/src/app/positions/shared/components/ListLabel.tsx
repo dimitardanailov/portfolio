@@ -7,7 +7,7 @@ export interface Props {
 }
 
 const ListLabel: FC<Props> = ({phrase}) => {
-  return <>{phrase}:</>
+  return <span className="font-bold">{phrase}:</span>
 }
 
 export default ListLabel
