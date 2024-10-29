@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "typegen": "npx xstate typegen \"src/**/*.ts?(x)\"",
-    "postinstall": "npm run typegen"
+    "postinstall": "npm run typegen",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@ai-sdk/google": "^0.0.23",
