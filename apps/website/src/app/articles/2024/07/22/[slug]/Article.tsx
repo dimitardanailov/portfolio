@@ -214,6 +214,13 @@ const Body = () => {
             text="Own Your AI - Tech Deck"
           />
         </li>
+        <li>
+          <TargetBlankLink
+            href="https://freedium.cfd/https://medium.com/mr-plan-publication/why-freelancing-isnt-the-dream-it-s-made-out-to-be-730b6f355681"
+            title="Why Freelancing Isn't the Dream It's Made Out to Be"
+            text="Why Freelancing Isn't the Dream It's Made Out to Be"
+          />
+        </li>
       </ul>
     </>
   )
