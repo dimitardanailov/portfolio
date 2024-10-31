@@ -221,6 +221,13 @@ const Body = () => {
             text="Why Freelancing Isn't the Dream It's Made Out to Be"
           />
         </li>
+        <li>
+          <TargetBlankLink
+            href="https://news.ycombinator.com/item?id=41956374"
+            title="HackerNews: Why Freelancing Isn't the Dream It's Made Out to Be"
+            text="HackerNews: Why Freelancing Isn't the Dream It's Made Out to Be"
+          />
+        </li>
       </ul>
     </>
   )
