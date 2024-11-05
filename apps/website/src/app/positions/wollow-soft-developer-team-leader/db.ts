@@ -1,6 +1,6 @@
 import type {Position, ResumePosition} from '@/types'
 
-const sufix = 'wollow-soft-cto'
+const sufix = 'wollow-soft-developer-team-leader'
 
 const technologies = [
   'PHP',

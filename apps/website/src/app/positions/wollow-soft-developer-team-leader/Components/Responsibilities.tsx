@@ -13,7 +13,6 @@ const Responsibilities = () => {
   return (
     <>
       <VFlexbox className="my-3">
-        <StrongLabel width={width}>Responsibilities:</StrongLabel>
         <VFlexbox className="my-3">
           <StrongLabel width={width}>Responsibilities:</StrongLabel>
           <ul className={listStyle}>
