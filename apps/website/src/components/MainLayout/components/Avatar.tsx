@@ -18,16 +18,25 @@ const Text = styled.span`
   position: relative;
   width: 100%;
 
-  margin-top: 1rem;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+`
+
+const SlogonWrapper = styled.div`
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 `
 
 const Avatar = dynamic(() => import('@/components/Avatar'), {ssr: false})
 
 const ProfileAvatar = () => {
   const size = 120
-  const title = "I'm here to help you!"
+  const title = 'Make it work, make it right, make it fast!'
   const border = '0.2rem solid #000'
   const borderRadius = 100
 
@@ -43,7 +52,9 @@ const ProfileAvatar = () => {
             radius={borderRadius}
           />
         </AvatarContainer>
-        <Text>{title}</Text>
+        <SlogonWrapper>
+          <Text>{title}</Text>
+        </SlogonWrapper>
       </VFlexbox>
     </Container>
   )
