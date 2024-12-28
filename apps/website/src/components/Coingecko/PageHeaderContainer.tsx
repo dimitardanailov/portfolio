@@ -19,6 +19,11 @@ const Wrapper = styled.div`
 
 const StyledButton = styled(BasicButton)`
   margin-left: auto;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin: 0.25rem auto;
+  }
 `
 
 export interface Props {
