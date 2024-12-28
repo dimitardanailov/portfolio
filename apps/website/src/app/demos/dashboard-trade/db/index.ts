@@ -14,6 +14,9 @@ export const coingeckoIds = [
   Currency.AVALANCHE,
   Currency.INJECTIVE,
   Currency.GRAPH_PROTOCOL,
+  Currency.TON,
+  Currency.STELLAR,
+  Currency.RENDER,
 ]
 
 export function getCoingeckoRequestParams(): CoingeckoSimplePriceRequest {
