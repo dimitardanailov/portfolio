@@ -11,6 +11,9 @@ enum CoingeckoCryptoCurrency {
   AVALANCHE = 'avalanche-2',
   INJECTIVE = 'injective-protocol',
   GRAPH_PROTOCOL = 'the-graph',
+  TON = 'the-open-network',
+  STELLAR = 'stellar',
+  RENDER = 'render-token',
 
   // SOLANA
   JUPITER = 'jupiter-exchange-solana',
