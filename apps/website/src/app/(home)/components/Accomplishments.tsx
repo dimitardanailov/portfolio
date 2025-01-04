@@ -19,10 +19,10 @@ const Accomplishments = () => {
             <span className="font-bold">{experienceByYears}+ years</span>,{' '}
           </span>
           <span>
-            People management and technical roles:{' '}
+            People management or technical leadership responsibilities:{' '}
             <span className="font-bold">{managerExperience} years</span>,{' '}
           </span>
-          <span>Remote contractor: {contractorExperience} years;</span>
+          <span>Remote B2B contractor: {contractorExperience} years;</span>
         </li>
         <li>
           Chief Technology Officer at outsourcing company. Duration: 18 months;
@@ -50,10 +50,6 @@ const Accomplishments = () => {
             title="@xstate/react"
             text="@xstate/react"
           />
-        </li>
-        <li>
-          Contract offered by The European Commission based in Brussels.
-          Contract type: Belgium (On-site); Position: Application Architect;
         </li>
       </ul>
     </>
