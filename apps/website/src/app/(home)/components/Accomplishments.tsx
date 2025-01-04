@@ -2,8 +2,7 @@
 
 import TargetBlankLink from '@/components/TargetBlankLink'
 import {listStyle} from './shared'
-import {experienceByYears} from '@/constants/text'
-import {clients} from '@/data/portfolio'
+import {experienceByYears, managerExperience} from '@/constants/text'
 
 const Accomplishments = () => {
   return (
@@ -14,9 +13,9 @@ const Accomplishments = () => {
           <span className="font-bold">
             {experienceByYears}+ years experience
           </span>
-          . My company worked with clients based in {clients.join(', ')}
+          . Experience with management of agile teams;
         </li>
-        <li>Leadership roles: 12+ years;</li>
+        <li>Leadership roles: {managerExperience} years;</li>
         <li>
           <TargetBlankLink
             text="Ex - contractor Siemens"
@@ -25,7 +24,7 @@ const Accomplishments = () => {
           />{' '}
           and The international Red cross;
         </li>
-        <li>ex-CTO - Experience with management of small teams;</li>
+        <li>ex-CTO in outsoursing company. Duration: 18 months;</li>
         <li>2 x Staff Engineer / Engineering manager;</li>
         <li>4 x Software Architect / Tech - Lead;</li>
         <li>
