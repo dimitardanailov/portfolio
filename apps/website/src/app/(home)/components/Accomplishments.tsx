@@ -26,7 +26,7 @@ const Accomplishments = () => {
         </li>
         <li>
           Chief Technology Officer at outsourcing company. Duration: 18 months;
-          Company size: 20+ employees;
+          Company size: 25+ employees;
         </li>
         <li>2 x Staff Engineer / Engineering manager; Duration: 24 months;</li>
         <li>7 x Software Architect / Tech - Lead;</li>
