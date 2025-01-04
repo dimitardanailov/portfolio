@@ -1,5 +1,5 @@
 import layout from '@/components/NextjsLayout'
-import generateMetadata, {InternalMetadata} from '@/seo/metadata'
+import generateMetadata from '@/seo/metadata'
 
 import props from './seo'
 

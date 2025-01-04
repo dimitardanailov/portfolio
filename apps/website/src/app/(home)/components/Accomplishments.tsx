@@ -2,7 +2,11 @@
 
 import TargetBlankLink from '@/components/TargetBlankLink'
 import {listStyle} from './shared'
-import {experienceByYears, managerExperience} from '@/constants/text'
+import {
+  experienceByYears,
+  managerExperience,
+  contractorExperience,
+} from '@/constants/text'
 
 const Accomplishments = () => {
   return (
@@ -10,23 +14,22 @@ const Accomplishments = () => {
       <div className="font-bold">Accomplishments</div>
       <ul className={listStyle}>
         <li>
-          <span className="font-bold">
-            {experienceByYears}+ years experience
+          <span>
+            Full stack engineer:{' '}
+            <span className="font-bold">{experienceByYears}+ years</span>,{' '}
           </span>
-          . Experience with management of agile teams;
+          <span>
+            People management and technical roles:{' '}
+            <span className="font-bold">{managerExperience} years</span>,{' '}
+          </span>
+          <span>Remote contractor: {contractorExperience} years;</span>
         </li>
-        <li>Leadership roles: {managerExperience} years;</li>
         <li>
-          <TargetBlankLink
-            text="Ex - contractor Siemens"
-            title="Senior Architect"
-            href="/letters/senior-architect.pdf"
-          />{' '}
-          and The international Red cross;
+          Chief Technology Officer at outsourcing company. Duration: 18 months;
+          Company size: 20+ employees;
         </li>
-        <li>ex-CTO in outsoursing company. Duration: 18 months;</li>
-        <li>2 x Staff Engineer / Engineering manager;</li>
-        <li>4 x Software Architect / Tech - Lead;</li>
+        <li>2 x Staff Engineer / Engineering manager; Duration: 24 months;</li>
+        <li>7 x Software Architect / Tech - Lead;</li>
         <li>
           <TargetBlankLink
             Element={
@@ -34,14 +37,8 @@ const Accomplishments = () => {
             }
             title="Top 4% user in Stack Overflow"
             href="https://stackoverflow.com/users/609707/d-danailov"
-          />
-        </li>
-        <li>
-          Contract offered by The European Commission based in Brussels.
-          Contract type: Belgium (On-site); Position: Application Architect;
-        </li>
-        <li>
-          Open source contributor:{' '}
+          />{' '}
+          and Open source contributor:{' '}
           <TargetBlankLink
             href="https://github.com/firefox-devtools/debugger/pulls?q=is%3Apr+is%3Aclosed+author%3Adimitardanailov"
             title="Mozilla foundation"
@@ -53,6 +50,10 @@ const Accomplishments = () => {
             title="@xstate/react"
             text="@xstate/react"
           />
+        </li>
+        <li>
+          Contract offered by The European Commission based in Brussels.
+          Contract type: Belgium (On-site); Position: Application Architect;
         </li>
       </ul>
     </>
