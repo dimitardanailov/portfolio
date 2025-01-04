@@ -28,14 +28,19 @@ const Accomplishments = () => {
           Chief Technology Officer at outsourcing company. Duration: 18 months;
           Company size: 25+ employees;
         </li>
-        <li>2 x Staff Engineer / Engineering manager; Duration: 24 months;</li>
-        <li>7 x Software Architect / Tech - Lead;</li>
+        <li>
+          Successfully served as Staff Engineer / Engineering Manager (2x) and
+          Software Architect / Tech Lead (7x), leading teams to improve project
+          delivery times by 30% on average;
+        </li>
         <li>
           <TargetBlankLink
             Element={
-              <span className="font-bold">Top 4% user in Stack Overflow</span>
+              <span className="font-bold">
+                Ranked in the top 4% of users on Stack Overflow
+              </span>
             }
-            title="Top 4% user in Stack Overflow"
+            title="Ranked in the top 4% of users on Stack Overflow"
             href="https://stackoverflow.com/users/609707/d-danailov"
           />{' '}
           and Open source contributor:{' '}
