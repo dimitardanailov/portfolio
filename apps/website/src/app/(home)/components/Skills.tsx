@@ -16,7 +16,7 @@ const Skills: FC = () => {
         <li>
           React: Typescript, Nextjs, Vercel, Redux, GraphQL, React Native;
         </li>
-        <li>Cloud Development: AWS, Azure, Google Cloud;</li>
+        <li>Cloud Development: AWS, Azure, Google Cloud and Fireabse;</li>
         <li>Blockchain EVM / Ethereum: Solidity, Hardhat, Foundry;</li>
         <li>
           Blockchain Custody Wallet: Cosmos, Algorand, Binance Smart Chain,
@@ -24,7 +24,7 @@ const Skills: FC = () => {
         </li>
         <li>
           Machine Learning / Artificial Intelligence: Vercel AI SDK, Gemini Pro,
-          ChatGPT, Large Language Models, Generative AI
+          ChatGPT, Large Language Models, Generative AI;
         </li>
         <li>
           Databases: PostgreSQL, MySQL, MSSQL, NoSQL, MongoDB, OpenSearch,
