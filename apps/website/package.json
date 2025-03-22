@@ -48,7 +48,7 @@
     "remark-gfm": "^4.0.0",
     "styled-components": "6.1.16",
     "tailwindcss": "^3.4.17",
-    "turbo": "^2.0.11",
+    "turbo": "2.4.4",
     "typescript": "^5.5.4",
     "web-vitals": "^4.2.2",
     "xstate": "^4.37.2",
