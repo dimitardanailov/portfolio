@@ -11,7 +11,7 @@ const Skills: FC = () => {
       <ul className={listStyle}>
         <li>
           Nodejs: Typescript, Nestjs, Express, Hapi, etherjs, web3js,
-          zksync-ethers;
+          zksync-ethers, thirdweb;
         </li>
         <li>
           React: Typescript, Nextjs, Vercel, Redux, GraphQL, React Native;
