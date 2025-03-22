@@ -28,7 +28,7 @@ const Skills: FC = () => {
         </li>
         <li>
           Databases: PostgreSQL, MySQL, MSSQL, NoSQL, MongoDB, OpenSearch,
-          Elastic Search;
+          Elastic Search, Firestore;
         </li>
         <li>
           Containers and orchestration: Docker, Kubernetes, OpenShift, Vagrant,
