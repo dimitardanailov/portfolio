@@ -40,6 +40,8 @@ enum CoingeckoCryptoCurrency {
   MANTA = 'manta-network',
   ETHFI = 'ether-fi',
   REZ = 'renzo',
+  SWELL_NETWORK = 'swell-network',
+  HYPERLANE = 'hyperlane',
 
   // L2
   ARBITRUM = 'arbitrum',
@@ -54,6 +56,9 @@ enum CoingeckoCryptoCurrency {
   OSMOSIS = 'osmosis',
   DYMENSION = 'dymension',
   SAGA = 'saga-2',
+
+  // Others
+  AVAIL = 'avail',
 }
 
 export default CoingeckoCryptoCurrency
