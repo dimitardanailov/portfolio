@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import './article.css';
+@import './code.css';
+
 .active-color {
   color: #ff9800;
   text-shadow: -1px 1px #000;

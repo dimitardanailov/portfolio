@@ -1,0 +1,24 @@
+.inline-code {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier,
+    monospace; /* Common monospaced fonts */
+  background-color: #f6f8fa; /* Light grey background, common for code blocks */
+  padding: 0.2em 0.4em; /* Small padding around the text */
+  margin: 0; /* Remove any default margins if present */
+  font-size: 85%; /* Slightly smaller font size than the surrounding text */
+  border-radius: 3px; /* Slightly rounded corners */
+  color: #333; /* Darker text color for contrast */
+}
+
+/* Optional: If you want a subtle border */
+.inline-code {
+  border: 1px solid rgba(27, 31, 35, 0.06);
+}
+
+/* Optional: For better readability on darker backgrounds */
+@media (prefers-color-scheme: dark) {
+  .inline-code {
+    background-color: #363b40; /* Darker background for dark mode */
+    color: #e6edf3; /* Lighter text for dark mode */
+    border-color: rgba(200, 200, 200, 0.1);
+  }
+}
