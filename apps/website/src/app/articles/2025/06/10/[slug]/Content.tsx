@@ -36,7 +36,7 @@ const Content = () => {
           <strong>Firebase Cloud Function</strong>.
         </p>
         <p>This Cloud Function&lsquo;s primary role is to:</p>
-        <ul>
+        <ul className={listStyle}>
           <li>Extract the `shortCode` from the incoming request path.</li>
           <li>
             Perform a rapid lookup to find the corresponding `originalLink`.
@@ -87,7 +87,7 @@ const Content = () => {
           collections&nbsp;
           <span className="font-bold">can</span> store this data, a more robust
           approach for extreme scale might involve streaming these events to a
-          data warehouse (e.g., Google BigQuery, Snowflake) or a specialized
+          data warehouse (e.g., Google BigQuery, Snowflake) or a specialised
           time-series database. This decouples analytics ingestion from the core
           redirection path.
         </p>
@@ -102,7 +102,7 @@ const Content = () => {
           <li>
             <strong>Generation:</strong> Using a unique identifier (e.g., base62
             encoding of an auto-incrementing ID, or a cryptographically secure
-            hash of the `originalLink` + a salt). The `ShortCode` type's
+            hash of the `originalLink` + a salt). The `ShortCode` type&lsquo;s
             `__length: 7` constraint hints at a fixed-length encoding,
             simplifying management.
           </li>
@@ -121,12 +121,12 @@ const Content = () => {
         <h2>Achieving Scalability Beyond Basics</h2>
         <p>
           While serverless functions and NoSQL databases provide significant
-          out-of-the-box scalability, further optimizations can be implemented:
+          out-of-the-box scalability, further optimisations can be implemented:
         </p>
-        <ul>
+        <ul className={listStyle}>
           <li>
             <strong>Caching:</strong> Implementing a caching layer (e.g., Redis,
-            or utilizing CDN edge caching features like Cloudflare Workers) for
+            or utilising CDN edge caching features like Cloudflare Workers) for
             frequently accessed `shortCode`s can drastically reduce Cloud
             Function invocations and database reads, especially for
             &ldquo;hot&ldquo; links.
@@ -151,7 +151,7 @@ const Content = () => {
         <p>
           Building a scalable URL shortener leverages the power of serverless
           architecture and purpose-built databases. By making the redirection
-          service stateless and utilizing highly performant data stores for both
+          service stateless and utilising highly performant data stores for both
           link mapping and analytics, experienced developers can construct a
           robust and efficient system capable of handling substantial web
           traffic with minimal operational overhead.
