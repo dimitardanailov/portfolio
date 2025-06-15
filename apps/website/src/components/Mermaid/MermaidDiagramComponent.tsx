@@ -1,82 +1,60 @@
-// components/MermaidDiagramComponent.tsx
-import React, {useEffect, useRef, useState, FC} from 'react'
-import mermaid from 'mermaid' // Direct import here, as this component will only be loaded client-side dynamically.
+'use client'
+
+import {useEffect, useRef, useState, FC} from 'react'
+import mermaid from 'mermaid'
 
 export interface Props {
   text: string
-  id?: string
+  diagramId: string
 }
 
-const MermaidDiagramComponent: FC<Props> = ({text, id}) => {
-  const diagramRef = useRef<HTMLHtmlElement>(null) // Use HTMLDivElement for type
-  const [diagramId, setDiagramId] = useState('')
+const MermaidDiagramComponent: FC<Props> = ({text, diagramId}) => {
+  const diagramRef = useRef<HTMLDivElement>(null)
   const [error, setError] = useState<string | null>(null)
-  const [hasRendered, setHasRendered] = useState(false) // New state to track initial render
+  const [hasRendered, setHasRendered] = useState(false)
 
-  // Effect to generate/set a unique ID for the diagram
+  // Initialize Mermaid once on mount
   useEffect(() => {
-    if (!id) {
-      setDiagramId(
-        `mermaid-diagram-${Math.random().toString(36).substring(2, 11)}`,
-      )
-    } else {
-      setDiagramId(id)
-    }
-  }, [id])
+    mermaid.initialize({startOnLoad: false})
+  }, [])
 
-  // --- Initialise Mermaid ONLY ONCE when the component mounts ---
+  // Render diagram when text or ID changes
   useEffect(() => {
-    mermaid.initialize({startOnLoad: false}) // Ensure this runs once
-  }, []) // Empty dependency array means this runs only once on component mount
+    let isCancelled = false
 
-  // Effect to render the diagram when text or diagramId changes
-  useEffect(() => {
-    if (diagramRef.current && diagramId && text) {
-      // Ensure text is also not empty
-      setError(null) // Clear previous errors
-
-      // Immediately clear content to show loading state if needed, or before new render
-      diagramRef.current.innerHTML = ''
-      setHasRendered(false) // Reset render state
+    if (diagramRef.current && text) {
+      setError(null)
 
       try {
-        // Attempt to parse the text for syntax errors
         mermaid.parse(text)
 
-        // Render the new diagram
         mermaid
           .render(diagramId, text)
           .then(({svg, bindFunctions}) => {
-            if (diagramRef.current) {
-              diagramRef.current.innerHTML = svg
-              if (bindFunctions) {
-                // IMPORTANT: Bind any interactive functions if the diagram has them
-                bindFunctions(diagramRef.current)
-              }
-              setHasRendered(true) // Diagram has rendered
+            const target = diagramRef.current
+            if (target && !isCancelled) {
+              target.innerHTML = svg
+              bindFunctions?.(target)
+              setHasRendered(true)
             }
           })
-          .catch(renderErr => {
-            console.error('Mermaid render error:', renderErr)
+          .catch(err => {
+            console.error('Mermaid render error:', err)
             setError('Failed to render diagram. Check Mermaid syntax.')
           })
       } catch (parseErr: any) {
         console.error('Mermaid parse error:', parseErr)
-        // Display the specific parse error message from Mermaid
         setError(
           `Mermaid syntax error: ${parseErr.message || String(parseErr)}`,
         )
       }
     }
-    // Cleanup function: Clear the diagram when component unmounts or text/id changes
-    return () => {
-      if (diagramRef.current) {
-        diagramRef.current.innerHTML = ''
-      }
-    }
-  }, [text, diagramId]) // Dependencies: text and diagramId
 
-  // Render the component
+    return () => {
+      isCancelled = true
+    }
+  }, [text, diagramId])
+
   if (error) {
     return (
       <div
@@ -88,36 +66,25 @@ const MermaidDiagramComponent: FC<Props> = ({text, id}) => {
         }}
       >
         <p>Error displaying diagram:</p>
-        <pre style={{whiteSpace: 'pre-wrap', wordBreak: 'break-all'}}>
-          {error}
-        </pre>
+        <pre style={{whiteSpace: 'pre-wrap'}}>{error}</pre>
         <p>Input text:</p>
-        <pre style={{whiteSpace: 'pre-wrap', wordBreak: 'break-all'}}>
-          {text}
-        </pre>
+        <pre style={{whiteSpace: 'pre-wrap'}}>{text}</pre>
       </div>
     )
   }
 
   return (
     <div
-      ref={diagramRef}
-      id={diagramId} // Assign the unique ID to the div
-      className="mermaid"
+      className="mermaid-container"
       style={{
         overflow: 'auto',
         border: '1px solid #eee',
         padding: '10px',
         borderRadius: '5px',
-        minHeight: '50px', // Prevent collapse while loading
-        display: 'flex', // For centering loading message
-        justifyContent: 'center',
-        alignItems: 'center',
+        minHeight: '50px',
       }}
     >
-      {!hasRendered && !error && <p>Rendering diagram...</p>}{' '}
-      {/* Show loading message only before first render and if no error */}
-      {/* Mermaid will inject SVG here */}
+      <div ref={diagramRef} id={diagramId} />
     </div>
   )
 }
