@@ -3,7 +3,7 @@
 import {useEffect, useRef, useState, FC} from 'react'
 import mermaid from 'mermaid'
 
-export interface Props {
+export type Props = {
   text: string
   diagramId: string
 }
@@ -22,37 +22,36 @@ export function initMermaid() {
 
 const MermaidDiagramComponent: FC<Props> = ({text, diagramId}) => {
   const diagramRef = useRef<HTMLDivElement>(null)
+
   const [error, setError] = useState<string | null>(null)
   const [hasRendered, setHasRendered] = useState(false)
 
-  // Initialize once
-  useEffect(() => {
-    mermaid.initialize({startOnLoad: false})
-  }, [])
-
-  // Inject and run Mermaid on diagram content
   useEffect(() => {
     let isCancelled = false
     initMermaid()
 
     if (diagramRef.current && text) {
+      diagramRef.current.innerHTML = ''
       setError(null)
       setHasRendered(false)
 
-      const pre = document.createElement('pre')
-      pre.className = 'mermaid'
-      pre.textContent = text // not innerHTML
-
-      diagramRef.current.innerHTML = ''
-      diagramRef.current.appendChild(pre)
+      const id = `mermaid-${diagramId}`
 
       mermaid
-        .run({nodes: [diagramRef.current]})
-        .then(() => {
-          if (!isCancelled) setHasRendered(true)
+        .render(id, text)
+        .then(({svg, bindFunctions}) => {
+          if (isCancelled || !diagramRef.current) return
+
+          diagramRef.current.innerHTML = svg
+          bindFunctions?.(diagramRef.current)
+          setHasRendered(true)
         })
         .catch(err => {
-          console.error('Mermaid run error:', err)
+          console.error('Mermaid render error:', err)
+          if (!isCancelled && diagramRef.current) {
+            diagramRef.current.innerHTML =
+              '<div style="color:red;padding:10px;">Error rendering diagram</div>'
+          }
           setError('Failed to render diagram. Check Mermaid syntax.')
         })
     }
