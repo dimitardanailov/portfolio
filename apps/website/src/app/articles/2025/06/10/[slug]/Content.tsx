@@ -16,25 +16,10 @@ import {
 
 import {slogan} from './seo'
 import {diagramText} from './diagrams'
-import dynamic from 'next/dynamic'
-import {useEffect, useState} from 'react'
-
-const MermaidDiagram = dynamic(
-  () => import('@/components/Mermaid/MermaidDiagramComponent'),
-  {
-    ssr: false,
-    loading: () => <p>Loading diagram...</p>,
-  },
-)
+import ClientOnlyDiagram from '@/components/Mermaid/ClientOnlyDiagram'
 
 const Content = () => {
   const listStyle = 'list-disc mx-6 mt-0 mb-5'
-
-  const [isClient, setIsClient] = useState(false)
-
-  useEffect(() => {
-    setIsClient(true)
-  }, [])
 
   return (
     <article>
@@ -200,7 +185,7 @@ const Content = () => {
           traffic with minimal operational overhead.
         </Paragraph>
 
-        {isClient && <MermaidDiagram text={diagramText} id="myFirstDiagram" />}
+        <ClientOnlyDiagram text={diagramText} id="myFirstDiagram" />
       </>
     </article>
   )
