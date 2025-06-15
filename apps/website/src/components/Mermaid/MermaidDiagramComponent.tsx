@@ -8,46 +8,53 @@ export interface Props {
   diagramId: string
 }
 
+let initialized = false
+
+export function initMermaid() {
+  if (!initialized) {
+    mermaid.initialize({
+      startOnLoad: false,
+      theme: 'default',
+    })
+    initialized = true
+  }
+}
+
 const MermaidDiagramComponent: FC<Props> = ({text, diagramId}) => {
   const diagramRef = useRef<HTMLDivElement>(null)
   const [error, setError] = useState<string | null>(null)
   const [hasRendered, setHasRendered] = useState(false)
 
-  // Initialize Mermaid once on mount
+  // Initialize once
   useEffect(() => {
     mermaid.initialize({startOnLoad: false})
   }, [])
 
-  // Render diagram when text or ID changes
+  // Inject and run Mermaid on diagram content
   useEffect(() => {
     let isCancelled = false
+    initMermaid()
 
     if (diagramRef.current && text) {
       setError(null)
+      setHasRendered(false)
 
-      try {
-        mermaid.parse(text)
+      const pre = document.createElement('pre')
+      pre.className = 'mermaid'
+      pre.textContent = text // not innerHTML
 
-        mermaid
-          .render(diagramId, text)
-          .then(({svg, bindFunctions}) => {
-            const target = diagramRef.current
-            if (target && !isCancelled) {
-              target.innerHTML = svg
-              bindFunctions?.(target)
-              setHasRendered(true)
-            }
-          })
-          .catch(err => {
-            console.error('Mermaid render error:', err)
-            setError('Failed to render diagram. Check Mermaid syntax.')
-          })
-      } catch (parseErr: any) {
-        console.error('Mermaid parse error:', parseErr)
-        setError(
-          `Mermaid syntax error: ${parseErr.message || String(parseErr)}`,
-        )
-      }
+      diagramRef.current.innerHTML = ''
+      diagramRef.current.appendChild(pre)
+
+      mermaid
+        .run({nodes: [diagramRef.current]})
+        .then(() => {
+          if (!isCancelled) setHasRendered(true)
+        })
+        .catch(err => {
+          console.error('Mermaid run error:', err)
+          setError('Failed to render diagram. Check Mermaid syntax.')
+        })
     }
 
     return () => {
@@ -84,7 +91,18 @@ const MermaidDiagramComponent: FC<Props> = ({text, diagramId}) => {
         minHeight: '50px',
       }}
     >
-      <div ref={diagramRef} id={diagramId} />
+      <div
+        ref={diagramRef}
+        id={diagramId}
+        style={{
+          minHeight: '100px',
+        }}
+      />
+      {!hasRendered && !error && (
+        <p style={{textAlign: 'center', fontStyle: 'italic'}}>
+          Rendering diagram...
+        </p>
+      )}
     </div>
   )
 }
