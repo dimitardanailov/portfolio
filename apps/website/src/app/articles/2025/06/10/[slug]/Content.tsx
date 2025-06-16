@@ -15,7 +15,7 @@ import {
 } from './snippets'
 
 import {slogan} from './seo'
-import {diagramText} from './diagrams'
+import {shortClickDiagram, shorteningDiagram} from './diagrams'
 import ClientOnlyDiagram from '@/components/Mermaid/ClientOnlyDiagram'
 
 const Content = () => {
@@ -34,6 +34,15 @@ const Content = () => {
           article outlines a high-level serverless approach, ideal for
           experienced developers.
         </p>
+
+        <SubTitle>
+          Handles caching, redirection, and click logging on Cloud Function
+          trigger
+        </SubTitle>
+
+        <div className="mt-2 mb-2">
+          <ClientOnlyDiagram text={shorteningDiagram} id="shorteningDiagram" />
+        </div>
 
         <SubTitle>Core Architecture: Serverless Redirection</SubTitle>
 
@@ -79,6 +88,14 @@ const Content = () => {
         </Paragraph>
 
         <SubTitle>
+          Cloud Function-driven flow for generating unique short codes
+        </SubTitle>
+
+        <div className="mt-2 mb-2">
+          <ClientOnlyDiagram text={shortClickDiagram} id="shortClickDiagram" />
+        </div>
+
+        <SubTitle>
           <Code>ShortenedLink</Code> (Main Data)
         </SubTitle>
         <Paragraph>
@@ -88,6 +105,7 @@ const Content = () => {
           tracking. This model is designed to be highly accessible and optimised
           for rapid retrieval during the redirection process.
         </Paragraph>
+
         <Typescript Content={shortCodeType} />
         <Typescript Content={shortenedLinkType} />
         <Paragraph>
@@ -184,8 +202,6 @@ const Content = () => {
           robust and efficient system capable of handling substantial web
           traffic with minimal operational overhead.
         </Paragraph>
-
-        <ClientOnlyDiagram text={diagramText} id="myFirstDiagram" />
       </>
     </article>
   )
