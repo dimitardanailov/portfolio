@@ -8,6 +8,21 @@ const withMDX = require('@next/mdx')()
 const nextConfig = {
   env: {},
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
+  experimental: {
+    legacyBrowsers: false, // Avoid legacy JS
+    optimizeCss: true, // Reduce render-blocking CSS
+  },
+  headers: async () => [
+    {
+      source: '/:all*(png|ico|webmanifest|jpg|jpeg|woff2)',
+      headers: [
+        {
+          key: 'Cache-Control',
+          value: 'public, max-age=31536000, immutable',
+        },
+      ],
+    },
+  ],
   async redirects() {
     return [
       {
