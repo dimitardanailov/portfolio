@@ -17,6 +17,7 @@ import {
 import {slogan} from './seo'
 import {shortClickDiagram, shorteningDiagram} from './diagrams'
 import ClientOnlyDiagram from '@/components/Mermaid/ClientOnlyDiagram'
+import TweetEmbed from '@/components/TweetEmbed'
 
 const Content = () => {
   const listStyle = 'list-disc mx-6 mt-0 mb-5'
@@ -34,26 +35,21 @@ const Content = () => {
           article outlines a high-level serverless approach, ideal for
           experienced developers.
         </p>
-
         <SubTitle>
           Handles caching, redirection, and click logging on Cloud Function
           trigger
         </SubTitle>
-
         <div className="mt-2 mb-2">
           <ClientOnlyDiagram text={shorteningDiagram} id="shorteningDiagram" />
         </div>
-
         <SubTitle>Core Architecture: Serverless Redirection</SubTitle>
-
         <Paragraph>
           At the heart of our design is a serverless redirection mechanism. When
           a user accesses a short URL, such as
-          <Code>fan3.io/[:shortCode]</Code>, the DNS record for fan3.io is
+          <Code>a.fan3.io/[:shortCode]</Code>, the DNS record for a.fan3.io is
           configured to point directly to a{' '}
           <strong>Firebase Cloud Function</strong>.
         </Paragraph>
-
         <p>This Cloud Function&lsquo;s primary role is to:</p>
         <ul className={listStyle}>
           <li>
@@ -86,15 +82,12 @@ const Content = () => {
           lightning-fast, while also having the capacity to log and analyse vast
           amounts of click data.
         </Paragraph>
-
         <SubTitle>
           Cloud Function-driven flow for generating unique short codes
         </SubTitle>
-
         <div className="mt-2 mb-2">
           <ClientOnlyDiagram text={shortClickDiagram} id="shortClickDiagram" />
         </div>
-
         <SubTitle>
           <Code>ShortenedLink</Code> (Main Data)
         </SubTitle>
@@ -105,7 +98,6 @@ const Content = () => {
           tracking. This model is designed to be highly accessible and optimised
           for rapid retrieval during the redirection process.
         </Paragraph>
-
         <Typescript Content={shortCodeType} />
         <Typescript Content={shortenedLinkType} />
         <Paragraph>
@@ -202,6 +194,7 @@ const Content = () => {
           robust and efficient system capable of handling substantial web
           traffic with minimal operational overhead.
         </Paragraph>
+        <TweetEmbed tweetUrl="https://twitter.com/pitbull/status/1927762541955994000" />
       </>
     </article>
   )
