@@ -1,7 +1,7 @@
 import sanitizeUrl from '@/seo/sanitizeUrl'
 import {InternalMetadata} from '@/seo/metadata'
 
-const folder = 'articles/2025/06/10/'
+const folder = '/articles/2025/06/10/'
 
 const title =
   'Building a Scalable URL Shortener with Serverless: A High-Level Design for Experienced Developers'
@@ -28,6 +28,8 @@ const props: InternalMetadata = {
   description,
   canonical,
 }
+
+console.log('canonical', canonical)
 
 export default props
 
