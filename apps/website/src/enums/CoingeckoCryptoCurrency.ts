@@ -3,7 +3,7 @@ enum CoingeckoCryptoCurrency {
   ETHEREUM = 'ethereum',
   SOLANA = 'solana',
   CHAINLINK = 'chainlink',
-  POLYGON = 'matic-network',
+  POLYGON = 'polygon-ecosystem-token',
   NEAR = 'near',
   COSMOS = 'cosmos',
   POLKADOT = 'polkadot',

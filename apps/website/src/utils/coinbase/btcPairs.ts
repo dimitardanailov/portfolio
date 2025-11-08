@@ -3,7 +3,7 @@ import comparing from './comparing'
 export function pairs(cryptoSymbol: string) {
   const supportedCoins = [
     'ALGORAND',
-    'matic-network',
+    'polygon-ecosystem-token',
     'CARDANO',
     'ethereum',
     'solana',
