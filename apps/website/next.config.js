@@ -10,7 +10,7 @@ const nextConfig = {
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
   experimental: {
     legacyBrowsers: false, // Avoid legacy JS
-    optimizeCss: true, // Reduce render-blocking CSS
+    optimizeCss: false, // Reduce render-blocking CSS
   },
   headers: async () => [
     {
