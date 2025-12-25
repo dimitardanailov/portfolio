@@ -5,6 +5,7 @@ export const coingeckoIds = [
   Currency.BTC,
   Currency.ETHEREUM,
   Currency.SOLANA,
+  Currency.MARINADE_STAKED_SOL,
   Currency.CHAINLINK,
   Currency.POLYGON,
   Currency.NEAR,

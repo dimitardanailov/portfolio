@@ -16,6 +16,7 @@ enum CoingeckoCryptoCurrency {
   RENDER = 'render-token',
 
   // SOLANA
+  MARINADE_STAKED_SOL = 'msol',
   JUPITER = 'jupiter-exchange-solana',
   WEN_SOLANA = 'wen-4',
   DRIFT_PROTOCOL = 'drift-protocol',
