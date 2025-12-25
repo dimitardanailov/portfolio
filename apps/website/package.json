@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:debug": "next build --debug",
     "start": "next start",
     "lint": "next lint",
     "typegen": "npx xstate typegen \"src/**/*.ts?(x)\"",
@@ -48,19 +49,19 @@
     "remark-gfm": "^4.0.0",
     "styled-components": "6.1.16",
     "tailwindcss": "^3.4.17",
-    "turbo": "2.4.4",
-    "typescript": "5.8.2",
+    "turbo": "2.7.2",
+    "typescript": "5.9.3",
     "web-vitals": "^4.2.2",
     "xstate": "^4.37.2",
     "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/cytoscape": "^3.21.4",
-    "@types/mdx": "^2.0.10",
-    "@types/node": "^20.3.1",
-    "@types/react": "^18.2.14",
-    "@types/react-dom": "^18.2.17",
-    "@types/react-syntax-highlighter": "^15.5.10",
+    "@types/mdx": "^2.0.13",
+    "@types/node": "^25.0.3",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.7",
+    "@types/react-syntax-highlighter": "^15.5.13",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.31"
   }
