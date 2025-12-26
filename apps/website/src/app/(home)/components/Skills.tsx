@@ -16,7 +16,7 @@ const Skills: FC = () => {
         <li>
           React: Typescript, Nextjs, Vercel, Redux, GraphQL, React Native;
         </li>
-        <li>Cloud Development: AWS, Azure, Google Cloud and Fireabse;</li>
+        <li>Cloud Development: AWS, Azure, Google Cloud and Firebase;</li>
         <li>Blockchain EVM / Ethereum: Solidity, Hardhat, Foundry;</li>
         <li>
           Blockchain Custody Wallet: Cosmos, Algorand, Binance Smart Chain,
