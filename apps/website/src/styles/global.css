@@ -1,9 +1,9 @@
+@import './article.css';
+@import './code.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import './article.css';
-@import './code.css';
 
 .active-color {
   color: #ff9800;

@@ -8,10 +8,7 @@ const withMDX = require('@next/mdx')()
 const nextConfig = {
   env: {},
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
-  experimental: {
-    legacyBrowsers: false, // Avoid legacy JS
-    optimizeCss: false, // Reduce render-blocking CSS
-  },
+  turbopack: {},
   headers: async () => [
     {
       source: '/:all*(png|ico|webmanifest|jpg|jpeg|woff2)',
