@@ -1,7 +1,6 @@
 import HomeIcon from '@mui/icons-material/Home'
 import SchoolIcon from '@mui/icons-material/School'
 import DeblurIcon from '@mui/icons-material/Deblur'
-import ArticleIcon from '@mui/icons-material/Article'
 import CameraIcon from '@mui/icons-material/Camera'
 import HandshakeIcon from '@mui/icons-material/Handshake'
 import RecordVoiceOverIcon from '@mui/icons-material/RecordVoiceOver'
@@ -34,7 +33,7 @@ export const RecommendationLetters = {
 export const HireMe = {
   key: 'hire-me',
   text: 'hire me',
-  title: '15 years of helping build an inclusive web2 or web3 projects',
+  title: '16 years of helping build an inclusive web2 or web3 projects',
   href: '/hire-me',
   Icon: <HandshakeIcon />,
 }
