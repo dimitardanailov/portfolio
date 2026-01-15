@@ -4,6 +4,7 @@ import {Keyword} from '@/components/SEO'
 import {Slogan} from '@/styled-components'
 
 import {
+  YeetCasino,
   CollinsonGrop,
   PropineLetter,
   AsianAbsoluteLetter,
@@ -25,10 +26,11 @@ const Content = () => {
         Able to identify problems, analyze answers and implement the optimal
         solutions
       </h4>
-      <CollinsonGrop />
       <PropineLetter />
-      <AsianAbsoluteLetter />
+      <CollinsonGrop />
       <ElephantstockLetter />
+      <AsianAbsoluteLetter />
+      <YeetCasino />
       <FleetpalLetter />
       <GetcraftLetter />
       <QuestaraiLetter />

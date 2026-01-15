@@ -6,8 +6,10 @@ import GetcraftLetter from './getcraft'
 import WollowSoftLetter from './wollow'
 import QuestaraiLetter from './questarai'
 import CollinsonGrop from './collinson-group'
+import YeetCasino from './yeet-casino'
 
 export {
+  YeetCasino,
   CollinsonGrop,
   PropineLetter,
   AsianAbsoluteLetter,
