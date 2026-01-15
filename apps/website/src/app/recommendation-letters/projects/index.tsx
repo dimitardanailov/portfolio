@@ -5,8 +5,10 @@ import FleetpalLetter from './fleetpal'
 import GetcraftLetter from './getcraft'
 import WollowSoftLetter from './wollow'
 import QuestaraiLetter from './questarai'
+import CollinsonGrop from './collinson-group'
 
 export {
+  CollinsonGrop,
   PropineLetter,
   AsianAbsoluteLetter,
   ElephantstockLetter,

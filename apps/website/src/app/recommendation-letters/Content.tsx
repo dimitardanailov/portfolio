@@ -4,6 +4,7 @@ import {Keyword} from '@/components/SEO'
 import {Slogan} from '@/styled-components'
 
 import {
+  CollinsonGrop,
   PropineLetter,
   AsianAbsoluteLetter,
   ElephantstockLetter,
@@ -24,6 +25,7 @@ const Content = () => {
         Able to identify problems, analyze answers and implement the optimal
         solutions
       </h4>
+      <CollinsonGrop />
       <PropineLetter />
       <AsianAbsoluteLetter />
       <ElephantstockLetter />
